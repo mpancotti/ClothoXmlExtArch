@@ -1,0 +1,14 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "css/regole.css",
+        "id": "clothoxml"
+    },
+    "id": "ExtBox1-ext-gen12554",
+    "designerId": "95540c0e-fedc-4d24-8d97-5913a9ff8e05"
+}

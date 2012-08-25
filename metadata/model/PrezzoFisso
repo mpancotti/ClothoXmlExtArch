@@ -1,0 +1,127 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PrezzoFisso"
+    },
+    "id": "ExtBox1-ext-gen15146",
+    "designerId": "50de5ff0-bcb4-420d-af06-d109dc765106",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField19",
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "b4139d62-1fc3-4b6e-8267-bd905f6edd52"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField20",
+                "name": "codice",
+                "type": "int"
+            },
+            "designerId": "a318e33d-33b9-4fde-b8e7-f2c2c58b57fb"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField21",
+                "name": "prezzo_fornitore",
+                "type": "float"
+            },
+            "designerId": "2181a882-aabb-430b-9832-d07486be3312"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField22",
+                "name": "netto_lordo",
+                "type": "float"
+            },
+            "designerId": "36c95763-13ae-4330-924d-2bf39a41fbea"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField23",
+                "name": "affiliato",
+                "type": "float"
+            },
+            "designerId": "7b36fd0f-14fb-498f-b87f-0b7994a307f8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField24",
+                "name": "affiliato_light",
+                "type": "float"
+            },
+            "designerId": "54ec17f0-71fc-4522-b456-34d72edc019a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField25",
+                "name": "somministrato",
+                "type": "float"
+            },
+            "designerId": "cfd9a0c6-c40f-4e31-8783-3a1fa18a570c"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField26",
+                "name": "scadenza",
+                "type": "date"
+            },
+            "designerId": "7d5ce569-5319-4028-b06b-b0022454a8dd"
+        }
+    ]
+}

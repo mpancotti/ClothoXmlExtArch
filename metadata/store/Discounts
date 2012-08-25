@@ -1,0 +1,15 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Discounts",
+        "storeId": "MyStore",
+        "model": "Discount"
+    },
+    "id": "ExtBox1-ext-gen17143",
+    "designerId": "a8b33621-8c8f-40f6-95ae-7220ce515698"
+}

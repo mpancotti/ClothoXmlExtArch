@@ -1,0 +1,85 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Rule"
+    },
+    "id": "ExtBox1-ext-gen15253",
+    "designerId": "7443fc3c-d80b-486c-9a91-c3142d5ddd8e",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField27",
+                "name": "id",
+                "type": "string"
+            },
+            "designerId": "9e5278ce-abdf-4820-96f6-72820c27d9e8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField28",
+                "name": "regexp",
+                "type": "string"
+            },
+            "designerId": "454fa880-3270-4964-a6c6-5f0c76cb1295"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField29",
+                "name": "valore_note_3",
+                "type": "string"
+            },
+            "designerId": "7f23e83c-4d12-4f0f-83ec-01b3bd7220e4"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField30",
+                "name": "scadenza",
+                "type": "date"
+            },
+            "designerId": "605c57b7-f950-4c02-ae79-06af3145a35e"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField31",
+                "name": "strategy",
+                "type": "string"
+            },
+            "designerId": "a8a8e511-677e-4b8a-b571-f0a819a02c48"
+        }
+    ]
+}

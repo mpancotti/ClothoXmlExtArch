@@ -1,0 +1,27 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Rules",
+        "models": [
+            "Discount",
+            "Prezzo",
+            "PrezzoFisso",
+            "Rule",
+            "Sconto"
+        ],
+        "stores": [
+            "Discounts",
+            "Prezzi",
+            "PrezziFissi",
+            "Rules",
+            "Sconti"
+        ]
+    },
+    "id": "ExtBox1-ext-gen3746",
+    "designerId": "d40825c4-56c5-4a6b-92e9-e18823ca0f25"
+}

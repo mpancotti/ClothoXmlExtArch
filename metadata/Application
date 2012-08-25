@@ -1,0 +1,35 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "Discount",
+            "Prezzo",
+            "PrezzoFisso",
+            "Rule",
+            "Sconto",
+            "Vendor"
+        ],
+        "stores": [
+            "Discounts",
+            "Prezzi",
+            "PrezziFissi",
+            "Rules",
+            "Sconti",
+            "Vendors"
+        ],
+        "autoCreateViewport": true,
+        "name": "ClothoExtXml",
+        "controllers": [
+            "Rules",
+            "Vendors",
+            "FocusController"
+        ]
+    },
+    "id": "ExtBox1-ext-gen2590",
+    "designerId": "application"
+}

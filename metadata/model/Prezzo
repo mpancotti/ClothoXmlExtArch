@@ -1,0 +1,155 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Prezzo"
+    },
+    "id": "ExtBox1-ext-gen15039",
+    "designerId": "f0a5500b-fd06-4c96-b10c-8c2073b4fff3",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField9",
+                "name": "id",
+                "type": "int"
+            },
+            "designerId": "1ef4853f-16a3-420d-a40a-33e29515fe5f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField10",
+                "name": "codice",
+                "type": "int"
+            },
+            "designerId": "f35dd5ab-0ffa-4d81-9f88-acce5e9e6778"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField11",
+                "name": "prezzo_from",
+                "type": "float"
+            },
+            "designerId": "5207f6dc-a05e-4118-afdb-02f265b4bc23"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField12",
+                "name": "prezzo_to",
+                "type": "float"
+            },
+            "designerId": "7a1bae5f-a1b6-4f18-96a4-c50fd9090e66"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField13",
+                "name": "netto_lordo",
+                "type": "float"
+            },
+            "designerId": "f64f3d28-3f19-47dc-a4f5-2c0dc4336dea"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField14",
+                "name": "prezzoPrezzoNL",
+                "type": "string"
+            },
+            "designerId": "7dc6d5f9-8ecf-4343-9694-0836d54dae39"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField15",
+                "name": "prezzo_affiliato",
+                "type": "float"
+            },
+            "designerId": "a696bdf3-2c23-4fbc-b0b1-45367950409c"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField16",
+                "name": "prezzo_affiliato_light",
+                "type": "float"
+            },
+            "designerId": "78addf70-9774-450f-9b04-c04a89d00d2f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField17",
+                "name": "prezzo_somministrato",
+                "type": "float"
+            },
+            "designerId": "cbc697f9-384d-4ae3-859e-cc81f49b932a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyField18",
+                "name": "scadenza",
+                "type": "date"
+            },
+            "designerId": "6892006a-597e-47d9-ab96-090cc30d9f77"
+        }
+    ]
+}

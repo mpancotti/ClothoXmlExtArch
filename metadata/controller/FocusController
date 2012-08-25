@@ -1,0 +1,101 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FocusController",
+        "designer|userAlias": "focusController"
+    },
+    "id": "ExtBox1-ext-gen30974",
+    "designerId": "a7b88bdc-9f79-4adb-a9a3-77c02608679a",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    "this.control(\r",
+                    "    {'textfield': {'focus':this.fieldGotFocus},\r",
+                    "     'gridpanel': {'containerclick':this.containerClicked}\r",
+                    "    }\r",
+                    ")"
+                ]
+            },
+            "designerId": "2602d44b-36eb-4895-a094-309e03b1b6f3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "fieldGotFocus",
+                "fn": "fieldGotFocus",
+                "designer|params": [
+                    "field"
+                ],
+                "implHandler": [
+                    "console.log('Field has got focus'+field.getName());\r",
+                    "this.resetBorders();\r",
+                    "field.up('form').setBodyStyle('border-color','red');\r",
+                    ""
+                ]
+            },
+            "designerId": "0f614deb-9282-439c-b72b-c1a675b64c34"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "resetBorders",
+                "fn": "resetBorders",
+                "implHandler": [
+                    "var panelsWithinMyViewport = Ext.ComponentQuery.query('gridpanel, form');\r",
+                    "Ext.Array.each(panelsWithinMyViewport,function(panel){\r",
+                    "    panel.setBodyStyle('border-color','');\r",
+                    "})"
+                ]
+            },
+            "designerId": "7dcccfc6-0659-480c-8174-de0e7001a3bf"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "containerClicked",
+                "fn": "containerClicked",
+                "designer|params": [
+                    "view"
+                ],
+                "implHandler": [
+                    "console.log('Container clicked');\r",
+                    "this.resetBorders();\r",
+                    "view.up('gridpanel').setBodyStyle('border: solid 2px red');"
+                ]
+            },
+            "designerId": "eb116239-d611-4288-8a4f-17f4392b5905"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Rules",
+        "storeId": "MyStore3",
+        "model": "Rule"
+    },
+    "id": "ExtBox1-ext-gen17614",
+    "designerId": "07c1fb7e-c097-4e13-951e-f333c34354e4"
+}

@@ -1,0 +1,19 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Vendors",
+        "models": [
+            "Vendor"
+        ],
+        "stores": [
+            "Vendors"
+        ]
+    },
+    "id": "ExtBox1-ext-gen3958",
+    "designerId": "cdf18da0-e28e-49bf-accd-f722f986dacf"
+}

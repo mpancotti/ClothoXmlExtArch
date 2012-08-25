@@ -1,0 +1,16 @@
+{
+    "type": "store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Vendors",
+        "storeId": "Vendors",
+        "model": "Vendor",
+        "data": "{id:'id01',codice:12345,nome:'nome01',strategy:'stra01'}"
+    },
+    "id": "ExtBox1-ext-gen17928",
+    "designerId": "323f3a24-9bc1-4157-83dc-feef56855915"
+}

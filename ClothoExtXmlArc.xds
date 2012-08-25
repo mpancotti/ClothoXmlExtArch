@@ -1,0 +1,192 @@
+{
+    "name": "ClothoExtXmlArc",
+    "settings": {
+        "urlPrefix": "http://localhost/ClothoExtXmlArc",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 588,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000495,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "664f83ad-5d62-4f70-bddf-b256049ce321": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "bb324d84-14c4-4543-be57-cd615045dea8": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "a8b33621-8c8f-40f6-95ae-7220ce515698": {
+            "paths": [
+                "metadata/store/Discounts",
+                "app/store/override/Discounts.js",
+                "app/store/Discounts.js"
+            ],
+            "className": "Discounts"
+        },
+        "8619a007-60fa-4149-8c2d-423c6e1ae43d": {
+            "paths": [
+                "metadata/store/Prezzi",
+                "app/store/override/Prezzi.js",
+                "app/store/Prezzi.js"
+            ],
+            "className": "Prezzi"
+        },
+        "86f13fe7-7a1d-4685-85f8-665f63236b5c": {
+            "paths": [
+                "metadata/store/PrezziFissi",
+                "app/store/override/PrezziFissi.js",
+                "app/store/PrezziFissi.js"
+            ],
+            "className": "PrezziFissi"
+        },
+        "07c1fb7e-c097-4e13-951e-f333c34354e4": {
+            "paths": [
+                "metadata/store/Rules",
+                "app/store/override/Rules.js",
+                "app/store/Rules.js"
+            ],
+            "className": "Rules"
+        },
+        "5c818a45-97a8-4a14-a50a-daaa45ea9d17": {
+            "paths": [
+                "metadata/store/Sconti",
+                "app/store/override/Sconti.js",
+                "app/store/Sconti.js"
+            ],
+            "className": "Sconti"
+        },
+        "323f3a24-9bc1-4157-83dc-feef56855915": {
+            "paths": [
+                "metadata/store/Vendors",
+                "app/store/override/Vendors.js",
+                "app/store/Vendors.js"
+            ],
+            "className": "Vendors"
+        },
+        "e9c88aa2-d26c-47b5-82b8-b1e531f8210f": {
+            "paths": [
+                "metadata/model/Discount",
+                "app/model/override/Discount.js",
+                "app/model/Discount.js"
+            ],
+            "className": "Discount"
+        },
+        "f0a5500b-fd06-4c96-b10c-8c2073b4fff3": {
+            "paths": [
+                "metadata/model/Prezzo",
+                "app/model/override/Prezzo.js",
+                "app/model/Prezzo.js"
+            ],
+            "className": "Prezzo"
+        },
+        "50de5ff0-bcb4-420d-af06-d109dc765106": {
+            "paths": [
+                "metadata/model/PrezzoFisso",
+                "app/model/override/PrezzoFisso.js",
+                "app/model/PrezzoFisso.js"
+            ],
+            "className": "PrezzoFisso"
+        },
+        "7443fc3c-d80b-486c-9a91-c3142d5ddd8e": {
+            "paths": [
+                "metadata/model/Rule",
+                "app/model/override/Rule.js",
+                "app/model/Rule.js"
+            ],
+            "className": "Rule"
+        },
+        "4c19ba5a-e9d7-4f43-8c67-b70ce92d910b": {
+            "paths": [
+                "metadata/model/Sconto",
+                "app/model/override/Sconto.js",
+                "app/model/Sconto.js"
+            ],
+            "className": "Sconto"
+        },
+        "d2a8b20c-6593-4e47-97f6-07e8ab84ba68": {
+            "paths": [
+                "metadata/model/Vendor",
+                "app/model/override/Vendor.js",
+                "app/model/Vendor.js"
+            ],
+            "className": "Vendor"
+        },
+        "d40825c4-56c5-4a6b-92e9-e18823ca0f25": {
+            "paths": [
+                "metadata/controller/Rules",
+                "app/controller/override/Rules.js",
+                "app/controller/Rules.js"
+            ],
+            "className": "Rules"
+        },
+        "cdf18da0-e28e-49bf-accd-f722f986dacf": {
+            "paths": [
+                "metadata/controller/Vendors",
+                "app/controller/override/Vendors.js",
+                "app/controller/Vendors.js"
+            ],
+            "className": "Vendors"
+        },
+        "95540c0e-fedc-4d24-8d97-5913a9ff8e05": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "a7b88bdc-9f79-4adb-a9a3-77c02608679a": {
+            "paths": [
+                "metadata/controller/FocusController",
+                "app/controller/override/FocusController.js",
+                "app/controller/FocusController.js"
+            ],
+            "className": "FocusController"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "664f83ad-5d62-4f70-bddf-b256049ce321"
+        ],
+        "store": [
+            "a8b33621-8c8f-40f6-95ae-7220ce515698",
+            "8619a007-60fa-4149-8c2d-423c6e1ae43d",
+            "86f13fe7-7a1d-4685-85f8-665f63236b5c",
+            "07c1fb7e-c097-4e13-951e-f333c34354e4",
+            "5c818a45-97a8-4a14-a50a-daaa45ea9d17",
+            "323f3a24-9bc1-4157-83dc-feef56855915"
+        ],
+        "controller": [
+            "d40825c4-56c5-4a6b-92e9-e18823ca0f25",
+            "cdf18da0-e28e-49bf-accd-f722f986dacf",
+            "a7b88bdc-9f79-4adb-a9a3-77c02608679a"
+        ],
+        "model": [
+            "e9c88aa2-d26c-47b5-82b8-b1e531f8210f",
+            "f0a5500b-fd06-4c96-b10c-8c2073b4fff3",
+            "50de5ff0-bcb4-420d-af06-d109dc765106",
+            "7443fc3c-d80b-486c-9a91-c3142d5ddd8e",
+            "4c19ba5a-e9d7-4f43-8c67-b70ce92d910b",
+            "d2a8b20c-6593-4e47-97f6-07e8ab84ba68"
+        ],
+        "resource": [
+            "bb324d84-14c4-4543-be57-cd615045dea8",
+            "95540c0e-fedc-4d24-8d97-5913a9ff8e05"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

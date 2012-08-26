@@ -1,7 +1,7 @@
 {
     "name": "ClothoExtXmlArc",
     "settings": {
-        "urlPrefix": "http://localhost/ClothoExtXmlArc",
+        "urlPrefix": "http://localhost/ClothoExtXmlArch",
         "spacesToIndent": 4,
         "exportPath": "",
         "lineEnding": "CRLF",
@@ -16,12 +16,12 @@
     "topInstanceFileMap": {
         "664f83ad-5d62-4f70-bddf-b256049ce321": {
             "paths": [
-                "metadata/view/MyViewport",
-                "app/view/override/MyViewport.js",
-                "app/view/MyViewport.js",
+                "metadata/view/ClothoXmlViewport",
+                "app/view/override/ClothoXmlViewport.js",
+                "app/view/ClothoXmlViewport.js",
                 "app/view/Viewport.js"
             ],
-            "className": "MyViewport"
+            "className": "ClothoXmlViewport"
         },
         "bb324d84-14c4-4543-be57-cd615045dea8": {
             "paths": [
@@ -154,6 +154,14 @@
                 "app/controller/FocusController.js"
             ],
             "className": "FocusController"
+        },
+        "fd4b6b7b-89d4-4c55-bf88-b2e28e771059": {
+            "paths": [
+                "metadata/controller/GlobalVariables",
+                "app/controller/override/GlobalVariables.js",
+                "app/controller/GlobalVariables.js"
+            ],
+            "className": "GlobalVariables"
         }
     },
     "viewOrderMap": {
@@ -171,7 +179,8 @@
         "controller": [
             "d40825c4-56c5-4a6b-92e9-e18823ca0f25",
             "cdf18da0-e28e-49bf-accd-f722f986dacf",
-            "a7b88bdc-9f79-4adb-a9a3-77c02608679a"
+            "a7b88bdc-9f79-4adb-a9a3-77c02608679a",
+            "fd4b6b7b-89d4-4c55-bf88-b2e28e771059"
         ],
         "model": [
             "e9c88aa2-d26c-47b5-82b8-b1e531f8210f",

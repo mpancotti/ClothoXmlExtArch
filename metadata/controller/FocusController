@@ -7,7 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "FocusController",
-        "designer|userAlias": "focusController"
+        "designer|userAlias": "focusController",
+        "mixins": null,
+        "requires": [
+            "ClothoExtXml.controller.GlobalVariables"
+        ]
     },
     "id": "ExtBox1-ext-gen30974",
     "designerId": "a7b88bdc-9f79-4adb-a9a3-77c02608679a",
@@ -27,9 +31,9 @@
                 ],
                 "implHandler": [
                     "this.control(\r",
-                    "    {'textfield': {'focus':this.fieldGotFocus},\r",
-                    "     'gridpanel': {'containerclick':this.containerClicked}\r",
-                    "    }\r",
+                    "{'textfield': {'focus':this.fieldGotFocus},\r",
+                    "'gridpanel': {'containerclick':this.containerClicked}\r",
+                    "}\r",
                     ")"
                 ]
             },
@@ -49,10 +53,12 @@
                     "field"
                 ],
                 "implHandler": [
-                    "console.log('Field has got focus'+field.getName());\r",
+                    "console.log('Field has got focus: '+field.getName());\r",
                     "this.resetBorders();\r",
-                    "field.up('form').setBodyStyle('border-color','red');\r",
-                    ""
+                    "var currentForm=field.up('form');\r",
+                    "currentForm.setBodyStyle('border-color','red');\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentForm(currentForm);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentRecord(currentForm.getRecord());"
                 ]
             },
             "designerId": "0f614deb-9282-439c-b72b-c1a675b64c34"
@@ -71,6 +77,7 @@
                     "var panelsWithinMyViewport = Ext.ComponentQuery.query('gridpanel, form');\r",
                     "Ext.Array.each(panelsWithinMyViewport,function(panel){\r",
                     "    panel.setBodyStyle('border-color','');\r",
+                    "    //panel.setBodyStyle('border-width',0);\r",
                     "})"
                 ]
             },
@@ -92,7 +99,9 @@
                 "implHandler": [
                     "console.log('Container clicked');\r",
                     "this.resetBorders();\r",
-                    "view.up('gridpanel').setBodyStyle('border: solid 2px red');"
+                    "var currentForm=view.up('panel');\r",
+                    "currentForm.setBodyStyle('border-color','red');\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentGrid(currentForm);"
                 ]
             },
             "designerId": "eb116239-d611-4288-8a4f-17f4392b5905"

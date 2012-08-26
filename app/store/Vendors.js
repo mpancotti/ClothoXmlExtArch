@@ -26,12 +26,32 @@ Ext.define('ClothoExtXml.store.Vendors', {
         me.callParent([Ext.apply({
             storeId: 'Vendors',
             model: 'ClothoExtXml.model.Vendor',
-            data: {
-                id: 'id01',
-                codice: 12345,
-                nome: 'nome01',
-                strategy: 'stra01'
-            }
+            data: [
+                {
+                    id: 1,
+                    codice: 12345,
+                    nome: 'Safilo',
+                    strategy: 'CODE'
+                },
+                {
+                    id: 2,
+                    codice: 23456,
+                    nome: 'Luxottica',
+                    strategy: 'DESC'
+                },
+                {
+                    id: 3,
+                    codice: 34567,
+                    nome: 'Rodenstock',
+                    strategy: 'DESCCODE'
+                },
+                {
+                    id: 4,
+                    codice: 45678,
+                    nome: 'Hoya',
+                    strategy: 'CODEDESC'
+                }
+            ]
         }, cfg)]);
     }
 });

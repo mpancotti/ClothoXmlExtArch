@@ -17,6 +17,10 @@ Ext.define('ClothoExtXml.controller.FocusController', {
     extend: 'Ext.app.Controller',
     alias: 'controller.focusController',
 
+    requires: [
+        'ClothoExtXml.controller.GlobalVariables'
+    ],
+
     init: function(application) {
         this.control(
         {'textfield': {'focus':this.fieldGotFocus},
@@ -26,23 +30,28 @@ Ext.define('ClothoExtXml.controller.FocusController', {
     },
 
     fieldGotFocus: function(field) {
-        console.log('Field has got focus'+field.getName());
+        console.log('Field has got focus: '+field.getName());
         this.resetBorders();
-        field.up('form').setBodyStyle('border-color','red');
-
+        var currentForm=field.up('form');
+        currentForm.setBodyStyle('border-color','red');
+        ClothoExtXml.controller.GlobalVariables.setCurrentForm(currentForm);
+        ClothoExtXml.controller.GlobalVariables.setCurrentRecord(currentForm.getRecord());
     },
 
     resetBorders: function() {
         var panelsWithinMyViewport = Ext.ComponentQuery.query('gridpanel, form');
         Ext.Array.each(panelsWithinMyViewport,function(panel){
             panel.setBodyStyle('border-color','');
+            //panel.setBodyStyle('border-width',0);
         })
     },
 
     containerClicked: function(view) {
         console.log('Container clicked');
         this.resetBorders();
-        view.up('gridpanel').setBodyStyle('border: solid 2px red');
+        var currentForm=view.up('panel');
+        currentForm.setBodyStyle('border-color','red');
+        ClothoExtXml.controller.GlobalVariables.setCurrentGrid(currentForm);
     }
 
 });

@@ -14,7 +14,10 @@
  */
 
 Ext.Loader.setConfig({
-    enabled: true
+    enabled: true,
+    paths: {
+        ClothoExtXml: 'app'
+    }
 });
 
 Ext.application({

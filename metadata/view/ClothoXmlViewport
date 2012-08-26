@@ -1,0 +1,1366 @@
+{
+    "type": "viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ClothoXmlViewport",
+        "requires": [
+            "ClothoExtXml.controller.GlobalVariables"
+        ],
+        "designer|initialView": true,
+        "id": "mainViewport",
+        "layout": "border"
+    },
+    "id": "ExtBox1-ext-gen4590",
+    "designerId": "664f83ad-5d62-4f70-bddf-b256049ce321",
+    "cn": [
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "center",
+                "designer|userClassName": "MyContainer",
+                "designer|displayName": "centreRegion",
+                "id": "centerRegion",
+                "layout": "fit"
+            },
+            "designerId": "c59f08c4-aed9-4b5f-8191-9e304605c7e0",
+            "cn": [
+                {
+                    "type": "tabpanel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTabPanel1",
+                        "designer|displayName": "rulesMainTabset",
+                        "height": null,
+                        "id": "mainTabset",
+                        "width": 694,
+                        "activeTab": 0
+                    },
+                    "designerId": "3064e16c-cf4a-4764-a66c-7482f98acb94",
+                    "cn": [
+                        {
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "designer|userClassName": "MyPanel3",
+                                "designer|displayName": "vendorBasicData",
+                                "height": 613,
+                                "width": 818,
+                                "layout": "vbox",
+                                "title": "Sconti generici"
+                            },
+                            "designerId": "d1c49070-4f64-4443-948e-1e2939a16978",
+                            "cn": [
+                                {
+                                    "type": "tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "TabConfig3",
+                                        "designer|displayName": "tabBasicData",
+                                        "closeText": ""
+                                    },
+                                    "designerId": "c41a6df0-00e5-4bf0-a22e-f1cb48c8f524"
+                                },
+                                {
+                                    "type": "panel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "designer|userClassName": "MyPanel2",
+                                        "designer|displayName": "vendorDataDisplay",
+                                        "height": null,
+                                        "id": "vendorData",
+                                        "maxHeight": 30,
+                                        "minHeight": 30,
+                                        "frameHeader": null,
+                                        "title": null,
+                                        "titleCollapse": null
+                                    },
+                                    "designerId": "7d397a37-66b5-4c4b-b1ec-d4f33802c078",
+                                    "cn": [
+                                        {
+                                            "type": "template",
+                                            "reference": {
+                                                "name": "tpl",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "tpl",
+                                                "implHandler": [
+                                                    "<div style=\"padding:5px\"> \r",
+                                                    "    <span>Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>\r",
+                                                    "    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>\r",
+                                                    "</div>"
+                                                ],
+                                                "designer|displayName": "tpl"
+                                            },
+                                            "designerId": "8d08b4d8-e96b-44ac-9055-9a700da1d827"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "gridpanel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "designer|userClassName": "MyGridPanel1",
+                                        "designer|displayName": "vendorScontiGrid",
+                                        "height": 205,
+                                        "id": "basicDataPanel",
+                                        "width": 748,
+                                        "title": "Basic Data"
+                                    },
+                                    "designerId": "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
+                                    "cn": [
+                                        {
+                                            "type": "gridcolumn",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyColumn1",
+                                                "dataIndex": "string",
+                                                "text": "Da"
+                                            },
+                                            "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf"
+                                        },
+                                        {
+                                            "type": "numbercolumn",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyNumberColumn1",
+                                                "dataIndex": "number",
+                                                "text": "A"
+                                            },
+                                            "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc"
+                                        },
+                                        {
+                                            "type": "datecolumn",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyDateColumn1",
+                                                "dataIndex": "date",
+                                                "text": "Scadenza"
+                                            },
+                                            "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
+                                        },
+                                        {
+                                            "type": "booleancolumn",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyBooleanColumn1",
+                                                "dataIndex": "bool",
+                                                "text": "Valore in note3"
+                                            },
+                                            "designerId": "c7737b6e-7db3-4683-92e3-647753846cdb"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "designer|userClassName": "MyPanel4",
+                                "layout": "vbox",
+                                "title": "Regole di sconto e prezzo"
+                            },
+                            "designerId": "fd16741e-361b-4020-8ee3-9f71936bec4d",
+                            "cn": [
+                                {
+                                    "type": "tab",
+                                    "reference": {
+                                        "name": "tabConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "TabConfig4",
+                                        "designer|displayName": "tabRegole",
+                                        "id": "tabRegole"
+                                    },
+                                    "designerId": "d17a0412-e16d-4e40-ac28-92d4f73c7af9"
+                                },
+                                {
+                                    "type": "container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "container|align": "stretch",
+                                        "designer|userClassName": "MyContainer5",
+                                        "designer|displayName": "rulesAreaContainer",
+                                        "maxWidth": null,
+                                        "minWidth": null,
+                                        "width": null,
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "dbaf5bae-5151-4987-b0fd-b438ac3c954e",
+                                    "cn": [
+                                        {
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "container|align": "stretch",
+                                                "designer|userClassName": "MyContainer9",
+                                                "designer|displayName": "rulesListContainer",
+                                                "maxWidth": 160,
+                                                "minWidth": 160,
+                                                "width": 160,
+                                                "layout": "hbox"
+                                            },
+                                            "designerId": "704cd6d2-3260-4b05-a51c-12c355b73584",
+                                            "cn": [
+                                                {
+                                                    "type": "gridpanel",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|userClassName": "MyGridPanel3",
+                                                        "designer|displayName": "rulesListGrid",
+                                                        "id": "ruleGridPanel",
+                                                        "maxWidth": 160,
+                                                        "minWidth": 160,
+                                                        "padding": 2,
+                                                        "width": 160,
+                                                        "title": "Lista Regole ",
+                                                        "enableColumnHide": false,
+                                                        "enableColumnMove": false,
+                                                        "enableColumnResize": false
+                                                    },
+                                                    "designerId": "67156ffa-162c-4f8d-9c34-50a318f451dc",
+                                                    "cn": [
+                                                        {
+                                                            "type": "gridview",
+                                                            "reference": {
+                                                                "name": "viewConfig",
+                                                                "type": "object"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyGridView3"
+                                                            },
+                                                            "designerId": "1caa2157-978d-4a67-a3b8-981196bcca5b"
+                                                        },
+                                                        {
+                                                            "type": "gridcolumn",
+                                                            "reference": {
+                                                                "name": "columns",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyColumn3",
+                                                                "width": 154,
+                                                                "dataIndex": "string",
+                                                                "text": "Regola"
+                                                            },
+                                                            "designerId": "9748c7de-d62c-4b86-b6da-d0161fc8d467"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1,
+                                                "container|align": "stretch",
+                                                "designer|userClassName": "MyContainer10",
+                                                "designer|displayName": "rulesContainer",
+                                                "hidden": false,
+                                                "layout": "vbox"
+                                            },
+                                            "designerId": "de25e3bb-1022-432b-8bbf-8acd75136339",
+                                            "cn": [
+                                                {
+                                                    "type": "form",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|flex": 1,
+                                                        "designer|userClassName": "MyForm1",
+                                                        "designer|displayName": "ruleForm",
+                                                        "maxHeight": 220,
+                                                        "maxWidth": null,
+                                                        "minHeight": 220,
+                                                        "padding": 2,
+                                                        "width": null,
+                                                        "layout": null,
+                                                        "bodyPadding": 5,
+                                                        "title": "Gestione singola regola"
+                                                    },
+                                                    "designerId": "b051ec7d-47cf-4c22-aa67-f4cbf61e8a4f",
+                                                    "cn": [
+                                                        {
+                                                            "type": "fieldset",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyFieldSet",
+                                                                "maxWidth": 300,
+                                                                "minWidth": 300,
+                                                                "padding": 5,
+                                                                "width": 300,
+                                                                "title": "Dati regola di sconto generica"
+                                                            },
+                                                            "designerId": "0e95e44d-b202-4ba1-9997-12135b710ac2",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "textfield",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "layout|anchor": "100%",
+                                                                        "designer|userClassName": "MyTextField1",
+                                                                        "width": 100,
+                                                                        "fieldLabel": "Regola",
+                                                                        "labelAlign": "right"
+                                                                    },
+                                                                    "designerId": "06ecab5b-0e56-4d55-be85-40100d5db5f3"
+                                                                },
+                                                                {
+                                                                    "type": "numberfield",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "layout|anchor": "100%",
+                                                                        "designer|userClassName": "MyNumberField1",
+                                                                        "fieldLabel": "Valore",
+                                                                        "labelAlign": "right",
+                                                                        "hideTrigger": true
+                                                                    },
+                                                                    "designerId": "f9e3fe61-3caf-49fd-96fb-acb12be2c71b"
+                                                                },
+                                                                {
+                                                                    "type": "datefield",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "layout|anchor": "100%",
+                                                                        "designer|userClassName": "MyDateField",
+                                                                        "fieldLabel": "Scadenza",
+                                                                        "labelAlign": "right"
+                                                                    },
+                                                                    "designerId": "6c9c456d-e96c-4a00-9ae8-b10cb866f632"
+                                                                },
+                                                                {
+                                                                    "type": "combobox",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "layout|anchor": "100%",
+                                                                        "designer|userClassName": "MyComboBox1",
+                                                                        "fieldLabel": "Strategia",
+                                                                        "labelAlign": "right"
+                                                                    },
+                                                                    "designerId": "599da978-185f-4ea1-8a6b-e2f63f2d298f"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "toolbar",
+                                                            "reference": {
+                                                                "name": "dockedItems",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "dock": "bottom",
+                                                                "designer|userClassName": "MyToolbar2",
+                                                                "ui": [
+                                                                    "'footer'"
+                                                                ]
+                                                            },
+                                                            "designerId": "7f7ed964-93f4-449f-bf7a-e9c5c11dc6bf",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "button",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "layout|flex": null,
+                                                                        "designer|userClassName": "MyButton10",
+                                                                        "text": "Salva"
+                                                                    },
+                                                                    "designerId": "344b9172-7946-40f5-82b1-b4a6cdc8f7b3"
+                                                                },
+                                                                {
+                                                                    "type": "button",
+                                                                    "reference": {
+                                                                        "name": "items",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "layout|flex": null,
+                                                                        "designer|userClassName": "MyButton9",
+                                                                        "text": "Esci senza salvare"
+                                                                    },
+                                                                    "designerId": "88f60714-cacc-467a-b752-042fb01b40b0"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "tabpanel",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|flex": 1,
+                                                        "designer|userClassName": "MyTabPanel1",
+                                                        "designer|displayName": "scontiPrezziTabset",
+                                                        "padding": 2,
+                                                        "activeTab": 0
+                                                    },
+                                                    "designerId": "75eea967-2e90-48c0-956d-58dbcc39f706",
+                                                    "cn": [
+                                                        {
+                                                            "type": "gridpanel",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyGridPanel2",
+                                                                "height": null,
+                                                                "padding": 2,
+                                                                "title": "Sconti"
+                                                            },
+                                                            "designerId": "53bd2e01-8b28-4948-a3fb-dc1d83bd6e49",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "gridcolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyColumn2",
+                                                                        "dataIndex": "string",
+                                                                        "text": "Da Fornitore"
+                                                                    },
+                                                                    "designerId": "0b04bae8-b250-4879-9046-b1cfe31c4f86"
+                                                                },
+                                                                {
+                                                                    "type": "numbercolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyNumberColumn2",
+                                                                        "dataIndex": "number",
+                                                                        "text": "Tolleranza"
+                                                                    },
+                                                                    "designerId": "8b03ecd7-9195-40f8-9f07-5fe7a67c85ca"
+                                                                },
+                                                                {
+                                                                    "type": "datecolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyDateColumn2",
+                                                                        "dataIndex": "date",
+                                                                        "text": "Scadenza"
+                                                                    },
+                                                                    "designerId": "3df7b665-37c9-4702-bd6a-1523b3700470"
+                                                                },
+                                                                {
+                                                                    "type": "booleancolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyBooleanColumn2",
+                                                                        "dataIndex": "bool",
+                                                                        "text": "Prezzo Lordo"
+                                                                    },
+                                                                    "designerId": "1ad20aeb-f786-42d9-b7ae-8898e4fc5875"
+                                                                },
+                                                                {
+                                                                    "type": "gridview",
+                                                                    "reference": {
+                                                                        "name": "viewConfig",
+                                                                        "type": "object"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyGridView2"
+                                                                    },
+                                                                    "designerId": "5d3d7c23-4e80-41f1-94dc-60155342aea9"
+                                                                },
+                                                                {
+                                                                    "type": "tab",
+                                                                    "reference": {
+                                                                        "name": "tabConfig",
+                                                                        "type": "object"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "TabConfig5"
+                                                                    },
+                                                                    "designerId": "67339d49-78d4-4ecc-9425-a6273905389d"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "gridpanel",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyGridPanel4",
+                                                                "title": "Prezzi"
+                                                            },
+                                                            "designerId": "ffb3cebb-af37-4c56-80e6-ff1cf5d3bffe",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "gridcolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyColumn4",
+                                                                        "dataIndex": "string",
+                                                                        "text": "String"
+                                                                    },
+                                                                    "designerId": "5b287cdb-2a87-41b0-9f5e-f5167c176e82"
+                                                                },
+                                                                {
+                                                                    "type": "numbercolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyNumberColumn4",
+                                                                        "dataIndex": "number",
+                                                                        "text": "Number"
+                                                                    },
+                                                                    "designerId": "88b5be58-363e-4313-b643-2e16a4472c00"
+                                                                },
+                                                                {
+                                                                    "type": "datecolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyDateColumn3",
+                                                                        "dataIndex": "date",
+                                                                        "text": "Date"
+                                                                    },
+                                                                    "designerId": "b5225d53-65e0-41e3-b655-7aeddba9dfc4"
+                                                                },
+                                                                {
+                                                                    "type": "booleancolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyBooleanColumn3",
+                                                                        "dataIndex": "bool",
+                                                                        "text": "Boolean"
+                                                                    },
+                                                                    "designerId": "8b822ba5-32f6-4a72-abd8-76f3cfd34a38"
+                                                                },
+                                                                {
+                                                                    "type": "gridview",
+                                                                    "reference": {
+                                                                        "name": "viewConfig",
+                                                                        "type": "object"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyGridView"
+                                                                    },
+                                                                    "designerId": "764b9297-61f2-4f79-abfa-7ae897ebb727"
+                                                                },
+                                                                {
+                                                                    "type": "tab",
+                                                                    "reference": {
+                                                                        "name": "tabConfig",
+                                                                        "type": "object"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "TabConfig4"
+                                                                    },
+                                                                    "designerId": "f4a08027-f451-4c40-9796-a92156a9f5ca"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "gridpanel",
+                                                            "reference": {
+                                                                "name": "items",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "MyGridPanel5",
+                                                                "title": "Prezzo fisso"
+                                                            },
+                                                            "designerId": "b3d66c06-5b22-4289-88bd-b7c07b42b7c7",
+                                                            "cn": [
+                                                                {
+                                                                    "type": "gridcolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyColumn5",
+                                                                        "dataIndex": "string",
+                                                                        "text": "String"
+                                                                    },
+                                                                    "designerId": "38212887-44c3-4437-b47f-a1ecfeff193b"
+                                                                },
+                                                                {
+                                                                    "type": "numbercolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyNumberColumn5",
+                                                                        "dataIndex": "number",
+                                                                        "text": "Number"
+                                                                    },
+                                                                    "designerId": "03965383-10fa-4c5a-839c-b7c1b647f366"
+                                                                },
+                                                                {
+                                                                    "type": "datecolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyDateColumn4",
+                                                                        "dataIndex": "date",
+                                                                        "text": "Date"
+                                                                    },
+                                                                    "designerId": "0352042c-22c1-4dd4-8835-c3170aa3a32c"
+                                                                },
+                                                                {
+                                                                    "type": "booleancolumn",
+                                                                    "reference": {
+                                                                        "name": "columns",
+                                                                        "type": "array"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyBooleanColumn4",
+                                                                        "dataIndex": "bool",
+                                                                        "text": "Boolean"
+                                                                    },
+                                                                    "designerId": "e3c4655f-8c0b-48c1-a648-46e51ea19d2c"
+                                                                },
+                                                                {
+                                                                    "type": "gridview",
+                                                                    "reference": {
+                                                                        "name": "viewConfig",
+                                                                        "type": "object"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "MyGridView4"
+                                                                    },
+                                                                    "designerId": "991698b8-6468-4cfe-ab34-9d387a50268a"
+                                                                },
+                                                                {
+                                                                    "type": "tab",
+                                                                    "reference": {
+                                                                        "name": "tabConfig",
+                                                                        "type": "object"
+                                                                    },
+                                                                    "codeClass": null,
+                                                                    "userConfig": {
+                                                                        "designer|userClassName": "TabConfig2"
+                                                                    },
+                                                                    "designerId": "49b2a5ba-8258-452d-895e-4393c7c60e77"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "west",
+                "designer|userClassName": "MyContainer1",
+                "designer|displayName": "westRegion",
+                "maxWidth": 200,
+                "minWidth": null,
+                "width": 200,
+                "layout": "fit"
+            },
+            "designerId": "a5612d05-dfcd-4fb3-8e5e-6056f10125cc",
+            "cn": [
+                {
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "designer|userClassName": "MyContainer6",
+                        "designer|displayName": "vendorContainer",
+                        "height": null,
+                        "layout": "vbox"
+                    },
+                    "designerId": "f7e0512b-9e93-4c52-9136-f4b6d2022441",
+                    "cn": [
+                        {
+                            "type": "container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "container|align": "stretch",
+                                "designer|userClassName": "MyContainer7",
+                                "designer|displayName": "vendorFormContainer",
+                                "height": 200,
+                                "hidden": false,
+                                "id": "vendorFormContainer",
+                                "maxHeight": 200,
+                                "minHeight": 200,
+                                "layout": "hbox"
+                            },
+                            "designerId": "856cd6d5-f728-4b7d-98bf-abdccd50157b",
+                            "cn": [
+                                {
+                                    "type": "form",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "designer|userClassName": "MyForm2",
+                                        "bodyPadding": 10,
+                                        "title": "Gestione  Fornitore"
+                                    },
+                                    "designerId": "3e5195e7-04f8-4ccb-837e-61d5e09c1e67",
+                                    "cn": [
+                                        {
+                                            "type": "fieldset",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyFieldSet2",
+                                                "title": "Dati generali del fornitore"
+                                            },
+                                            "designerId": "dfd6fd81-1e84-4c5d-8dda-6c8afaba435d",
+                                            "cn": [
+                                                {
+                                                    "type": "numberfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|anchor": "100%",
+                                                        "designer|userClassName": "MyNumberField",
+                                                        "name": "codice",
+                                                        "fieldLabel": "Codice",
+                                                        "labelAlign": "right",
+                                                        "labelWidth": 50,
+                                                        "hideTrigger": true,
+                                                        "spinDownEnabled": false,
+                                                        "spinUpEnabled": false,
+                                                        "allowDecimals": false,
+                                                        "decimalPrecision": 0
+                                                    },
+                                                    "designerId": "8e397522-f8f7-403f-9e42-80824b495d35"
+                                                },
+                                                {
+                                                    "type": "textfield",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|anchor": "100%",
+                                                        "designer|userClassName": "MyTextField1",
+                                                        "width": null,
+                                                        "name": "nome",
+                                                        "fieldLabel": "Nome",
+                                                        "labelAlign": "right",
+                                                        "labelWidth": 50,
+                                                        "size": 60
+                                                    },
+                                                    "designerId": "7183c537-5d88-430d-b554-0cb04411a802"
+                                                },
+                                                {
+                                                    "type": "combobox",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|anchor": "100%",
+                                                        "designer|userClassName": "MyComboBox",
+                                                        "name": "strategy",
+                                                        "fieldLabel": "Strategia",
+                                                        "labelAlign": "right",
+                                                        "labelWidth": 50
+                                                    },
+                                                    "designerId": "2b36d539-da13-4121-87de-2dd81dfa1464"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "toolbar",
+                                            "reference": {
+                                                "name": "dockedItems",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dock": "bottom",
+                                                "container|align": "middle",
+                                                "container|pack": "center",
+                                                "container|padding": "",
+                                                "designer|userClassName": "MyToolbar1",
+                                                "designer|displayName": "vendorFormToolbar",
+                                                "height": 35,
+                                                "maxHeight": 35,
+                                                "minHeight": 35,
+                                                "ui": [
+                                                    "'footer'"
+                                                ]
+                                            },
+                                            "designerId": "32ae9955-bb9f-4521-9626-683e201e6c27",
+                                            "cn": [
+                                                {
+                                                    "type": "button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|flex": null,
+                                                        "designer|userClassName": "MyButton7",
+                                                        "iconCls": "file_save",
+                                                        "text": "Salva",
+                                                        "type": "submit"
+                                                    },
+                                                    "designerId": "7f0f4198-6f4e-4256-8271-017b3c967337"
+                                                },
+                                                {
+                                                    "type": "button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|flex": null,
+                                                        "designer|userClassName": "MyButton8",
+                                                        "iconCls": "cancel",
+                                                        "text": "Esci senza salvare",
+                                                        "type": "reset"
+                                                    },
+                                                    "designerId": "73baa4a1-7ac1-4285-82d3-924d98ff517b",
+                                                    "cn": [
+                                                        {
+                                                            "type": "basiceventbinding",
+                                                            "reference": {
+                                                                "name": "listeners",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "onButtonClick",
+                                                                "fn": "onButtonClick",
+                                                                "implHandler": [
+                                                                    "Ext.getCmp('vendorFormContainer').hide()"
+                                                                ],
+                                                                "name": "click",
+                                                                "scope": "me"
+                                                            },
+                                                            "designerId": "2e8385d7-468d-4287-8ef0-1497cad7cb4e"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 3,
+                                "designer|userClassName": "MyContainer8",
+                                "designer|displayName": "vendorGridContainer",
+                                "layout": "fit"
+                            },
+                            "designerId": "eda0620e-8787-401e-bd96-daf9149f9bca",
+                            "cn": [
+                                {
+                                    "type": "gridpanel",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyGridPanel",
+                                        "height": null,
+                                        "id": "vendorGridPanel",
+                                        "title": "Fornitori",
+                                        "store": "Vendors"
+                                    },
+                                    "designerId": "dc78034f-90cc-4598-b68b-d9f0e1bde877",
+                                    "cn": [
+                                        {
+                                            "type": "gridview",
+                                            "reference": {
+                                                "name": "viewConfig",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyGridView",
+                                                "designer|displayName": "vendorGridView"
+                                            },
+                                            "designerId": "900e31ed-cbe9-4f38-a8ce-3214accbbc6a"
+                                        },
+                                        {
+                                            "type": "numbercolumn",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyNumberColumn3",
+                                                "width": 50,
+                                                "dataIndex": "codice",
+                                                "text": "Codice",
+                                                "format": ""
+                                            },
+                                            "designerId": "2d43888c-c4da-45f5-9b53-0a46686b0927"
+                                        },
+                                        {
+                                            "type": "gridcolumn",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyColumn3",
+                                                "width": 148,
+                                                "dataIndex": "nome",
+                                                "text": "Nome"
+                                            },
+                                            "designerId": "8e0b4d23-120b-4a8b-9dbb-b156450ef74a"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onVendorGridPanelAfterLayout",
+                                                "fn": "onVendorGridPanelAfterLayout",
+                                                "implHandler": [
+                                                    "ClothoExtXml.controller.GlobalVariables.setCurrentGrid(abstractcontainer);"
+                                                ],
+                                                "name": "afterlayout",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "c2e3cb0a-d3e0-4ebf-af4e-e4f1e9898f65"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onVendorGridPanelSelect",
+                                                "fn": "onVendorGridPanelSelect",
+                                                "implHandler": [
+                                                    "Ext.getCmp('vendorData').update(record.getData());"
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "834ecf1e-4f61-47cb-8eb1-57585ad237b1"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onVendorGridPanelItemDblClick",
+                                                "fn": "onVendorGridPanelItemDblClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp('vendorFormContainer').show()"
+                                                ],
+                                                "name": "itemdblclick",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "37f8956d-2c31-4544-a791-2c0785edaac9"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south",
+                "designer|userClassName": "MyContainer2",
+                "designer|displayName": "southRegion",
+                "height": 30
+            },
+            "designerId": "b68058a8-5e31-4306-aa59-446a35c32cf6"
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "container|align": "stretch",
+                "designer|userClassName": "MyContainer3",
+                "designer|displayName": "northRegion",
+                "height": 34,
+                "layout": "hbox"
+            },
+            "designerId": "c0915f5b-57a4-4ad8-9951-a2ed2649c39a",
+            "cn": [
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 2,
+                        "designer|userClassName": "MyToolbar",
+                        "designer|displayName": "mainToolbar",
+                        "height": 30
+                    },
+                    "designerId": "8af6e369-8926-4575-885f-7cfaa8cd9d84",
+                    "cn": [
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton",
+                                "designer|displayName": "Excel",
+                                "width": 53,
+                                "text": "Excel"
+                            },
+                            "designerId": "f701590d-6abe-4a16-9915-b6df41459e62"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton1",
+                                "designer|displayName": "Diapason",
+                                "text": "Diapason"
+                            },
+                            "designerId": "adf41abd-00f6-4c25-a21e-9c73bfa8ff79"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton2",
+                                "designer|displayName": "Help",
+                                "width": 61,
+                                "text": "Help"
+                            },
+                            "designerId": "59e33faa-f87f-4784-a281-c01e2a76f7bb"
+                        },
+                        {
+                            "type": "tbfill",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyFill"
+                            },
+                            "designerId": "d61d240b-7c61-4fbf-8a3f-057c03d7c361"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton3",
+                                "id": "maintoolbar-add-btn",
+                                "iconCls": "file_add",
+                                "text": "Aggiungi"
+                            },
+                            "designerId": "de7b7e2a-e2c7-42da-9dc8-8c3f3631388f",
+                            "cn": [
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "addRecord",
+                                        "fn": "addRecord",
+                                        "implHandler": [
+                                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentForm());\r",
+                                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentGrid());\r",
+                                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentRecord());"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "b8d2d951-210c-4e3a-9f4c-578e8be5d397"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton4",
+                                "id": "maintoolbar-modify-btn",
+                                "iconCls": "file_edit",
+                                "text": "Modifica"
+                            },
+                            "designerId": "5392a209-737c-4983-be82-19582e4b6df4"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton5",
+                                "id": "maintoolbar-delete-btn",
+                                "iconCls": "file_delete",
+                                "text": "Cancella"
+                            },
+                            "designerId": "5765903c-19ce-4334-809e-96b6385e969e"
+                        },
+                        {
+                            "type": "button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "designer|userClassName": "MyButton6",
+                                "id": "bmaintoolbar-save-btn",
+                                "iconCls": "file_save",
+                                "text": "Salva"
+                            },
+                            "designerId": "734f3a10-c646-4bb0-ad65-67715867199d"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

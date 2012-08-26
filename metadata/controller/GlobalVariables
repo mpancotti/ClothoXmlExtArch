@@ -1,0 +1,156 @@
+{
+    "type": "class",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "GlobalVariables",
+        "singleton": true
+    },
+    "id": "ExtBox1-ext-gen14363",
+    "designerId": "fd4b6b7b-89d4-4c55-bf88-b2e28e771059",
+    "cn": [
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentGrid",
+                "fn": "setCurrentGrid",
+                "designer|params": [
+                    "grid"
+                ],
+                "implHandler": [
+                    "this.currentGrid=grid"
+                ]
+            },
+            "designerId": "fe9af9bc-bd4f-406f-87a0-eb83c4bc20de"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentForm",
+                "fn": "setCurrentForm",
+                "designer|params": [
+                    "form"
+                ],
+                "implHandler": [
+                    "this.currentForm=form"
+                ]
+            },
+            "designerId": "49068793-b7f3-4940-bcd7-2337f490aa4d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentRecord",
+                "fn": "setCurrentRecord",
+                "designer|params": [
+                    "record"
+                ],
+                "implHandler": [
+                    "this.currentRecord=record"
+                ]
+            },
+            "designerId": "f9a3ccf0-9039-4679-8be9-ff8f5605c6b6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentStatus",
+                "fn": "setCurrentStatus",
+                "designer|params": [
+                    "status"
+                ],
+                "implHandler": [
+                    "this.currentStatus=status"
+                ]
+            },
+            "designerId": "f61fb41e-ae0e-47fb-8986-a10de0a95497"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentGrid",
+                "fn": "getCurrentGrid",
+                "implHandler": [
+                    "return this.currentGrid"
+                ]
+            },
+            "designerId": "5597b8a4-aff1-436e-a2b1-e018b0eab2f9"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentForm",
+                "fn": "getCurrentForm",
+                "implHandler": [
+                    "return this.currentForm"
+                ]
+            },
+            "designerId": "f113841b-bdcd-4128-982b-b1fccc3c97d6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentRecord",
+                "fn": "getCurrentRecord",
+                "implHandler": [
+                    "return this.currentRecord"
+                ]
+            },
+            "designerId": "a52348f0-86fb-49d1-8f8c-de1d2d41f02a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentStatus",
+                "fn": "getCurrentStatus",
+                "implHandler": [
+                    "return this.currentStatus"
+                ]
+            },
+            "designerId": "37853441-347a-4de5-80d8-f93d8bccceaf"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "RuleGidPanel",
+        "designer|userAlias": "ruleGridPanel",
+        "designer|displayName": "rulesListGrid",
+        "id": "ruleGridPanel",
+        "maxWidth": 160,
+        "minWidth": 160,
+        "padding": 2,
+        "width": 160,
+        "title": "Lista Regole ",
+        "enableColumnHide": false,
+        "enableColumnMove": false,
+        "enableColumnResize": false,
+        "store": "Rules"
+    },
+    "id": "ExtBox1-ext-gen1966",
+    "designerId": "67156ffa-162c-4f8d-9c34-50a318f451dc",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView3"
+            },
+            "designerId": "1caa2157-978d-4a67-a3b8-981196bcca5b"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn3",
+                "width": 154,
+                "dataIndex": "id",
+                "text": "Regola"
+            },
+            "designerId": "9748c7de-d62c-4b86-b6da-d0161fc8d467"
+        }
+    ]
+}

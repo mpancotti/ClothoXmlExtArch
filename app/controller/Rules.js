@@ -29,5 +29,19 @@ Ext.define('ClothoExtXml.controller.Rules', {
         'PrezziFissi',
         'Rules',
         'Sconti'
-    ]
+    ],
+
+    rulesDoubleClick: function(view,record) {
+        //var container = Ext.getCmp('vendorFormContainer');
+        //if (container.hidden)
+        //    container.show()
+        Ext.getCmp('ruleForm').getForm().loadRecord(record);
+    },
+
+    init: function(application) {
+        this.control(
+        {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick},
+    })
+    }
+
 });

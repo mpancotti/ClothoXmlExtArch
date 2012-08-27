@@ -1,0 +1,100 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "VendorGridPaneL",
+        "designer|userAlias": "vendorGridPanel",
+        "height": null,
+        "id": "vendorGridPanel",
+        "title": "Fornitori",
+        "store": "Vendors"
+    },
+    "id": "ExtBox1-ext-gen2028",
+    "designerId": "dc78034f-90cc-4598-b68b-d9f0e1bde877",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView",
+                "designer|displayName": "vendorGridView"
+            },
+            "designerId": "900e31ed-cbe9-4f38-a8ce-3214accbbc6a"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn3",
+                "width": 50,
+                "dataIndex": "codice",
+                "text": "Codice",
+                "format": ""
+            },
+            "designerId": "2d43888c-c4da-45f5-9b53-0a46686b0927"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn3",
+                "width": 148,
+                "dataIndex": "nome",
+                "text": "Nome"
+            },
+            "designerId": "8e0b4d23-120b-4a8b-9dbb-b156450ef74a"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onVendorGridPanelAfterLayout",
+                "fn": "onVendorGridPanelAfterLayout",
+                "implHandler": [
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentGrid(abstractcontainer);"
+                ],
+                "name": "afterlayout",
+                "scope": "me"
+            },
+            "designerId": "c2e3cb0a-d3e0-4ebf-af4e-e4f1e9898f65"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onVendorGridPanelSelect",
+                "fn": "onVendorGridPanelSelect",
+                "implHandler": [
+                    "Ext.getCmp('vendorData').update(record.getData());"
+                ],
+                "name": "select",
+                "scope": "me"
+            },
+            "designerId": "834ecf1e-4f61-47cb-8eb1-57585ad237b1"
+        }
+    ]
+}

@@ -21,5 +21,19 @@ Ext.define('ClothoExtXml.controller.Vendors', {
     ],
     stores: [
         'Vendors'
-    ]
+    ],
+
+    init: function(application) {
+        this.control(
+        {'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick},
+    })
+    },
+
+    vendorDoubleClick: function(view, record) {
+        var container = Ext.getCmp('vendorFormContainer');
+        if (container.hidden)
+        container.show()
+        Ext.getCmp('vendorForm').getForm().loadRecord(record);
+    }
+
 });

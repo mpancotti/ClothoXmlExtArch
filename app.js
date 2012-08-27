@@ -42,7 +42,11 @@ Ext.application({
         'VendorDataPanel',
         'RulesAreaPanel',
         'MainToolbar',
-        'VendorArea'
+        'VendorArea',
+        'VendorForm',
+        'VendorGridPaneL',
+        'RuleGidPanel',
+        'RuleForm'
     ],
     autoCreateViewport: true,
     name: 'ClothoExtXml',
@@ -50,5 +54,10 @@ Ext.application({
         'Rules',
         'Vendors',
         'FocusController'
-    ]
+    ],
+
+    launch: function() {
+        Ext.getCmp('vendorGridPanel').getSelectionModel().select(0)
+    }
+
 });

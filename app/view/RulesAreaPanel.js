@@ -17,6 +17,11 @@ Ext.define('ClothoExtXml.view.RulesAreaPanel', {
     extend: 'Ext.panel.Panel',
     alias: 'widget.rulesAreaPanel',
 
+    requires: [
+        'ClothoExtXml.view.RuleGidPanel',
+        'ClothoExtXml.view.RuleForm'
+    ],
+
     layout: {
         align: 'stretch',
         type: 'vbox'
@@ -47,28 +52,7 @@ Ext.define('ClothoExtXml.view.RulesAreaPanel', {
                             },
                             items: [
                                 {
-                                    xtype: 'gridpanel',
-                                    id: 'ruleGridPanel',
-                                    maxWidth: 160,
-                                    minWidth: 160,
-                                    padding: 2,
-                                    width: 160,
-                                    title: 'Lista Regole ',
-                                    enableColumnHide: false,
-                                    enableColumnMove: false,
-                                    enableColumnResize: false,
-                                    store: 'Rules',
-                                    viewConfig: {
-
-                                    },
-                                    columns: [
-                                        {
-                                            xtype: 'gridcolumn',
-                                            width: 154,
-                                            dataIndex: 'id',
-                                            text: 'Regola'
-                                        }
-                                    ]
+                                    xtype: 'ruleGridPanel'
                                 }
                             ]
                         },
@@ -82,68 +66,8 @@ Ext.define('ClothoExtXml.view.RulesAreaPanel', {
                             },
                             items: [
                                 {
-                                    xtype: 'form',
-                                    flex: 1,
-                                    maxHeight: 220,
-                                    minHeight: 220,
-                                    padding: 2,
-                                    bodyPadding: 5,
-                                    title: 'Gestione singola regola',
-                                    items: [
-                                        {
-                                            xtype: 'fieldset',
-                                            maxWidth: 300,
-                                            minWidth: 300,
-                                            padding: 5,
-                                            width: 300,
-                                            title: 'Dati regola di sconto generica',
-                                            items: [
-                                                {
-                                                    xtype: 'textfield',
-                                                    anchor: '100%',
-                                                    width: 100,
-                                                    fieldLabel: 'Regola',
-                                                    labelAlign: 'right'
-                                                },
-                                                {
-                                                    xtype: 'numberfield',
-                                                    anchor: '100%',
-                                                    fieldLabel: 'Valore',
-                                                    labelAlign: 'right',
-                                                    hideTrigger: true
-                                                },
-                                                {
-                                                    xtype: 'datefield',
-                                                    anchor: '100%',
-                                                    fieldLabel: 'Scadenza',
-                                                    labelAlign: 'right'
-                                                },
-                                                {
-                                                    xtype: 'combobox',
-                                                    anchor: '100%',
-                                                    fieldLabel: 'Strategia',
-                                                    labelAlign: 'right'
-                                                }
-                                            ]
-                                        }
-                                    ],
-                                    dockedItems: [
-                                        {
-                                            xtype: 'toolbar',
-                                            dock: 'bottom',
-                                            ui: 'footer',
-                                            items: [
-                                                {
-                                                    xtype: 'button',
-                                                    text: 'Salva'
-                                                },
-                                                {
-                                                    xtype: 'button',
-                                                    text: 'Esci senza salvare'
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    xtype: 'ruleForm',
+                                    flex: 1
                                 },
                                 {
                                     xtype: 'tabpanel',

@@ -29,7 +29,7 @@
                 "designer|userClassName": "MyContainer7",
                 "designer|displayName": "vendorFormContainer",
                 "height": 200,
-                "hidden": false,
+                "hidden": true,
                 "id": "vendorFormContainer",
                 "maxHeight": 200,
                 "minHeight": 200,
@@ -38,7 +38,7 @@
             "designerId": "856cd6d5-f728-4b7d-98bf-abdccd50157b",
             "cn": [
                 {
-                    "type": "form",
+                    "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -46,163 +46,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|flex": 1,
-                        "designer|userClassName": "MyForm2",
-                        "bodyPadding": 10,
-                        "title": "Gestione  Fornitore"
+                        "designer|displayName": "vendorFormLink"
                     },
-                    "designerId": "3e5195e7-04f8-4ccb-837e-61d5e09c1e67",
-                    "cn": [
-                        {
-                            "type": "fieldset",
-                            "reference": {
-                                "name": "items",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyFieldSet2",
-                                "title": "Dati generali del fornitore"
-                            },
-                            "designerId": "dfd6fd81-1e84-4c5d-8dda-6c8afaba435d",
-                            "cn": [
-                                {
-                                    "type": "numberfield",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|anchor": "100%",
-                                        "designer|userClassName": "MyNumberField",
-                                        "name": "codice",
-                                        "fieldLabel": "Codice",
-                                        "labelAlign": "right",
-                                        "labelWidth": 50,
-                                        "hideTrigger": true,
-                                        "spinDownEnabled": false,
-                                        "spinUpEnabled": false,
-                                        "allowDecimals": false,
-                                        "decimalPrecision": 0
-                                    },
-                                    "designerId": "8e397522-f8f7-403f-9e42-80824b495d35"
-                                },
-                                {
-                                    "type": "textfield",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|anchor": "100%",
-                                        "designer|userClassName": "MyTextField1",
-                                        "width": null,
-                                        "name": "nome",
-                                        "fieldLabel": "Nome",
-                                        "labelAlign": "right",
-                                        "labelWidth": 50,
-                                        "size": 60
-                                    },
-                                    "designerId": "7183c537-5d88-430d-b554-0cb04411a802"
-                                },
-                                {
-                                    "type": "combobox",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|anchor": "100%",
-                                        "designer|userClassName": "MyComboBox",
-                                        "name": "strategy",
-                                        "fieldLabel": "Strategia",
-                                        "labelAlign": "right",
-                                        "labelWidth": 50
-                                    },
-                                    "designerId": "2b36d539-da13-4121-87de-2dd81dfa1464"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "toolbar",
-                            "reference": {
-                                "name": "dockedItems",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "dock": "bottom",
-                                "container|align": "middle",
-                                "container|pack": "center",
-                                "container|padding": "",
-                                "designer|userClassName": "MyToolbar1",
-                                "designer|displayName": "vendorFormToolbar",
-                                "height": 35,
-                                "maxHeight": 35,
-                                "minHeight": 35,
-                                "ui": [
-                                    "'footer'"
-                                ]
-                            },
-                            "designerId": "32ae9955-bb9f-4521-9626-683e201e6c27",
-                            "cn": [
-                                {
-                                    "type": "button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|flex": null,
-                                        "designer|userClassName": "MyButton7",
-                                        "iconCls": "file_save",
-                                        "text": "Salva",
-                                        "type": "submit"
-                                    },
-                                    "designerId": "7f0f4198-6f4e-4256-8271-017b3c967337"
-                                },
-                                {
-                                    "type": "button",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "layout|flex": null,
-                                        "designer|userClassName": "MyButton8",
-                                        "iconCls": "cancel",
-                                        "text": "Esci senza salvare",
-                                        "type": "reset"
-                                    },
-                                    "designerId": "73baa4a1-7ac1-4285-82d3-924d98ff517b",
-                                    "cn": [
-                                        {
-                                            "type": "basiceventbinding",
-                                            "reference": {
-                                                "name": "listeners",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "onButtonClick",
-                                                "fn": "onButtonClick",
-                                                "implHandler": [
-                                                    "Ext.getCmp('vendorFormContainer').hide()"
-                                                ],
-                                                "name": "click",
-                                                "scope": "me"
-                                            },
-                                            "designerId": "2e8385d7-468d-4287-8ef0-1497cad7cb4e"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                    "designerId": "3799f61c-e7c9-4f0d-a0a7-f11b53849be8",
+                    "masterInstanceId": "ExtBox1-ext-gen2018"
                 }
             ]
         },
@@ -222,120 +69,17 @@
             "designerId": "eda0620e-8787-401e-bd96-daf9149f9bca",
             "cn": [
                 {
-                    "type": "gridpanel",
+                    "type": "linkedinstance",
                     "reference": {
                         "name": "items",
                         "type": "array"
                     },
                     "codeClass": null,
                     "userConfig": {
-                        "designer|userClassName": "MyGridPanel",
-                        "height": null,
-                        "id": "vendorGridPanel",
-                        "title": "Fornitori",
-                        "store": "Vendors"
+                        "designer|displayName": "vendorGridPanelLink"
                     },
-                    "designerId": "dc78034f-90cc-4598-b68b-d9f0e1bde877",
-                    "cn": [
-                        {
-                            "type": "gridview",
-                            "reference": {
-                                "name": "viewConfig",
-                                "type": "object"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyGridView",
-                                "designer|displayName": "vendorGridView"
-                            },
-                            "designerId": "900e31ed-cbe9-4f38-a8ce-3214accbbc6a"
-                        },
-                        {
-                            "type": "numbercolumn",
-                            "reference": {
-                                "name": "columns",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyNumberColumn3",
-                                "width": 50,
-                                "dataIndex": "codice",
-                                "text": "Codice",
-                                "format": ""
-                            },
-                            "designerId": "2d43888c-c4da-45f5-9b53-0a46686b0927"
-                        },
-                        {
-                            "type": "gridcolumn",
-                            "reference": {
-                                "name": "columns",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyColumn3",
-                                "width": 148,
-                                "dataIndex": "nome",
-                                "text": "Nome"
-                            },
-                            "designerId": "8e0b4d23-120b-4a8b-9dbb-b156450ef74a"
-                        },
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "onVendorGridPanelAfterLayout",
-                                "fn": "onVendorGridPanelAfterLayout",
-                                "implHandler": [
-                                    "ClothoExtXml.controller.GlobalVariables.setCurrentGrid(abstractcontainer);"
-                                ],
-                                "name": "afterlayout",
-                                "scope": "me"
-                            },
-                            "designerId": "c2e3cb0a-d3e0-4ebf-af4e-e4f1e9898f65"
-                        },
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "onVendorGridPanelSelect",
-                                "fn": "onVendorGridPanelSelect",
-                                "implHandler": [
-                                    "Ext.getCmp('vendorData').update(record.getData());"
-                                ],
-                                "name": "select",
-                                "scope": "me"
-                            },
-                            "designerId": "834ecf1e-4f61-47cb-8eb1-57585ad237b1"
-                        },
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "onVendorGridPanelItemDblClick",
-                                "fn": "onVendorGridPanelItemDblClick",
-                                "implHandler": [
-                                    "Ext.getCmp('vendorFormContainer').show()"
-                                ],
-                                "name": "itemdblclick",
-                                "scope": "me"
-                            },
-                            "designerId": "37f8956d-2c31-4544-a791-2c0785edaac9"
-                        }
-                    ]
+                    "designerId": "490e6821-53d1-49cf-9a48-6fd3cc5bd610",
+                    "masterInstanceId": "ExtBox1-ext-gen2028"
                 }
             ]
         }

@@ -53,56 +53,14 @@
                     "designerId": "704cd6d2-3260-4b05-a51c-12c355b73584",
                     "cn": [
                         {
-                            "type": "gridpanel",
+                            "type": "linkedinstance",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "MyGridPanel3",
-                                "designer|displayName": "rulesListGrid",
-                                "id": "ruleGridPanel",
-                                "maxWidth": 160,
-                                "minWidth": 160,
-                                "padding": 2,
-                                "width": 160,
-                                "title": "Lista Regole ",
-                                "enableColumnHide": false,
-                                "enableColumnMove": false,
-                                "enableColumnResize": false,
-                                "store": "Rules"
-                            },
-                            "designerId": "67156ffa-162c-4f8d-9c34-50a318f451dc",
-                            "cn": [
-                                {
-                                    "type": "gridview",
-                                    "reference": {
-                                        "name": "viewConfig",
-                                        "type": "object"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyGridView3"
-                                    },
-                                    "designerId": "1caa2157-978d-4a67-a3b8-981196bcca5b"
-                                },
-                                {
-                                    "type": "gridcolumn",
-                                    "reference": {
-                                        "name": "columns",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyColumn3",
-                                        "width": 154,
-                                        "dataIndex": "id",
-                                        "text": "Regola"
-                                    },
-                                    "designerId": "9748c7de-d62c-4b86-b6da-d0161fc8d467"
-                                }
-                            ]
+                            "designerId": "7f3c2c30-30b4-4289-87e2-ff8885220b95",
+                            "masterInstanceId": "ExtBox1-ext-gen1966"
                         }
                     ]
                 },
@@ -124,155 +82,17 @@
                     "designerId": "de25e3bb-1022-432b-8bbf-8acd75136339",
                     "cn": [
                         {
-                            "type": "form",
+                            "type": "linkedinstance",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": 1,
-                                "designer|userClassName": "MyForm1",
-                                "designer|displayName": "ruleForm",
-                                "maxHeight": 220,
-                                "maxWidth": null,
-                                "minHeight": 220,
-                                "padding": 2,
-                                "width": null,
-                                "layout": null,
-                                "bodyPadding": 5,
-                                "title": "Gestione singola regola"
+                                "layout|flex": 1
                             },
-                            "designerId": "b051ec7d-47cf-4c22-aa67-f4cbf61e8a4f",
-                            "cn": [
-                                {
-                                    "type": "fieldset",
-                                    "reference": {
-                                        "name": "items",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyFieldSet",
-                                        "maxWidth": 300,
-                                        "minWidth": 300,
-                                        "padding": 5,
-                                        "width": 300,
-                                        "title": "Dati regola di sconto generica"
-                                    },
-                                    "designerId": "0e95e44d-b202-4ba1-9997-12135b710ac2",
-                                    "cn": [
-                                        {
-                                            "type": "textfield",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "layout|anchor": "100%",
-                                                "designer|userClassName": "MyTextField1",
-                                                "width": 100,
-                                                "fieldLabel": "Regola",
-                                                "labelAlign": "right"
-                                            },
-                                            "designerId": "06ecab5b-0e56-4d55-be85-40100d5db5f3"
-                                        },
-                                        {
-                                            "type": "numberfield",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "layout|anchor": "100%",
-                                                "designer|userClassName": "MyNumberField1",
-                                                "fieldLabel": "Valore",
-                                                "labelAlign": "right",
-                                                "hideTrigger": true
-                                            },
-                                            "designerId": "f9e3fe61-3caf-49fd-96fb-acb12be2c71b"
-                                        },
-                                        {
-                                            "type": "datefield",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "layout|anchor": "100%",
-                                                "designer|userClassName": "MyDateField",
-                                                "fieldLabel": "Scadenza",
-                                                "labelAlign": "right"
-                                            },
-                                            "designerId": "6c9c456d-e96c-4a00-9ae8-b10cb866f632"
-                                        },
-                                        {
-                                            "type": "combobox",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "layout|anchor": "100%",
-                                                "designer|userClassName": "MyComboBox1",
-                                                "fieldLabel": "Strategia",
-                                                "labelAlign": "right"
-                                            },
-                                            "designerId": "599da978-185f-4ea1-8a6b-e2f63f2d298f"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "toolbar",
-                                    "reference": {
-                                        "name": "dockedItems",
-                                        "type": "array"
-                                    },
-                                    "codeClass": null,
-                                    "userConfig": {
-                                        "dock": "bottom",
-                                        "designer|userClassName": "MyToolbar2",
-                                        "ui": [
-                                            "'footer'"
-                                        ]
-                                    },
-                                    "designerId": "7f7ed964-93f4-449f-bf7a-e9c5c11dc6bf",
-                                    "cn": [
-                                        {
-                                            "type": "button",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "layout|flex": null,
-                                                "designer|userClassName": "MyButton10",
-                                                "text": "Salva"
-                                            },
-                                            "designerId": "344b9172-7946-40f5-82b1-b4a6cdc8f7b3"
-                                        },
-                                        {
-                                            "type": "button",
-                                            "reference": {
-                                                "name": "items",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "layout|flex": null,
-                                                "designer|userClassName": "MyButton9",
-                                                "text": "Esci senza salvare"
-                                            },
-                                            "designerId": "88f60714-cacc-467a-b752-042fb01b40b0"
-                                        }
-                                    ]
-                                }
-                            ]
+                            "designerId": "85aaa9cd-4af2-49a6-81e3-dd6946e912fd",
+                            "masterInstanceId": "ExtBox1-ext-gen1970"
                         },
                         {
                             "type": "tabpanel",

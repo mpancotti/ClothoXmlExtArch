@@ -37,6 +37,13 @@ Ext.application({
         'Sconti',
         'Vendors'
     ],
+    views: [
+        'BasicDataGrid',
+        'VendorDataPanel',
+        'RulesAreaPanel',
+        'MainToolbar',
+        'VendorArea'
+    ],
     autoCreateViewport: true,
     name: 'ClothoExtXml',
     controllers: [

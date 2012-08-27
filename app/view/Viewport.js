@@ -17,6 +17,7 @@ Ext.define('ClothoExtXml.view.Viewport', {
     extend: 'ClothoExtXml.view.ClothoXmlViewport',
     renderTo: Ext.getBody(),
     requires: [
-        'ClothoExtXml.view.ClothoXmlViewport'
+        'ClothoExtXml.view.ClothoXmlViewport',
+        'ClothoExtXml.view.BasicDataGrid'
     ]
 });

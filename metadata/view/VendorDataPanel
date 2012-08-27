@@ -1,0 +1,140 @@
+{
+    "type": "panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "stretch",
+        "designer|userClassName": "VendorDataPanel",
+        "designer|userAlias": "vendorDataPanel",
+        "designer|displayName": "vendorBasicData",
+        "height": 613,
+        "width": 818,
+        "layout": "vbox",
+        "title": "Sconti generici"
+    },
+    "id": "ExtBox1-ext-gen1952",
+    "designerId": "d1c49070-4f64-4443-948e-1e2939a16978",
+    "cn": [
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyPanel2",
+                "designer|displayName": "vendorDataDisplay",
+                "height": null,
+                "id": "vendorData",
+                "maxHeight": 30,
+                "minHeight": 30,
+                "frameHeader": null,
+                "title": null,
+                "titleCollapse": null
+            },
+            "designerId": "7d397a37-66b5-4c4b-b1ec-d4f33802c078",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "tpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "tpl",
+                        "implHandler": [
+                            "<div style=\"padding:5px\"> \r",
+                            "    <span>Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>\r",
+                            "    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>\r",
+                            "</div>"
+                        ],
+                        "designer|displayName": "tpl"
+                    },
+                    "designerId": "8d08b4d8-e96b-44ac-9055-9a700da1d827"
+                }
+            ]
+        },
+        {
+            "type": "gridpanel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": 1,
+                "designer|userClassName": "MyGridPanel1",
+                "designer|displayName": "vendorScontiGrid",
+                "height": 205,
+                "id": "basicDataPanel",
+                "width": 748,
+                "title": "Basic Data"
+            },
+            "designerId": "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
+            "cn": [
+                {
+                    "type": "gridcolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyColumn1",
+                        "dataIndex": "string",
+                        "text": "Da"
+                    },
+                    "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf"
+                },
+                {
+                    "type": "numbercolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberColumn1",
+                        "dataIndex": "number",
+                        "text": "A"
+                    },
+                    "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc"
+                },
+                {
+                    "type": "datecolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyDateColumn1",
+                        "dataIndex": "date",
+                        "text": "Scadenza"
+                    },
+                    "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
+                },
+                {
+                    "type": "booleancolumn",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyBooleanColumn1",
+                        "dataIndex": "bool",
+                        "text": "Valore in note3"
+                    },
+                    "designerId": "c7737b6e-7db3-4683-92e3-647753846cdb"
+                }
+            ]
+        }
+    ]
+}

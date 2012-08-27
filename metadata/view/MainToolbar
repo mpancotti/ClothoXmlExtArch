@@ -1,0 +1,164 @@
+{
+    "type": "toolbar",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainToolbar",
+        "designer|userAlias": "mainToolbar",
+        "designer|displayName": "mainToolbar",
+        "height": 30
+    },
+    "id": "ExtBox1-ext-gen2026",
+    "designerId": "8af6e369-8926-4575-885f-7cfaa8cd9d84",
+    "cn": [
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton",
+                "designer|displayName": "Excel",
+                "width": 53,
+                "text": "Excel"
+            },
+            "designerId": "f701590d-6abe-4a16-9915-b6df41459e62"
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton1",
+                "designer|displayName": "Diapason",
+                "text": "Diapason"
+            },
+            "designerId": "adf41abd-00f6-4c25-a21e-9c73bfa8ff79"
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton2",
+                "designer|displayName": "Help",
+                "width": 61,
+                "text": "Help"
+            },
+            "designerId": "59e33faa-f87f-4784-a281-c01e2a76f7bb"
+        },
+        {
+            "type": "tbfill",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyFill"
+            },
+            "designerId": "d61d240b-7c61-4fbf-8a3f-057c03d7c361"
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton3",
+                "id": "maintoolbar-add-btn",
+                "iconCls": "file_add",
+                "text": "Aggiungi"
+            },
+            "designerId": "de7b7e2a-e2c7-42da-9dc8-8c3f3631388f",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "addRecord",
+                        "fn": "addRecord",
+                        "implHandler": [
+                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentForm());\r",
+                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentGrid());\r",
+                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentRecord());"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "designerId": "b8d2d951-210c-4e3a-9f4c-578e8be5d397"
+                }
+            ]
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton4",
+                "id": "maintoolbar-modify-btn",
+                "iconCls": "file_edit",
+                "text": "Modifica"
+            },
+            "designerId": "5392a209-737c-4983-be82-19582e4b6df4"
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton5",
+                "id": "maintoolbar-delete-btn",
+                "iconCls": "file_delete",
+                "text": "Cancella"
+            },
+            "designerId": "5765903c-19ce-4334-809e-96b6385e969e"
+        },
+        {
+            "type": "button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|flex": null,
+                "designer|userClassName": "MyButton6",
+                "id": "bmaintoolbar-save-btn",
+                "iconCls": "file_save",
+                "text": "Salva"
+            },
+            "designerId": "734f3a10-c646-4bb0-ad65-67715867199d"
+        }
+    ]
+}

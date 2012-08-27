@@ -162,11 +162,56 @@
                 "app/controller/GlobalVariables.js"
             ],
             "className": "GlobalVariables"
+        },
+        "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375": {
+            "paths": [
+                "metadata/view/BasicDataGrid",
+                "app/view/override/BasicDataGrid.js",
+                "app/view/BasicDataGrid.js"
+            ],
+            "className": "BasicDataGrid"
+        },
+        "d1c49070-4f64-4443-948e-1e2939a16978": {
+            "paths": [
+                "metadata/view/VendorDataPanel",
+                "app/view/override/VendorDataPanel.js",
+                "app/view/VendorDataPanel.js"
+            ],
+            "className": "VendorDataPanel"
+        },
+        "fd16741e-361b-4020-8ee3-9f71936bec4d": {
+            "paths": [
+                "metadata/view/RulesAreaPanel",
+                "app/view/override/RulesAreaPanel.js",
+                "app/view/RulesAreaPanel.js"
+            ],
+            "className": "RulesAreaPanel"
+        },
+        "8af6e369-8926-4575-885f-7cfaa8cd9d84": {
+            "paths": [
+                "metadata/view/MainToolbar",
+                "app/view/override/MainToolbar.js",
+                "app/view/MainToolbar.js"
+            ],
+            "className": "MainToolbar"
+        },
+        "f7e0512b-9e93-4c52-9136-f4b6d2022441": {
+            "paths": [
+                "metadata/view/VendorArea",
+                "app/view/override/VendorArea.js",
+                "app/view/VendorArea.js"
+            ],
+            "className": "VendorArea"
         }
     },
     "viewOrderMap": {
         "view": [
-            "664f83ad-5d62-4f70-bddf-b256049ce321"
+            "664f83ad-5d62-4f70-bddf-b256049ce321",
+            "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
+            "d1c49070-4f64-4443-948e-1e2939a16978",
+            "fd16741e-361b-4020-8ee3-9f71936bec4d",
+            "8af6e369-8926-4575-885f-7cfaa8cd9d84",
+            "f7e0512b-9e93-4c52-9136-f4b6d2022441"
         ],
         "store": [
             "a8b33621-8c8f-40f6-95ae-7220ce515698",

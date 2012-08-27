@@ -1,0 +1,77 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "BasicDataGrid",
+        "designer|userAlias": "basicDataGrid",
+        "designer|displayName": "vendorScontiGrid",
+        "height": 205,
+        "id": "basicDataPanel",
+        "width": 748,
+        "title": "Basic Data"
+    },
+    "id": "ExtBox1-ext-gen1956",
+    "designerId": "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
+    "cn": [
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "string",
+                "text": "Da"
+            },
+            "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn1",
+                "dataIndex": "number",
+                "text": "A"
+            },
+            "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc"
+        },
+        {
+            "type": "datecolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyDateColumn1",
+                "dataIndex": "date",
+                "text": "Scadenza"
+            },
+            "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
+        },
+        {
+            "type": "booleancolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyBooleanColumn1",
+                "dataIndex": "bool",
+                "text": "Valore in note3"
+            },
+            "designerId": "c7737b6e-7db3-4683-92e3-647753846cdb"
+        }
+    ]
+}

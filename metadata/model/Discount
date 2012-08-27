@@ -62,7 +62,7 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyField3",
-                "name": "to_dicount",
+                "name": "to_discount",
                 "type": "float"
             },
             "designerId": "cdedb461-3245-45f4-b768-d918669bc28c"

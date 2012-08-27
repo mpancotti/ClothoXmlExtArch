@@ -81,6 +81,9 @@
                                 "type": "array"
                             },
                             "codeClass": null,
+                            "userConfig": {
+                                "title": "Regole di sconto"
+                            },
                             "designerId": "0e6a70e2-6478-48bc-b9fe-153a7a4c8c46",
                             "masterInstanceId": "ExtBox1-ext-gen1961",
                             "cn": [

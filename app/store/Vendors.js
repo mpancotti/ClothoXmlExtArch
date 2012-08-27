@@ -24,7 +24,7 @@ Ext.define('ClothoExtXml.store.Vendors', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            storeId: 'Vendors',
+            storeId: 'vendors',
             model: 'ClothoExtXml.model.Vendor',
             data: [
                 {

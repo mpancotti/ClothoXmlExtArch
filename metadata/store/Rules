@@ -7,8 +7,9 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Rules",
-        "storeId": "MyStore3",
-        "model": "Rule"
+        "storeId": "rules",
+        "model": "Rule",
+        "data": "[\r\n    {id:\"x\",regexp:\"xxx\",valore_note_3:\"335\",scadenza:\"2012/12/12\",strategy:\"code\"},\r\n    {id:\"y\",regexp:\"yyy\",valore_note_3:\"336\",scadenza:\"2012/12/12\",strategy:\"desc\"},\r\n    {id:\"z\",regexp:\"zzz\",valore_note_3:\"337\",scadenza:\"2012/12/12\",strategy:\"desccode\"}\r\n]"
     },
     "id": "ExtBox1-ext-gen17614",
     "designerId": "07c1fb7e-c097-4e13-951e-f333c34354e4"

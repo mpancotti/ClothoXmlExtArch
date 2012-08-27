@@ -7,8 +7,10 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Prezzi",
-        "storeId": "MyStore1",
-        "model": "Prezzo"
+        "autoLoad": true,
+        "storeId": "prezzi",
+        "model": "Prezzo",
+        "data": "[\r\n    {id:1,codice:12345,prezzo_from:50,prezzo_to:70,netto_lordo:60,prezzpPrezzoNL:70,prezzo_affiliato:60,prezzo_affiliato_light:70,prezzo_somministrato:80,scadenza:\"2012-12-12\"},\r\n    {id:2,codice:12355,prezzo_from:60,prezzo_to:80,netto_lordo:70,prezzpPrezzoNL:80,prezzo_affiliato:70,prezzo_affiliato_light:80,prezzo_somministrato:900,scadenza:\"2012/12/12\"},\r\n    {id:3,codice:12365,prezzo_from:70,prezzo_to:90,netto_lordo:80,prezzpPrezzoNL:90,prezzo_affiliato:80,prezzo_affiliato_light:90,prezzo_somministrato:100,scadenza:\"2012/12/12\"},\r\n    {id:4,codice:12375,prezzo_from:80,prezzo_to:100,netto_lordo:90,prezzpPrezzoNL:100,prezzo_affiliato:90,prezzo_affiliato_light:100,prezzo_somministrato:110,scadenza:\"2012/12/12\"},\r\n    {id:5,codice:12385,prezzo_from:90,prezzo_to:110,netto_lordo:100,prezzpPrezzoNL:110,prezzo_affiliato:100,prezzo_affiliato_light:110,prezzo_somministrato:120,scadenza:\"2012/12/12\"}\r\n]"
     },
     "id": "ExtBox1-ext-gen17300",
     "designerId": "8619a007-60fa-4149-8c2d-423c6e1ae43d"

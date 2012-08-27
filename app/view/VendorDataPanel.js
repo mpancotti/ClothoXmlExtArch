@@ -50,25 +50,26 @@ Ext.define('ClothoExtXml.view.VendorDataPanel', {
                     id: 'basicDataPanel',
                     width: 748,
                     title: 'Basic Data',
+                    store: 'Discounts',
                     columns: [
                         {
                             xtype: 'gridcolumn',
-                            dataIndex: 'string',
+                            dataIndex: 'from_discount',
                             text: 'Da'
                         },
                         {
                             xtype: 'numbercolumn',
-                            dataIndex: 'number',
+                            dataIndex: 'to_discount',
                             text: 'A'
                         },
                         {
                             xtype: 'datecolumn',
-                            dataIndex: 'date',
+                            dataIndex: 'scadenza',
                             text: 'Scadenza'
                         },
                         {
                             xtype: 'booleancolumn',
-                            dataIndex: 'bool',
+                            dataIndex: 'value_note_3',
                             text: 'Valore in note3'
                         }
                     ]

@@ -24,8 +24,80 @@ Ext.define('ClothoExtXml.store.Sconti', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            storeId: 'Sconti',
-            model: 'ClothoExtXml.model.Sconto'
+            storeId: 'sconti',
+            model: 'ClothoExtXml.model.Sconto',
+            data: [
+                {
+                    id: 1,
+                    codice: 12345,
+                    sconto_fornitore: 20,
+                    tolleranza: 30,
+                    prezzo_lordo: 50,
+                    affiliato: 60,
+                    affiliato_light: 70,
+                    somministrato: 80,
+                    prezzo_affiliato: 60,
+                    prezzo_affiliato_light: 70,
+                    prezzo_somministrato: 80,
+                    scadenza: '2012/12/12'
+                },
+                {
+                    id: 2,
+                    codice: 13345,
+                    sconto_fornitore: 30,
+                    tolleranza: 30,
+                    prezzo_lordo: 60,
+                    affiliato: 70,
+                    affiliato_light: 80,
+                    somministrato: 90,
+                    prezzo_affiliato: 70,
+                    prezzo_affiliato_light: 80,
+                    prezzo_somministrato: 90,
+                    scadenza: '2012/12/12'
+                },
+                {
+                    id: 3,
+                    codice: 14345,
+                    sconto_fornitore: 40,
+                    tolleranza: 30,
+                    prezzo_lordo: 70,
+                    affiliato: 80,
+                    affiliato_light: 90,
+                    somministrato: 100,
+                    prezzo_affiliato: 80,
+                    prezzo_affiliato_light: 90,
+                    prezzo_somministrato: 100,
+                    scadenza: '2012/12/12'
+                },
+                {
+                    id: 4,
+                    codice: 15345,
+                    sconto_fornitore: 50,
+                    tolleranza: 30,
+                    prezzo_lordo: 80,
+                    affiliato: 90,
+                    affiliato_light: 100,
+                    somministrato: 110,
+                    prezzo_affiliato: 90,
+                    prezzo_affiliato_light: 100,
+                    prezzo_somministrato: 110,
+                    scadenza: '2012/12/12'
+                },
+                {
+                    id: 5,
+                    codice: 16345,
+                    sconto_fornitore: 60,
+                    tolleranza: 30,
+                    prezzo_lordo: 90,
+                    affiliato: 100,
+                    affiliato_light: 110,
+                    somministrato: 120,
+                    prezzo_affiliato: 100,
+                    prezzo_affiliato_light: 110,
+                    prezzo_somministrato: 120,
+                    scadenza: '2012/12/12'
+                }
+            ]
         }, cfg)]);
     }
 });

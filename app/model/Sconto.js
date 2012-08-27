@@ -18,40 +18,52 @@ Ext.define('ClothoExtXml.model.Sconto', {
 
     fields: [
         {
-            name: 'id'
+            name: 'id',
+            type: 'int'
         },
         {
-            name: 'codice'
+            name: 'codice',
+            type: 'int'
         },
         {
-            name: 'sconto_fornitore'
+            name: 'sconto_fornitore',
+            type: 'float'
         },
         {
-            name: 'tolleranza'
+            name: 'tolleranza',
+            type: 'float'
         },
         {
-            name: 'prezzo_lordo'
+            name: 'prezzo_lordo',
+            type: 'float'
         },
         {
-            name: 'affiliato'
+            name: 'affiliato',
+            type: 'float'
         },
         {
-            name: 'affiliato_light'
+            name: 'affiliato_light',
+            type: 'float'
         },
         {
-            name: 'somministrato'
+            name: 'somministrato',
+            type: 'float'
         },
         {
-            name: 'prezzo_affiliato'
+            name: 'prezzo_affiliato',
+            type: 'float'
         },
         {
-            name: 'prezzo_affiliato_light'
+            name: 'prezzo_affiliato_light',
+            type: 'float'
         },
         {
-            name: 'prezzo_somministrato'
+            name: 'prezzo_somministrato',
+            type: 'float'
         },
         {
-            name: 'scadenza'
+            name: 'scadenza',
+            type: 'float'
         }
     ]
 });

@@ -52,7 +52,8 @@ Ext.define('ClothoExtXml.view.ClothoXmlViewport', {
                                     xtype: 'vendorDataPanel'
                                 },
                                 {
-                                    xtype: 'rulesAreaPanel'
+                                    xtype: 'rulesAreaPanel',
+                                    title: 'Regole di sconto'
                                 }
                             ]
                         }

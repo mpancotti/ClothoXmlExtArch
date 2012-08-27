@@ -30,7 +30,7 @@ Ext.define('ClothoExtXml.model.Discount', {
             type: 'float'
         },
         {
-            name: 'to_dicount',
+            name: 'to_discount',
             type: 'float'
         },
         {

@@ -74,7 +74,8 @@
                 "height": 205,
                 "id": "basicDataPanel",
                 "width": 748,
-                "title": "Basic Data"
+                "title": "Basic Data",
+                "store": "Discounts"
             },
             "designerId": "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
             "cn": [
@@ -87,7 +88,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyColumn1",
-                        "dataIndex": "string",
+                        "dataIndex": "from_discount",
                         "text": "Da"
                     },
                     "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf"
@@ -101,7 +102,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyNumberColumn1",
-                        "dataIndex": "number",
+                        "dataIndex": "to_discount",
                         "text": "A"
                     },
                     "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc"
@@ -115,7 +116,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyDateColumn1",
-                        "dataIndex": "date",
+                        "dataIndex": "scadenza",
                         "text": "Scadenza"
                     },
                     "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
@@ -129,7 +130,7 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyBooleanColumn1",
-                        "dataIndex": "bool",
+                        "dataIndex": "value_note_3",
                         "text": "Valore in note3"
                     },
                     "designerId": "c7737b6e-7db3-4683-92e3-647753846cdb"

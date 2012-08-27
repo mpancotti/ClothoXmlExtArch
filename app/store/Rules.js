@@ -24,8 +24,31 @@ Ext.define('ClothoExtXml.store.Rules', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            storeId: 'MyStore3',
-            model: 'ClothoExtXml.model.Rule'
+            storeId: 'rules',
+            model: 'ClothoExtXml.model.Rule',
+            data: [
+                {
+                    id: 'x',
+                    regexp: 'xxx',
+                    valore_note_3: '335',
+                    scadenza: '2012/12/12',
+                    strategy: 'code'
+                },
+                {
+                    id: 'y',
+                    regexp: 'yyy',
+                    valore_note_3: '336',
+                    scadenza: '2012/12/12',
+                    strategy: 'desc'
+                },
+                {
+                    id: 'z',
+                    regexp: 'zzz',
+                    valore_note_3: '337',
+                    scadenza: '2012/12/12',
+                    strategy: 'desccode'
+                }
+            ]
         }, cfg)]);
     }
 });

@@ -1,0 +1,170 @@
+{
+    "type": "form",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "VendorForm",
+        "designer|userAlias": "vendorForm",
+        "id": "vendorForm",
+        "bodyPadding": 10,
+        "title": "Gestione  Fornitore"
+    },
+    "id": "ExtBox1-ext-gen2018",
+    "designerId": "3e5195e7-04f8-4ccb-837e-61d5e09c1e67",
+    "cn": [
+        {
+            "type": "fieldset",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyFieldSet2",
+                "id": "vendorFieldSet",
+                "title": "Dati generali del fornitore"
+            },
+            "designerId": "dfd6fd81-1e84-4c5d-8dda-6c8afaba435d",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyNumberField",
+                        "name": "codice",
+                        "fieldLabel": "Codice",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "hideTrigger": true,
+                        "spinDownEnabled": false,
+                        "spinUpEnabled": false,
+                        "allowDecimals": false,
+                        "decimalPrecision": 0
+                    },
+                    "designerId": "8e397522-f8f7-403f-9e42-80824b495d35"
+                },
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyTextField1",
+                        "width": null,
+                        "name": "nome",
+                        "fieldLabel": "Nome",
+                        "labelAlign": "right",
+                        "labelWidth": 50,
+                        "size": 60
+                    },
+                    "designerId": "7183c537-5d88-430d-b554-0cb04411a802"
+                },
+                {
+                    "type": "combobox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|anchor": "100%",
+                        "designer|userClassName": "MyComboBox",
+                        "name": "strategy",
+                        "fieldLabel": "Strategia",
+                        "labelAlign": "right",
+                        "labelWidth": 50
+                    },
+                    "designerId": "2b36d539-da13-4121-87de-2dd81dfa1464"
+                }
+            ]
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "container|align": "middle",
+                "container|pack": "center",
+                "container|padding": "",
+                "designer|userClassName": "MyToolbar1",
+                "designer|displayName": "vendorFormToolbar",
+                "height": 35,
+                "maxHeight": 35,
+                "minHeight": 35,
+                "ui": [
+                    "'footer'"
+                ]
+            },
+            "designerId": "32ae9955-bb9f-4521-9626-683e201e6c27",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton7",
+                        "iconCls": "file_save",
+                        "text": "Salva",
+                        "type": "submit"
+                    },
+                    "designerId": "7f0f4198-6f4e-4256-8271-017b3c967337"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton8",
+                        "iconCls": "cancel",
+                        "text": "Esci senza salvare",
+                        "type": "reset"
+                    },
+                    "designerId": "73baa4a1-7ac1-4285-82d3-924d98ff517b",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onButtonClick",
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "Ext.getCmp('vendorFormContainer').hide()"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "2e8385d7-468d-4287-8ef0-1497cad7cb4e"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

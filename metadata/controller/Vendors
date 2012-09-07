@@ -15,5 +15,50 @@
         ]
     },
     "id": "ExtBox1-ext-gen3958",
-    "designerId": "cdf18da0-e28e-49bf-accd-f722f986dacf"
+    "designerId": "cdf18da0-e28e-49bf-accd-f722f986dacf",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "init",
+                "fn": "init",
+                "designer|params": [
+                    "application"
+                ],
+                "implHandler": [
+                    " this.control(\r",
+                    "        {'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick},\r",
+                    " })"
+                ]
+            },
+            "designerId": "1618113d-98c1-4cd8-b801-2b50c01caf65"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "vendorDoubleClick",
+                "fn": "vendorDoubleClick",
+                "designer|params": [
+                    "view, record"
+                ],
+                "implHandler": [
+                    "var container = Ext.getCmp('vendorFormContainer');\r",
+                    "if (container.hidden)\r",
+                    "    container.show()\r",
+                    "Ext.getCmp('vendorForm').getForm().loadRecord(record);"
+                ]
+            },
+            "designerId": "5d9d2db0-5a49-4988-a7b4-f032ed92f1d3"
+        }
+    ]
 }

@@ -27,7 +27,11 @@
             "VendorDataPanel",
             "RulesAreaPanel",
             "MainToolbar",
-            "VendorArea"
+            "VendorArea",
+            "VendorForm",
+            "VendorGridPaneL",
+            "RuleGidPanel",
+            "RuleForm"
         ],
         "autoCreateViewport": true,
         "name": "ClothoExtXml",
@@ -55,6 +59,22 @@
                 ]
             },
             "designerId": "a37c161a-a115-4951-92d1-ec030486a8dd"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "Ext.getCmp('vendorGridPanel').getSelectionModel().select(0)"
+                ]
+            },
+            "designerId": "89603797-53ab-4b97-be0d-e097efe6e9ba"
         }
     ]
 }

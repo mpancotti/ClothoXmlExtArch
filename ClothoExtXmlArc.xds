@@ -3,15 +3,15 @@
     "settings": {
         "urlPrefix": "http://localhost/ClothoXmlExtArch",
         "spacesToIndent": 4,
-        "exportPath": "",
+        "exportPath": "C:/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false
     },
     "xdsVersion": "2.1.0",
-    "xdsBuild": 588,
+    "xdsBuild": 613,
     "schemaVersion": 1,
-    "upgradeVersion": 210000000495,
+    "upgradeVersion": 210000000497,
     "framework": "ext41",
     "topInstanceFileMap": {
         "664f83ad-5d62-4f70-bddf-b256049ce321": {

@@ -17,6 +17,7 @@
         "width": null,
         "layout": null,
         "bodyPadding": 5,
+        "iconCls": null,
         "title": "Gestione singola regola"
     },
     "id": "ExtBox1-ext-gen1970",
@@ -135,6 +136,8 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyButton10",
+                        "id": "ruleFormSaveBtn",
+                        "iconCls": "file_save",
                         "text": "Salva"
                     },
                     "designerId": "344b9172-7946-40f5-82b1-b4a6cdc8f7b3"
@@ -149,9 +152,31 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyButton9",
+                        "id": "ruleFormExit",
+                        "iconCls": "cancel",
                         "text": "Esci senza salvare"
                     },
-                    "designerId": "88f60714-cacc-467a-b752-042fb01b40b0"
+                    "designerId": "88f60714-cacc-467a-b752-042fb01b40b0",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onButtonClick",
+                                "fn": "onButtonClick",
+                                "implHandler": [
+                                    "ClothoExtXml.controller.GlobalVariables.formExit();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "59d5e8a6-96ab-4822-b80c-17ef4d7ac3a2"
+                        }
+                    ]
                 }
             ]
         }

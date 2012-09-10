@@ -41,7 +41,7 @@ Ext.define('ClothoExtXml.controller.Rules', {
             var form = Ext.getCmp('ruleForm');
             // Carica i dati dallo store
             form.getForm().loadRecord(record);
-            // Imposta le variabili globali
+            //Imposta le variabili globali
             ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());
             ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);
             ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);
@@ -53,19 +53,33 @@ Ext.define('ClothoExtXml.controller.Rules', {
 
     init: function(application) {
         this.control(
-        {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick}
+        {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick,'selectionchange':this.ruleSelectionChange},
+        '#ruleFormSaveBtn':{'click': this.ruleFormSave},
+        '#maintoolbar-add-btn':{'click': this.ruleClearToAdd},
+        '#maintoolbar-modify-btn':{'click': this.ruleClearToModify},
     })
     },
 
     rulesItemClick: function(view,record) {
-        var form = Ext.getCmp('vendorForm');
-        var container = Ext.getCmp('vendorFormContainer');
+        var form = Ext.getCmp('ruleForm');
+        var container = Ext.getCmp('ruleFormContainer');
         ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());
         ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);
         ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);
         ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);
         ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Selected');
-        ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Vendor');
+        ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Rule');
+    },
+
+    ruleFormSave: function() {
+        ClothoExtXml.controller.GlobalVariables.formSave(
+        function(){ClothoExtXml.controller.GlobalVariables.deleteFromStore()},
+        function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()}
+        )   
+    },
+
+    ruleSelectionChange: function(model, record) {
+
     }
 
 });

@@ -92,6 +92,7 @@ Ext.define('ClothoExtXml.view.VendorForm', {
                         },
                         {
                             xtype: 'button',
+                            id: 'venFormExit',
                             iconCls: 'cancel',
                             text: 'Esci senza salvare',
                             type: 'reset',

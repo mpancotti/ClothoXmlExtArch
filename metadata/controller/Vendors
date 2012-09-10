@@ -91,8 +91,8 @@
                 "implHandler": [
                     "\r",
                     "ClothoExtXml.controller.GlobalVariables.formSave(\r",
-                    "    function(){ClothoExtXml.controller.GlobalVariables.deleteFromStore()},\r",
-                    "    function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()}\r",
+                    "function(){ClothoExtXml.controller.GlobalVariables.deleteFromStore()},\r",
+                    "function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()}\r",
                     ")    "
                 ]
             },
@@ -156,8 +156,8 @@
                 "fn": "vendorClearToModify",
                 "implHandler": [
                     "this.vendorDoubleClick( \r",
-                    "        Ext.getCmp('vendorGridPanel'),\r",
-                    "        ClothoExtXml.controller.GlobalVariables.getCurrentRecord()\r",
+                    "Ext.getCmp('vendorGridPanel'),\r",
+                    "ClothoExtXml.controller.GlobalVariables.getCurrentRecord()\r",
                     ")"
                 ]
             },

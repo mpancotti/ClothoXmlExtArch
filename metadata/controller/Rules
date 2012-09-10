@@ -43,12 +43,12 @@
                     "if(record){\r",
                     "    var container = Ext.getCmp('ruleFormContainer');\r",
                     "    if (!container.isVisible())\r",
-                    "    container.setVisible(true);\r",
+                    "      container.setVisible(true);\r",
                     "    // Legge il Basic form\r",
                     "    var form = Ext.getCmp('ruleForm');\r",
                     "    // Carica i dati dallo store\r",
                     "    form.getForm().loadRecord(record);\r",
-                    "    // Imposta le variabili globali\r",
+                    "   //Imposta le variabili globali\r",
                     "    ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
                     "    ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
                     "    ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
@@ -75,7 +75,10 @@
                 ],
                 "implHandler": [
                     "this.control(\r",
-                    "    {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick}\r",
+                    "    {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick,'selectionchange':this.ruleSelectionChange},\r",
+                    "     '#ruleFormSaveBtn':{'click': this.ruleFormSave},\r",
+                    "     '#maintoolbar-add-btn':{'click': this.ruleClearToAdd},\r",
+                    "     '#maintoolbar-modify-btn':{'click': this.ruleClearToModify},\r",
                     "})"
                 ]
             },
@@ -95,17 +98,55 @@
                     "view,record"
                 ],
                 "implHandler": [
-                    "var form = Ext.getCmp('vendorForm');\r",
-                    "var container = Ext.getCmp('vendorFormContainer');\r",
+                    "var form = Ext.getCmp('ruleForm');\r",
+                    "var container = Ext.getCmp('ruleFormContainer');\r",
                     "ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
                     "ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
                     "ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
                     "ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);\r",
                     "ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Selected');\r",
-                    "ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Vendor');"
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Rule');"
                 ]
             },
             "designerId": "b1d975de-d602-4815-a13c-592f9a14e65b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "ruleFormSave",
+                "fn": "ruleFormSave",
+                "implHandler": [
+                    "ClothoExtXml.controller.GlobalVariables.formSave(\r",
+                    "function(){ClothoExtXml.controller.GlobalVariables.deleteFromStore()},\r",
+                    "function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()}\r",
+                    ")   "
+                ]
+            },
+            "designerId": "ab6a6a81-b43c-48ab-8258-66a0ea718791"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "ruleSelectionChange",
+                "fn": "ruleSelectionChange",
+                "designer|params": [
+                    "model, record"
+                ],
+                "implHandler": [
+                    ""
+                ]
+            },
+            "designerId": "57e7723f-8cce-41d3-b9dd-b671eca8686d"
         }
     ]
 }

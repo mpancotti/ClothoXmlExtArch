@@ -78,11 +78,21 @@ Ext.define('ClothoExtXml.view.RuleForm', {
                     items: [
                         {
                             xtype: 'button',
+                            id: 'ruleFormSaveBtn',
+                            iconCls: 'file_save',
                             text: 'Salva'
                         },
                         {
                             xtype: 'button',
-                            text: 'Esci senza salvare'
+                            id: 'ruleFormExit',
+                            iconCls: 'cancel',
+                            text: 'Esci senza salvare',
+                            listeners: {
+                                click: {
+                                    fn: me.onButtonClick,
+                                    scope: me
+                                }
+                            }
                         }
                     ]
                 }
@@ -90,6 +100,10 @@ Ext.define('ClothoExtXml.view.RuleForm', {
         });
 
         me.callParent(arguments);
+    },
+
+    onButtonClick: function(button, e, options) {
+        ClothoExtXml.controller.GlobalVariables.formExit();
     }
 
 });

@@ -143,6 +143,7 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyButton8",
+                        "id": "venFormExit",
                         "iconCls": "cancel",
                         "text": "Esci senza salvare",
                         "type": "reset"

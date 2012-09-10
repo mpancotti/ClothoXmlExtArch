@@ -29,13 +29,29 @@ Ext.define('ClothoExtXml.store.Vendors', {
             storeId: 'vendors',
             model: 'ClothoExtXml.model.Vendor',
             proxy: {
-                type: 'ajax',
-                url: 'data/vendors.json',
+                type: 'rest',
+                url: '/clothoxml/vendors',
                 reader: {
                     type: 'json',
-                    root: 'vendors'
+                    root: 'data'
+                },
+                listeners: {
+                    exception: {
+                        fn: me.onRestproxyException,
+                        scope: me
+                    }
                 }
             }
         }, cfg)]);
+    },
+
+    onRestproxyException: function(server, response, operation, options) {
+        Ext.Msg.alert('Errore nell\'accesso al database', 
+        operation.getError().status + ' - ' + operation.getError().statusText,
+        function(){
+            this.rejectChanges();
+            ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()
+        },this);
     }
+
 });

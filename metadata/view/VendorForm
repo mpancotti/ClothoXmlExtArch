@@ -39,6 +39,7 @@
                     "userConfig": {
                         "layout|anchor": "100%",
                         "designer|userClassName": "MyNumberField",
+                        "itemId": "codiceVendor",
                         "name": "codice",
                         "fieldLabel": "Codice",
                         "labelAlign": "right",
@@ -61,6 +62,7 @@
                     "userConfig": {
                         "layout|anchor": "100%",
                         "designer|userClassName": "MyTextField1",
+                        "itemId": "nomeVendor",
                         "width": null,
                         "name": "nome",
                         "fieldLabel": "Nome",
@@ -83,7 +85,10 @@
                         "name": "strategy",
                         "fieldLabel": "Strategia",
                         "labelAlign": "right",
-                        "labelWidth": 50
+                        "labelWidth": 50,
+                        "displayField": "strategy",
+                        "store": "Strategy",
+                        "valueField": "strategy"
                     },
                     "designerId": "2b36d539-da13-4121-87de-2dd81dfa1464"
                 }
@@ -122,9 +127,9 @@
                     "userConfig": {
                         "layout|flex": null,
                         "designer|userClassName": "MyButton7",
+                        "id": "venFormSaveBtn",
                         "iconCls": "file_save",
-                        "text": "Salva",
-                        "type": "submit"
+                        "text": "Salva"
                     },
                     "designerId": "7f0f4198-6f4e-4256-8271-017b3c967337"
                 },
@@ -155,7 +160,7 @@
                                 "designer|userClassName": "onButtonClick",
                                 "fn": "onButtonClick",
                                 "implHandler": [
-                                    "Ext.getCmp('vendorFormContainer').hide()"
+                                    "ClothoExtXml.controller.GlobalVariables.formExit();"
                                 ],
                                 "name": "click",
                                 "scope": "me"

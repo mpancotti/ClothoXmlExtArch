@@ -1,0 +1,32 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Strategy",
+        "autoLoad": true,
+        "storeId": "MyJsonStore1",
+        "model": null,
+        "data": "[{strategy: 'CODE'},{strategy: 'DESC'},{strategy:'CODEDESC'},{strategy:'DESCCODE'}]"
+    },
+    "id": "ExtBox1-ext-gen11787",
+    "designerId": "22a3c537-3762-4da1-b33f-7947507694db",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field47",
+                "name": "strategy"
+            },
+            "designerId": "f5aafe16-63e8-4402-a755-d1895a012065"
+        }
+    ]
+}

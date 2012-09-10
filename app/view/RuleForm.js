@@ -31,8 +31,6 @@ Ext.define('ClothoExtXml.view.RuleForm', {
             items: [
                 {
                     xtype: 'fieldset',
-                    maxWidth: 300,
-                    minWidth: 300,
                     padding: 5,
                     width: 300,
                     title: 'Dati regola di sconto generica',
@@ -65,7 +63,10 @@ Ext.define('ClothoExtXml.view.RuleForm', {
                             anchor: '100%',
                             name: 'strategy',
                             fieldLabel: 'Strategia',
-                            labelAlign: 'right'
+                            labelAlign: 'right',
+                            displayField: 'strategy',
+                            store: 'Strategy',
+                            valueField: 'strategy'
                         }
                     ]
                 }

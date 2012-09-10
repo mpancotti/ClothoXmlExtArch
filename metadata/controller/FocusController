@@ -32,7 +32,10 @@
                 "implHandler": [
                     "this.control(\r",
                     "{'textfield': {'focus':this.fieldGotFocus},\r",
-                    "'gridpanel': {'containerclick':this.containerClicked}\r",
+                    "'gridpanel': {'containerclick':this.containerClicked},\r",
+                    "'grid':{'itemclick':this.gridclicked},\r",
+                    "'grid':{'itemdblclick':this.gridclicked}\r",
+                    "\r",
                     "}\r",
                     ")"
                 ]
@@ -53,7 +56,6 @@
                     "field"
                 ],
                 "implHandler": [
-                    "console.log('Field has got focus: '+field.getName());\r",
                     "this.resetBorders();\r",
                     "var currentForm=field.up('form');\r",
                     "currentForm.setBodyStyle('border-color','red');\r",
@@ -97,7 +99,6 @@
                     "view"
                 ],
                 "implHandler": [
-                    "console.log('Container clicked');\r",
                     "this.resetBorders();\r",
                     "var currentForm=view.up('panel');\r",
                     "currentForm.setBodyStyle('border-color','red');\r",
@@ -105,6 +106,29 @@
                 ]
             },
             "designerId": "eb116239-d611-4288-8a4f-17f4392b5905"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "gridclicked",
+                "fn": "gridclicked",
+                "designer|params": [
+                    "view, record"
+                ],
+                "implHandler": [
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
+                    "this.resetBorders();\r",
+                    "var currentForm=view.up('panel');\r",
+                    "currentForm.setBodyStyle('border-color','red');"
+                ]
+            },
+            "designerId": "72544e58-76b4-4836-ba59-195c219c238d"
         }
     ]
 }

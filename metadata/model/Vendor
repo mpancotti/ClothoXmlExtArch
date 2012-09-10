@@ -6,25 +6,12 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "Vendor"
+        "designer|userClassName": "Vendor",
+        "idProperty": "codice"
     },
     "id": "ExtBox1-ext-gen15467",
     "designerId": "d2a8b20c-6593-4e47-97f6-07e8ab84ba68",
     "cn": [
-        {
-            "type": "datafield",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "MyField44",
-                "name": "id",
-                "type": "int"
-            },
-            "designerId": "25e3bb37-6ab6-4a80-a108-62835ebc4362"
-        },
         {
             "type": "datafield",
             "reference": {
@@ -63,6 +50,9 @@
             "userConfig": {
                 "designer|userClassName": "MyField47",
                 "name": "strategy",
+                "defaultValue": [
+                    "'CODE'"
+                ],
                 "type": "string"
             },
             "designerId": "f412ca1e-bc43-4f82-8856-e4d27edfeee0"

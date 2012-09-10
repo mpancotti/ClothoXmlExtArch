@@ -27,7 +27,8 @@ Ext.application({
         'PrezzoFisso',
         'Rule',
         'Sconto',
-        'Vendor'
+        'Vendor',
+        'Strategy'
     ],
     stores: [
         'Discounts',
@@ -35,7 +36,8 @@ Ext.application({
         'PrezziFissi',
         'Rules',
         'Sconti',
-        'Vendors'
+        'Vendors',
+        'Strategy'
     ],
     views: [
         'BasicDataGrid',

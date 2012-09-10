@@ -20,6 +20,261 @@
             },
             "codeClass": null,
             "userConfig": {
+                "designer|userClassName": "addCurrentRecord",
+                "fn": "addCurrentRecord",
+                "implHandler": [
+                    "this.currentRecord=Ext.create(this.currentModel);\r",
+                    "this.currentStore.insert(0,this.currentRecord);\r",
+                    "if (!this.currentContainer.isVisible())\r",
+                    "    this.currentContainer.setVisible(true);\r",
+                    "this.currentForm.getForm().loadRecord(this.currentRecord);\r",
+                    "this.currentStatus='Add';\r",
+                    "console.log(this.currentStatus);\r",
+                    ""
+                ]
+            },
+            "designerId": "fd7123d8-15f2-4011-a207-8f6f451af245"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "deleteFromStore",
+                "fn": "deleteFromStore",
+                "implHandler": [
+                    "if(this.currentStatus=='Add')\r",
+                    "  this.currentStore.remove(this.currentRecord);"
+                ]
+            },
+            "designerId": "2d7809a4-1949-4335-bb38-d1f8e19c3715"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "formExit",
+                "fn": "formExit",
+                "implHandler": [
+                    "this.currentContainer.hide();\r",
+                    "if(this.currentStatus=='Add'){\r",
+                    "    this.deleteFromStore();\r",
+                    "}"
+                ]
+            },
+            "designerId": "b2e0ed65-7ecd-4cf7-a25e-7c1fa31667e0"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "formSave",
+                "fn": "formSave",
+                "designer|params": [
+                    "failureFunc,successFunc"
+                ],
+                "implHandler": [
+                    "this.currentForm.getForm().updateRecord();\r",
+                    "this.currentStore.sync({\r",
+                    "    success:successFunc,\r",
+                    "    failure:failureFunc}\r",
+                    ");"
+                ]
+            },
+            "designerId": "bd541a03-9406-46bf-9774-b929789643b3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "removeCurrentRecord",
+                "fn": "removeCurrentRecord",
+                "designer|params": [
+                    "successFunc, failureFunc"
+                ],
+                "implHandler": [
+                    "this.currentStore.remove(this.currentRecord)\r",
+                    "this.currentStore.sync({\r",
+                    "    success:successFunc,\r",
+                    "    failure:failureFunc\r",
+                    "});"
+                ]
+            },
+            "designerId": "5e9675a3-b2af-47b3-9b74-2a14a25b3449"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentContainer",
+                "fn": "getCurrentContainer",
+                "implHandler": [
+                    "return this.currentContainer"
+                ]
+            },
+            "designerId": "8447f0b6-21ce-478c-8091-e2512dee6e60"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentForm",
+                "fn": "getCurrentForm",
+                "implHandler": [
+                    "return this.currentForm"
+                ]
+            },
+            "designerId": "f113841b-bdcd-4128-982b-b1fccc3c97d6"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentGrid",
+                "fn": "getCurrentGrid",
+                "implHandler": [
+                    "return this.currentGrid"
+                ]
+            },
+            "designerId": "5597b8a4-aff1-436e-a2b1-e018b0eab2f9"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentModel",
+                "fn": "getCurrentModel",
+                "implHandler": [
+                    "return this.currentModel"
+                ]
+            },
+            "designerId": "90060eb8-4e70-44f8-a681-aa004adc8e52"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentRecord",
+                "fn": "getCurrentRecord",
+                "implHandler": [
+                    "return this.currentRecord"
+                ]
+            },
+            "designerId": "a52348f0-86fb-49d1-8f8c-de1d2d41f02a"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentStatus",
+                "fn": "getCurrentStatus",
+                "implHandler": [
+                    "return this.currentStatus"
+                ]
+            },
+            "designerId": "37853441-347a-4de5-80d8-f93d8bccceaf"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentStore",
+                "fn": "getCurrentStore",
+                "implHandler": [
+                    "return this.currentStore;"
+                ]
+            },
+            "designerId": "d24a3852-ada0-4e28-ac3c-7efe86f93972"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentContainer",
+                "fn": "setCurrentContainer",
+                "designer|params": [
+                    "container"
+                ],
+                "implHandler": [
+                    "this.currentContainer=container"
+                ]
+            },
+            "designerId": "1c3a7492-e227-4099-9803-cfe82498f622"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentForm",
+                "fn": "setCurrentForm",
+                "designer|params": [
+                    "form"
+                ],
+                "implHandler": [
+                    "this.currentForm=form;"
+                ]
+            },
+            "designerId": "49068793-b7f3-4940-bcd7-2337f490aa4d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
                 "designer|userClassName": "setCurrentGrid",
                 "fn": "setCurrentGrid",
                 "designer|params": [
@@ -39,16 +294,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "setCurrentForm",
-                "fn": "setCurrentForm",
+                "designer|userClassName": "setCurrentModel",
+                "fn": "setCurrentModel",
                 "designer|params": [
-                    "form"
+                    "model"
                 ],
                 "implHandler": [
-                    "this.currentForm=form"
+                    "this.currentModel=model;"
                 ]
             },
-            "designerId": "49068793-b7f3-4940-bcd7-2337f490aa4d"
+            "designerId": "d277fa50-bab8-4797-a7a6-53e979bd8887"
         },
         {
             "type": "basicfunction",
@@ -96,13 +351,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "getCurrentGrid",
-                "fn": "getCurrentGrid",
+                "designer|userClassName": "setCurrentStore",
+                "fn": "setCurrentStore",
+                "designer|params": [
+                    "store"
+                ],
                 "implHandler": [
-                    "return this.currentGrid"
+                    "this.currentStore=store;"
                 ]
             },
-            "designerId": "5597b8a4-aff1-436e-a2b1-e018b0eab2f9"
+            "designerId": "e03049e3-311e-445e-be0c-dfec3bbf60b1"
         },
         {
             "type": "basicfunction",
@@ -112,45 +370,16 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "getCurrentForm",
-                "fn": "getCurrentForm",
+                "designer|userClassName": "hideCurrentContainer",
+                "fn": "hideCurrentContainer",
                 "implHandler": [
-                    "return this.currentForm"
+                    "if(this.currentContainer){\r",
+                    "    if(this.currentContainer.isVisible())\r",
+                    "        this.currentContainer.setVisible(false);\r",
+                    "}"
                 ]
             },
-            "designerId": "f113841b-bdcd-4128-982b-b1fccc3c97d6"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "getCurrentRecord",
-                "fn": "getCurrentRecord",
-                "implHandler": [
-                    "return this.currentRecord"
-                ]
-            },
-            "designerId": "a52348f0-86fb-49d1-8f8c-de1d2d41f02a"
-        },
-        {
-            "type": "basicfunction",
-            "reference": {
-                "name": "items",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
-                "designer|userClassName": "getCurrentStatus",
-                "fn": "getCurrentStatus",
-                "implHandler": [
-                    "return this.currentStatus"
-                ]
-            },
-            "designerId": "37853441-347a-4de5-80d8-f93d8bccceaf"
+            "designerId": "6848af32-abbb-4d8e-8385-305421cd02ab"
         }
     ]
 }

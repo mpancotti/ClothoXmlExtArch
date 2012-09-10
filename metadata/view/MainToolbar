@@ -101,9 +101,7 @@
                         "designer|userClassName": "addRecord",
                         "fn": "addRecord",
                         "implHandler": [
-                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentForm());\r",
-                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentGrid());\r",
-                            "console.log(ClothoExtXml.controller.GlobalVariables.getCurrentRecord());"
+                            "ClothoExtXml.controller.GlobalVariables.addCurrentRecord();"
                         ],
                         "name": "click",
                         "scope": "me"
@@ -142,7 +140,27 @@
                 "iconCls": "file_delete",
                 "text": "Cancella"
             },
-            "designerId": "5765903c-19ce-4334-809e-96b6385e969e"
+            "designerId": "5765903c-19ce-4334-809e-96b6385e969e",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "removeRecord",
+                        "fn": "removeRecord",
+                        "implHandler": [
+                            "ClothoExtXml.controller.GlobalVariables.removeCurrentRecord();"
+                        ],
+                        "name": "click",
+                        "scope": "me"
+                    },
+                    "designerId": "12fbd6a7-cca0-4745-bb1c-c47390939877"
+                }
+            ]
         },
         {
             "type": "button",

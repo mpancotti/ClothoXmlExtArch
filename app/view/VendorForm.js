@@ -34,6 +34,7 @@ Ext.define('ClothoExtXml.view.VendorForm', {
                         {
                             xtype: 'numberfield',
                             anchor: '100%',
+                            itemId: 'codiceVendor',
                             name: 'codice',
                             fieldLabel: 'Codice',
                             labelAlign: 'right',
@@ -47,6 +48,7 @@ Ext.define('ClothoExtXml.view.VendorForm', {
                         {
                             xtype: 'textfield',
                             anchor: '100%',
+                            itemId: 'nomeVendor',
                             name: 'nome',
                             fieldLabel: 'Nome',
                             labelAlign: 'right',
@@ -59,7 +61,10 @@ Ext.define('ClothoExtXml.view.VendorForm', {
                             name: 'strategy',
                             fieldLabel: 'Strategia',
                             labelAlign: 'right',
-                            labelWidth: 50
+                            labelWidth: 50,
+                            displayField: 'strategy',
+                            store: 'Strategy',
+                            valueField: 'strategy'
                         }
                     ]
                 }
@@ -81,9 +86,9 @@ Ext.define('ClothoExtXml.view.VendorForm', {
                     items: [
                         {
                             xtype: 'button',
+                            id: 'venFormSaveBtn',
                             iconCls: 'file_save',
-                            text: 'Salva',
-                            type: 'submit'
+                            text: 'Salva'
                         },
                         {
                             xtype: 'button',
@@ -106,7 +111,7 @@ Ext.define('ClothoExtXml.view.VendorForm', {
     },
 
     onButtonClick: function(button, e, options) {
-        Ext.getCmp('vendorFormContainer').hide()
+        ClothoExtXml.controller.GlobalVariables.formExit();
     }
 
 });

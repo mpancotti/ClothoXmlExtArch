@@ -31,8 +31,8 @@
             "codeClass": null,
             "userConfig": {
                 "designer|userClassName": "MyFieldSet",
-                "maxWidth": 300,
-                "minWidth": 300,
+                "maxWidth": null,
+                "minWidth": null,
                 "padding": 5,
                 "width": 300,
                 "title": "Dati regola di sconto generica"
@@ -101,7 +101,10 @@
                         "designer|userClassName": "MyComboBox1",
                         "name": "strategy",
                         "fieldLabel": "Strategia",
-                        "labelAlign": "right"
+                        "labelAlign": "right",
+                        "displayField": "strategy",
+                        "store": "Strategy",
+                        "valueField": "strategy"
                     },
                     "designerId": "599da978-185f-4ea1-8a6b-e2f63f2d298f"
                 }

@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userClassName": "VendorGridPaneL",
+        "designer|userClassName": "VendorGridPanel",
         "designer|userAlias": "vendorGridPanel",
         "height": null,
         "id": "vendorGridPanel",

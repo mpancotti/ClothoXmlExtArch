@@ -17,17 +17,17 @@
     "designerId": "323f3a24-9bc1-4157-83dc-feef56855915",
     "cn": [
         {
-            "type": "ajaxproxy",
+            "type": "restproxy",
             "reference": {
                 "name": "proxy",
                 "type": "object"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyAjaxProxy",
-                "url": "data/vendors.json"
+                "designer|userClassName": "MyRestProxy",
+                "url": "/clothoxml/vendors"
             },
-            "designerId": "0f6fc80f-78f0-4b8a-9214-2d6f572970cb",
+            "designerId": "2a61d0c8-9280-4d56-bb72-c7b0c075be1a",
             "cn": [
                 {
                     "type": "jsonreader",
@@ -38,9 +38,32 @@
                     "codeClass": null,
                     "userConfig": {
                         "designer|userClassName": "MyJsonReader",
-                        "root": "vendors"
+                        "root": "data"
                     },
-                    "designerId": "45b1a75a-7a5f-416b-82da-73f16906e063"
+                    "designerId": "bdb26990-7305-47fc-98e8-ffbb9b875a27"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onRestproxyException",
+                        "fn": "onRestproxyException",
+                        "implHandler": [
+                            "Ext.Msg.alert('Errore nell\\'accesso al database', \r",
+                            "operation.getError().status + ' - ' + operation.getError().statusText,\r",
+                            "    function(){\r",
+                            "        this.rejectChanges();\r",
+                            "        ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()\r",
+                            "    },this);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "designerId": "47e09000-8e2c-459f-b033-55358e8abfda"
                 }
             ]
         }

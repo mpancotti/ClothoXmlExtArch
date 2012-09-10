@@ -19,7 +19,7 @@ Ext.define('ClothoExtXml.view.VendorArea', {
 
     requires: [
         'ClothoExtXml.view.VendorForm',
-        'ClothoExtXml.view.VendorGridPaneL'
+        'ClothoExtXml.view.VendorGridPanel'
     ],
 
     layout: {

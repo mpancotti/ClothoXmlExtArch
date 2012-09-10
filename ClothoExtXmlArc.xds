@@ -3,7 +3,7 @@
     "settings": {
         "urlPrefix": "http://localhost/ClothoXmlExtArch",
         "spacesToIndent": 4,
-        "exportPath": "C:/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
+        "exportPath": "/Users/marco/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false
@@ -213,11 +213,11 @@
         },
         "dc78034f-90cc-4598-b68b-d9f0e1bde877": {
             "paths": [
-                "metadata/view/VendorGridPaneL",
-                "app/view/override/VendorGridPaneL.js",
-                "app/view/VendorGridPaneL.js"
+                "metadata/view/VendorGridPanel",
+                "app/view/override/VendorGridPanel.js",
+                "app/view/VendorGridPanel.js"
             ],
-            "className": "VendorGridPaneL"
+            "className": "VendorGridPanel"
         },
         "67156ffa-162c-4f8d-9c34-50a318f451dc": {
             "paths": [
@@ -234,6 +234,22 @@
                 "app/view/RuleForm.js"
             ],
             "className": "RuleForm"
+        },
+        "624acb7e-9552-46bd-9c33-648d904a485e": {
+            "paths": [
+                "metadata/model/Strategy",
+                "app/model/override/Strategy.js",
+                "app/model/Strategy.js"
+            ],
+            "className": "Strategy"
+        },
+        "22a3c537-3762-4da1-b33f-7947507694db": {
+            "paths": [
+                "metadata/store/Strategy",
+                "app/store/override/Strategy.js",
+                "app/store/Strategy.js"
+            ],
+            "className": "Strategy"
         }
     },
     "viewOrderMap": {
@@ -255,7 +271,8 @@
             "86f13fe7-7a1d-4685-85f8-665f63236b5c",
             "07c1fb7e-c097-4e13-951e-f333c34354e4",
             "5c818a45-97a8-4a14-a50a-daaa45ea9d17",
-            "323f3a24-9bc1-4157-83dc-feef56855915"
+            "323f3a24-9bc1-4157-83dc-feef56855915",
+            "22a3c537-3762-4da1-b33f-7947507694db"
         ],
         "controller": [
             "d40825c4-56c5-4a6b-92e9-e18823ca0f25",
@@ -269,7 +286,8 @@
             "50de5ff0-bcb4-420d-af06-d109dc765106",
             "7443fc3c-d80b-486c-9a91-c3142d5ddd8e",
             "4c19ba5a-e9d7-4f43-8c67-b70ce92d910b",
-            "d2a8b20c-6593-4e47-97f6-07e8ab84ba68"
+            "d2a8b20c-6593-4e47-97f6-07e8ab84ba68",
+            "624acb7e-9552-46bd-9c33-648d904a485e"
         ],
         "resource": [
             "bb324d84-14c4-4543-be57-cd615045dea8",

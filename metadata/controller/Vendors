@@ -31,9 +31,12 @@
                     "application"
                 ],
                 "implHandler": [
-                    " this.control(\r",
-                    "        {'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick},\r",
-                    " })"
+                    "this.control(\r",
+                    "{'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick},\r",
+                    " '#venFormSaveBtn':{'click': this.vendorFormSave},\r",
+                    " '#maintoolbar-add-btn':{'click': this.vendorClearToAdd},\r",
+                    " '#maintoolbar-modify-btn':{'click': this.vendorClearToModify}\r",
+                    "})"
                 ]
             },
             "designerId": "1618113d-98c1-4cd8-b801-2b50c01caf65"
@@ -52,13 +55,113 @@
                     "view, record"
                 ],
                 "implHandler": [
-                    "var container = Ext.getCmp('vendorFormContainer');\r",
-                    "if (container.hidden)\r",
-                    "    container.show()\r",
-                    "Ext.getCmp('vendorForm').getForm().loadRecord(record);"
+                    "// Mostra il container\r",
+                    "if(record){\r",
+                    "    var container = Ext.getCmp('vendorFormContainer');\r",
+                    "    if (!container.isVisible())\r",
+                    "        container.setVisible(true);\r",
+                    "    // Legge il Basic form\r",
+                    "    var form = Ext.getCmp('vendorForm');\r",
+                    "    form.queryById('codiceVendor').setEditable(false);\r",
+                    "    form.queryById('nomeVendor').focus(false,100);\r",
+                    "    // Carica i dati dallo store\r",
+                    "    form.getForm().loadRecord(record);\r",
+                    "    // Imposta le variabili globali\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Modify');\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Vendor');\r",
+                    "}"
                 ]
             },
             "designerId": "5d9d2db0-5a49-4988-a7b4-f032ed92f1d3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "vendorFormSave",
+                "fn": "vendorFormSave",
+                "implHandler": [
+                    "\r",
+                    "ClothoExtXml.controller.GlobalVariables.formSave(\r",
+                    "    function(){ClothoExtXml.controller.GlobalVariables.deleteFromStore()},\r",
+                    "    function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()}\r",
+                    ")    "
+                ]
+            },
+            "designerId": "9946130b-4003-4061-be01-b79abee3dc30"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "vendorClick",
+                "fn": "vendorClick",
+                "designer|params": [
+                    "view, record"
+                ],
+                "implHandler": [
+                    "var form = Ext.getCmp('vendorForm');\r",
+                    "var container = Ext.getCmp('vendorFormContainer');\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Selected');\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Vendor');"
+                ]
+            },
+            "designerId": "754bb91d-bacc-4128-9958-44ade2e0f3ef"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "vendorClearToAdd",
+                "fn": "vendorClearToAdd",
+                "implHandler": [
+                    "if(ClothoExtXml.controller.GlobalVariables.getCurrentModel()=='ClothoExtXml.model.Vendor'){\r",
+                    "    var form=Ext.getCmp('vendorForm');\r",
+                    "    form.queryById('codiceVendor').setEditable(true);\r",
+                    "    form.queryById('codiceVendor').focus(true,100);\r",
+                    "}"
+                ]
+            },
+            "designerId": "ea1b5a53-0668-416d-b984-f800dc822fbc"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "vendorClearToModify",
+                "fn": "vendorClearToModify",
+                "implHandler": [
+                    "this.vendorDoubleClick( \r",
+                    "        Ext.getCmp('vendorGridPanel'),\r",
+                    "        ClothoExtXml.controller.GlobalVariables.getCurrentRecord()\r",
+                    ")"
+                ]
+            },
+            "designerId": "b9242eda-59ed-4edf-87ff-361bebd1147f"
         }
     ]
 }

@@ -10,9 +10,10 @@
         "designer|userAlias": "basicDataGrid",
         "designer|displayName": "vendorScontiGrid",
         "height": 205,
-        "id": "basicDataPanel",
+        "id": "discountDataPanel",
         "width": 748,
-        "title": "Basic Data"
+        "title": "Basic Data",
+        "store": "Discounts"
     },
     "id": "ExtBox1-ext-gen1956",
     "designerId": "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",

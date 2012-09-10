@@ -1,0 +1,30 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Strategy",
+        "designer|userAlias": "strategy"
+    },
+    "id": "ExtBox1-ext-gen5340",
+    "designerId": "624acb7e-9552-46bd-9c33-648d904a485e",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field48",
+                "name": "strategy",
+                "type": "string"
+            },
+            "designerId": "23561b41-029f-4c33-9402-ced2392c9549"
+        }
+    ]
+}

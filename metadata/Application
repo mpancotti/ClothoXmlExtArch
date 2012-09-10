@@ -12,7 +12,8 @@
             "PrezzoFisso",
             "Rule",
             "Sconto",
-            "Vendor"
+            "Vendor",
+            "Strategy"
         ],
         "stores": [
             "Discounts",
@@ -20,7 +21,8 @@
             "PrezziFissi",
             "Rules",
             "Sconti",
-            "Vendors"
+            "Vendors",
+            "Strategy"
         ],
         "views": [
             "BasicDataGrid",

@@ -55,10 +55,10 @@
                         "implHandler": [
                             "Ext.Msg.alert('Errore nell\\'accesso al database', \r",
                             "operation.getError().status + ' - ' + operation.getError().statusText,\r",
-                            "    function(){\r",
-                            "        this.rejectChanges();\r",
-                            "        ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()\r",
-                            "    },this);"
+                            "function(){\r",
+                            "    this.rejectChanges();\r",
+                            "    ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()\r",
+                            "},this);"
                         ],
                         "name": "exception",
                         "scope": "me"

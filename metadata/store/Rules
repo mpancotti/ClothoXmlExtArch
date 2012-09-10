@@ -7,10 +7,66 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Rules",
+        "autoLoad": false,
+        "remoteFilter": true,
         "storeId": "rules",
         "model": "Rule",
-        "data": "[\r\n    {id:\"x\",regexp:\"xxx\",valore_note_3:\"335\",scadenza:\"2012/12/12\",strategy:\"code\"},\r\n    {id:\"y\",regexp:\"yyy\",valore_note_3:\"336\",scadenza:\"2012/12/12\",strategy:\"desc\"},\r\n    {id:\"z\",regexp:\"zzz\",valore_note_3:\"337\",scadenza:\"2012/12/12\",strategy:\"desccode\"}\r\n]"
+        "data": null
     },
     "id": "ExtBox1-ext-gen17614",
-    "designerId": "07c1fb7e-c097-4e13-951e-f333c34354e4"
+    "designerId": "07c1fb7e-c097-4e13-951e-f333c34354e4",
+    "cn": [
+        {
+            "type": "restproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyRestProxy1",
+                "extraParams": null,
+                "url": "/clothoxml/rules"
+            },
+            "designerId": "4a6941ce-3c81-488e-a2ec-410139bc0c49",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader1",
+                        "root": "data"
+                    },
+                    "designerId": "a6860351-0444-4c06-9fed-cd4c7ffdf75c"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onRestproxyException",
+                        "fn": "onRestproxyException",
+                        "implHandler": [
+                            "Ext.Msg.alert('Errore nell\\'accesso al database', \r",
+                            "operation.getError().status + ' - ' + operation.getError().statusText,\r",
+                            "function(){\r",
+                            "    this.rejectChanges();\r",
+                            "    ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()\r",
+                            "},this);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "designerId": "d6c62600-6e48-40d7-96cc-de47fde64f13"
+                }
+            ]
+        }
+    ]
 }

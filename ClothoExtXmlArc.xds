@@ -3,7 +3,7 @@
     "settings": {
         "urlPrefix": "http://localhost/ClothoXmlExtArch",
         "spacesToIndent": 4,
-        "exportPath": "/Users/marco/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
+        "exportPath": "C:/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false

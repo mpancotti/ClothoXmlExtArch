@@ -44,12 +44,11 @@ Ext.define('ClothoExtXml.view.RuleForm', {
                             labelAlign: 'right'
                         },
                         {
-                            xtype: 'numberfield',
+                            xtype: 'textfield',
                             anchor: '100%',
                             name: 'valore_note_3',
                             fieldLabel: 'Valore',
-                            labelAlign: 'right',
-                            hideTrigger: true
+                            labelAlign: 'right'
                         },
                         {
                             xtype: 'datefield',

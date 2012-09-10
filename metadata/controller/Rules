@@ -39,10 +39,23 @@
                     "view,record"
                 ],
                 "implHandler": [
-                    "//var container = Ext.getCmp('vendorFormContainer');\r",
-                    "//if (container.hidden)\r",
-                    "//    container.show()\r",
-                    "Ext.getCmp('ruleForm').getForm().loadRecord(record);"
+                    "// Mostra il container\r",
+                    "if(record){\r",
+                    "    var container = Ext.getCmp('ruleFormContainer');\r",
+                    "    if (!container.isVisible())\r",
+                    "    container.setVisible(true);\r",
+                    "    // Legge il Basic form\r",
+                    "    var form = Ext.getCmp('ruleForm');\r",
+                    "    // Carica i dati dallo store\r",
+                    "    form.getForm().loadRecord(record);\r",
+                    "    // Imposta le variabili globali\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Modify');\r",
+                    "    ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Rule');\r",
+                    "}"
                 ]
             },
             "designerId": "77187a0c-327b-43f5-b04f-9d2b36c17586"
@@ -61,12 +74,38 @@
                     "application"
                 ],
                 "implHandler": [
-                    " this.control(\r",
-                    "        {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick},\r",
-                    " })"
+                    "this.control(\r",
+                    "    {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick}\r",
+                    "})"
                 ]
             },
             "designerId": "fa230cbc-697f-4a62-9bd4-f211cdec5070"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "rulesItemClick",
+                "fn": "rulesItemClick",
+                "designer|params": [
+                    "view,record"
+                ],
+                "implHandler": [
+                    "var form = Ext.getCmp('vendorForm');\r",
+                    "var container = Ext.getCmp('vendorFormContainer');\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Selected');\r",
+                    "ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Vendor');"
+                ]
+            },
+            "designerId": "b1d975de-d602-4815-a13c-592f9a14e65b"
         }
     ]
 }

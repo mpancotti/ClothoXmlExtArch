@@ -31,7 +31,9 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyGridView3"
+                "designer|userClassName": "MyGridView3",
+                "id": "ruleGridView",
+                "itemId": "ruleGridView"
             },
             "designerId": "1caa2157-978d-4a67-a3b8-981196bcca5b"
         },
@@ -45,10 +47,28 @@
             "userConfig": {
                 "designer|userClassName": "MyColumn3",
                 "width": 154,
-                "dataIndex": "id",
+                "dataIndex": "regexp",
                 "text": "Regola"
             },
             "designerId": "9748c7de-d62c-4b86-b6da-d0161fc8d467"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onRuleGridPanelSelect",
+                "fn": "onRuleGridPanelSelect",
+                "implHandler": [
+                    "Ext.getCmp('ruleData').update(record.getData());"
+                ],
+                "name": "select",
+                "scope": "me"
+            },
+            "designerId": "a0c2fd0c-34f7-48f4-8e82-1cfa15a1cf1f"
         }
     ]
 }

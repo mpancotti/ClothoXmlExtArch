@@ -32,16 +32,40 @@ Ext.define('ClothoExtXml.controller.Rules', {
     ],
 
     rulesDoubleClick: function(view,record) {
-        //var container = Ext.getCmp('vendorFormContainer');
-        //if (container.hidden)
-        //    container.show()
-        Ext.getCmp('ruleForm').getForm().loadRecord(record);
+        // Mostra il container
+        if(record){
+            var container = Ext.getCmp('ruleFormContainer');
+            if (!container.isVisible())
+            container.setVisible(true);
+            // Legge il Basic form
+            var form = Ext.getCmp('ruleForm');
+            // Carica i dati dallo store
+            form.getForm().loadRecord(record);
+            // Imposta le variabili globali
+            ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());
+            ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);
+            ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);
+            ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);
+            ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Modify');
+            ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Rule');
+        }
     },
 
     init: function(application) {
         this.control(
-        {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick},
+        {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick}
     })
+    },
+
+    rulesItemClick: function(view,record) {
+        var form = Ext.getCmp('vendorForm');
+        var container = Ext.getCmp('vendorFormContainer');
+        ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());
+        ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);
+        ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);
+        ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);
+        ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Selected');
+        ClothoExtXml.controller.GlobalVariables.setCurrentModel('ClothoExtXml.model.Vendor');
     }
 
 });

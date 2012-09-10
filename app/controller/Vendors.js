@@ -23,12 +23,19 @@ Ext.define('ClothoExtXml.controller.Vendors', {
         'Vendors'
     ],
 
+    refs: [
+        {
+            ref: 'ruleList',
+            selector: 'ruleGridPanel'
+        }
+    ],
+
     init: function(application) {
         this.control(
-        {'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick},
+        {'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick,'selectionchange':this.vendorSelectionChange},
         '#venFormSaveBtn':{'click': this.vendorFormSave},
         '#maintoolbar-add-btn':{'click': this.vendorClearToAdd},
-        '#maintoolbar-modify-btn':{'click': this.vendorClearToModify}
+        '#maintoolbar-modify-btn':{'click': this.vendorClearToModify},
     })
     },
 
@@ -86,6 +93,10 @@ Ext.define('ClothoExtXml.controller.Vendors', {
         Ext.getCmp('vendorGridPanel'),
         ClothoExtXml.controller.GlobalVariables.getCurrentRecord()
         )
+    },
+
+    vendorSelectionChange: function(model,records) {
+        this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});
     }
 
 });

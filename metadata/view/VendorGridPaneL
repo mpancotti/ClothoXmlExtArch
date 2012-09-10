@@ -95,6 +95,18 @@
                 "scope": "me"
             },
             "designerId": "834ecf1e-4f61-47cb-8eb1-57585ad237b1"
+        },
+        {
+            "type": "rowselectionmodel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": "Ext.selection.RowModel",
+            "userConfig": {
+                "designer|userClassName": "MyRowSelectionModel"
+            },
+            "designerId": "3c40db72-9b14-40c8-be79-2d2814dd7fce"
         }
     ]
 }

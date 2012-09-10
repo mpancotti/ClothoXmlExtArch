@@ -57,7 +57,7 @@
                     "designerId": "06ecab5b-0e56-4d55-be85-40100d5db5f3"
                 },
                 {
-                    "type": "numberfield",
+                    "type": "textfield",
                     "reference": {
                         "name": "items",
                         "type": "array"
@@ -65,11 +65,10 @@
                     "codeClass": null,
                     "userConfig": {
                         "layout|anchor": "100%",
-                        "designer|userClassName": "MyNumberField1",
+                        "designer|userClassName": "MyTextField2",
                         "name": "valore_note_3",
                         "fieldLabel": "Valore",
-                        "labelAlign": "right",
-                        "hideTrigger": true
+                        "labelAlign": "right"
                     },
                     "designerId": "f9e3fe61-3caf-49fd-96fb-acb12be2c71b"
                 },

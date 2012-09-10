@@ -82,17 +82,75 @@
                     "designerId": "de25e3bb-1022-432b-8bbf-8acd75136339",
                     "cn": [
                         {
-                            "type": "linkedinstance",
+                            "type": "panel",
                             "reference": {
                                 "name": "items",
                                 "type": "array"
                             },
                             "codeClass": null,
                             "userConfig": {
-                                "layout|flex": 1
+                                "layout|flex": 1,
+                                "designer|userClassName": "MyPanel3",
+                                "id": "ruleData",
+                                "maxHeight": 30,
+                                "minHeight": 30,
+                                "frameHeader": false,
+                                "title": null
                             },
-                            "designerId": "85aaa9cd-4af2-49a6-81e3-dd6946e912fd",
-                            "masterInstanceId": "ExtBox1-ext-gen1970"
+                            "designerId": "33982043-1611-458d-8d53-5f8e591c1466",
+                            "cn": [
+                                {
+                                    "type": "template",
+                                    "reference": {
+                                        "name": "tpl",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "tpl",
+                                        "implHandler": [
+                                            "<div style=\"padding:5px\"> \r",
+                                            "    <span>RegExp:<b>{regexp}</b></span>&nbsp;&nbsp;<span>Valore Note 3:<b>{valore_note_3}</b></span>\r",
+                                            "    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>&nbsp;&nbsp;<span>Scadenza:<b>{scadenza}</b></span>\r",
+                                            "</div>"
+                                        ],
+                                        "designer|displayName": "tpl"
+                                    },
+                                    "designerId": "6c3438e0-8afd-4b17-aa58-ee2cb1e921bd"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "designer|userClassName": "MyContainer10",
+                                "hidden": true,
+                                "id": "ruleFormContainer",
+                                "maxHeight": 220,
+                                "minHeight": 220
+                            },
+                            "designerId": "40e9cafd-058b-4ab1-a500-eaf49514a221",
+                            "cn": [
+                                {
+                                    "type": "linkedinstance",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "hidden": false
+                                    },
+                                    "designerId": "85aaa9cd-4af2-49a6-81e3-dd6946e912fd",
+                                    "masterInstanceId": "ExtBox1-ext-gen1970"
+                                }
+                            ]
                         },
                         {
                             "type": "tabpanel",

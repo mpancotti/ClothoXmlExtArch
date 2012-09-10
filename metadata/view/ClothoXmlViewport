@@ -34,6 +34,47 @@
             "designerId": "c59f08c4-aed9-4b5f-8191-9e304605c7e0",
             "cn": [
                 {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyPanel2",
+                        "designer|displayName": "vendorDataDisplay",
+                        "height": null,
+                        "id": "vendorData",
+                        "maxHeight": 30,
+                        "minHeight": 30,
+                        "frameHeader": null,
+                        "title": null,
+                        "titleCollapse": null
+                    },
+                    "designerId": "7d397a37-66b5-4c4b-b1ec-d4f33802c078",
+                    "cn": [
+                        {
+                            "type": "template",
+                            "reference": {
+                                "name": "tpl",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "tpl",
+                                "implHandler": [
+                                    "<div style=\"padding:5px\"> \r",
+                                    "    <span>Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>\r",
+                                    "    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>\r",
+                                    "</div>"
+                                ],
+                                "designer|displayName": "tpl"
+                            },
+                            "designerId": "8d08b4d8-e96b-44ac-9055-9a700da1d827"
+                        }
+                    ]
+                },
+                {
                     "type": "tabpanel",
                     "reference": {
                         "name": "items",

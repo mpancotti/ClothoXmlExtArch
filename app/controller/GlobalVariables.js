@@ -118,6 +118,10 @@ Ext.define('ClothoExtXml.controller.GlobalVariables', {
             if(this.currentContainer.isVisible())
             this.currentContainer.setVisible(false);
         }
+    },
+
+    getCurrentVendorCode: function() {
+        return 18308
     }
 
 });

@@ -26,7 +26,7 @@
                     "this.currentRecord=Ext.create(this.currentModel);\r",
                     "this.currentStore.insert(0,this.currentRecord);\r",
                     "if (!this.currentContainer.isVisible())\r",
-                    "    this.currentContainer.setVisible(true);\r",
+                    "this.currentContainer.setVisible(true);\r",
                     "this.currentForm.getForm().loadRecord(this.currentRecord);\r",
                     "this.currentStatus='Add';\r",
                     "console.log(this.currentStatus);\r",
@@ -47,7 +47,7 @@
                 "fn": "deleteFromStore",
                 "implHandler": [
                     "if(this.currentStatus=='Add')\r",
-                    "  this.currentStore.remove(this.currentRecord);"
+                    "this.currentStore.remove(this.currentRecord);"
                 ]
             },
             "designerId": "2d7809a4-1949-4335-bb38-d1f8e19c3715"
@@ -88,7 +88,7 @@
                     "this.currentForm.getForm().updateRecord();\r",
                     "this.currentStore.sync({\r",
                     "    success:successFunc,\r",
-                    "    failure:failureFunc}\r",
+                    "failure:failureFunc}\r",
                     ");"
                 ]
             },
@@ -380,6 +380,22 @@
                 ]
             },
             "designerId": "6848af32-abbb-4d8e-8385-305421cd02ab"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentVendorCode",
+                "fn": "getCurrentVendorCode",
+                "implHandler": [
+                    "return 18308"
+                ]
+            },
+            "designerId": "2de4c563-bbb6-4e99-aa87-3012749d4b29"
         }
     ]
 }

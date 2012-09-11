@@ -10,8 +10,7 @@
         "autoLoad": false,
         "remoteFilter": true,
         "storeId": "rules",
-        "model": "Rule",
-        "data": null
+        "model": "Rule"
     },
     "id": "ExtBox1-ext-gen17614",
     "designerId": "07c1fb7e-c097-4e13-951e-f333c34354e4",

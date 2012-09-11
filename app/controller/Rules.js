@@ -79,6 +79,13 @@ Ext.define('ClothoExtXml.controller.Rules', {
     },
 
     ruleSelectionChange: function(model, record) {
+        if(records[0])
+        this.ruleGridPanel().getStore().load({params:{rule:records[0].get('id')}});
+        else{
+            var rec= Ext.getCmp('ruleGridPanel').getSelectionModel();
+            rec.select(0);
+            this.ruleGridPanel().getStore().load({params:{vendor:rec.getSelection()[0].get('id')}});
+        }
 
     },
 

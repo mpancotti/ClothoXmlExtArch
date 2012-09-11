@@ -7,10 +7,64 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "PrezziFissi",
+        "autoLoad": true,
+        "remoteFilter": true,
         "storeId": "prezziFissi",
-        "model": "PrezzoFisso",
-        "data": "[\r\n    {id:1,codice:12345,prezzo_fornitore:50,netto_lordo:60,affiliato:50,affiliato_light:60,somministrato:70,scadenza:\"2012/12/12\"},\r\n    {id:2,codice:12445,prezzo_fornitore:55,netto_lordo:65,affiliato:55,affiliato_light:65,somministrato:75,scadenza:\"2012/12/12\"},\r\n    {id:3,codice:12545,prezzo_fornitore:60,netto_lordo:70,affiliato:60,affiliato_light:70,somministrato:80,scadenza:\"2012/12/12\"},\r\n    {id:4,codice:12645,prezzo_fornitore:65,netto_lordo:75,affiliato:65,affiliato_light:75,somministrato:85,scadenza:\"2012/12/12\"},\r\n    {id:5,codice:12745,prezzo_fornitore:70,netto_lordo:80,affiliato:70,affiliato_light:80,somministrato:90,scadenza:\"2012/12/12\"}\r\n]"
+        "model": "PrezzoFisso"
     },
     "id": "ExtBox1-ext-gen17457",
-    "designerId": "86f13fe7-7a1d-4685-85f8-665f63236b5c"
+    "designerId": "86f13fe7-7a1d-4685-85f8-665f63236b5c",
+    "cn": [
+        {
+            "type": "restproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyRestProxy3",
+                "url": "/clothoxml/prezzifissi"
+            },
+            "designerId": "4c39751f-60d6-4a96-ab41-01662c4d0e19",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onRestproxyException",
+                        "fn": "onRestproxyException",
+                        "implHandler": [
+                            "Ext.Msg.alert('Errore nell\\'accesso al database', \r",
+                            "operation.getError().status + ' - ' + operation.getError().statusText,\r",
+                            "function(){\r",
+                            "    this.rejectChanges();\r",
+                            "    ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()\r",
+                            "},this);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "designerId": "9165b20c-5098-4bf4-bd21-5825460c9383"
+                },
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader3",
+                        "root": "data"
+                    },
+                    "designerId": "150a18a9-353f-4d53-8920-985915226391"
+                }
+            ]
+        }
+    ]
 }

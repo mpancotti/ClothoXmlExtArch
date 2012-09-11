@@ -7,10 +7,11 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "BasicDataGrid",
-        "designer|userAlias": "basicDataGrid",
+        "designer|userAlias": "discountGridPanel",
         "designer|displayName": "vendorScontiGrid",
         "height": 205,
-        "id": "discountDataPanel",
+        "id": "discountGridPanel",
+        "itemId": "discountGridPanel",
         "width": 748,
         "title": "Basic Data",
         "store": "Discounts"

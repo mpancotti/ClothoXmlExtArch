@@ -33,20 +33,6 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyField1",
-                "name": "codice",
-                "type": "int"
-            },
-            "designerId": "fd544817-bd60-4fdd-b9ae-4bf11f434acd"
-        },
-        {
-            "type": "datafield",
-            "reference": {
-                "name": "fields",
-                "type": "array"
-            },
-            "codeClass": null,
-            "userConfig": {
                 "designer|userClassName": "MyField2",
                 "name": "from_discount",
                 "type": "float"

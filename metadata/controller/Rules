@@ -143,7 +143,14 @@
                     "model, record"
                 ],
                 "implHandler": [
-                    ""
+                    "if(records[0])\r",
+                    "    this.ruleGridPanel().getStore().load({params:{rule:records[0].get('id')}});\r",
+                    "else{\r",
+                    "    var rec= Ext.getCmp('ruleGridPanel').getSelectionModel();\r",
+                    "    rec.select(0);\r",
+                    "    this.ruleGridPanel().getStore().load({params:{vendor:rec.getSelection()[0].get('id')}});\r",
+                    "}\r",
+                    "   "
                 ]
             },
             "designerId": "57e7723f-8cce-41d3-b9dd-b671eca8686d"

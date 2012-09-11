@@ -35,6 +35,7 @@ Ext.define('ClothoExtXml.view.VendorDataPanel', {
                     flex: 1,
                     height: 205,
                     id: 'basicDataPanel',
+                    itemId: 'basicDataPanel',
                     width: 748,
                     title: 'Basic Data',
                     store: 'Discounts',

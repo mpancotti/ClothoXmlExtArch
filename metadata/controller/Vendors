@@ -180,12 +180,16 @@
                     "model,records"
                 ],
                 "implHandler": [
-                    "if(records[0])\r",
-                    "    this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "if(records[0]!=undefined){\r",
+                    "   this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "   var rec= Ext.getCmp('discountGridPanel').getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "   //this.getDiscountList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "}\r",
                     "else{\r",
                     "    var rec= Ext.getCmp('vendorGridPanel').getSelectionModel();\r",
                     "    rec.select(0);\r",
                     "    this.getRuleList().getStore().load({params:{vendor:rec.getSelection()[0].get('codice')}});\r",
+                    "    this.getDiscountList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
                     "}\r",
                     "    "
                 ]
@@ -205,6 +209,20 @@
                 "selector": "ruleGridPanel"
             },
             "designerId": "d54844ac-ca87-497d-bebb-1a8c32fce918"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "discountList",
+                "ref": "discountList",
+                "selector": "discountGridPanel"
+            },
+            "designerId": "2ed003af-69f3-43c0-b886-609d05267aaf"
         }
     ]
 }

@@ -75,10 +75,10 @@
                 ],
                 "implHandler": [
                     "this.control(\r",
-                    "    {'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick,'selectionchange':this.ruleSelectionChange},\r",
-                    "     '#ruleFormSaveBtn':{'click': this.ruleFormSave},\r",
-                    "     '#maintoolbar-add-btn':{'click': this.ruleClearToAdd},\r",
-                    "     '#maintoolbar-modify-btn':{'click': this.ruleClearToModify},\r",
+                    "{'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick,'selectionchange':this.ruleSelectionChange},\r",
+                    "'#ruleFormSaveBtn':{'click': this.ruleFormSave},\r",
+                    "'#maintoolbar-add-btn':{'click': this.ruleClearToAdd},\r",
+                    "'#maintoolbar-modify-btn':{'click': this.ruleClearToModify},\r",
                     "})"
                 ]
             },
@@ -147,6 +147,23 @@
                 ]
             },
             "designerId": "57e7723f-8cce-41d3-b9dd-b671eca8686d"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "ruleClearToAdd",
+                "fn": "ruleClearToAdd",
+                "implHandler": [
+                    "if(ClothoExtXml.controller.GlobalVariables.getCurrentModel()=='ClothoExtXml.model.Rule'){\r",
+                    "}"
+                ]
+            },
+            "designerId": "87229040-b58a-4ed1-b9fb-9ceb3cd7f6c7"
         }
     ]
 }

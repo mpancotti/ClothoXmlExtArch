@@ -80,6 +80,11 @@ Ext.define('ClothoExtXml.controller.Rules', {
 
     ruleSelectionChange: function(model, record) {
 
+    },
+
+    ruleClearToAdd: function() {
+        if(ClothoExtXml.controller.GlobalVariables.getCurrentModel()=='ClothoExtXml.model.Rule'){
+        }
     }
 
 });

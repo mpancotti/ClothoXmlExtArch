@@ -32,10 +32,11 @@
                 ],
                 "implHandler": [
                     "this.control(\r",
-                    "    {'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick,'selectionchange':this.vendorSelectionChange},\r",
+                    "{'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick,'selectionchange':this.vendorSelectionChange},\r",
                     "'#venFormSaveBtn':{'click': this.vendorFormSave},\r",
-                    "'#maintoolbar-add-btn':{'click': this.vendorClearToAdd},\r",
-                    "'#maintoolbar-modify-btn':{'click': this.vendorClearToModify},\r",
+                    "'#venFormExit':{'click':this.vendorFormExit},\r",
+                    " '#maintoolbar-add-btn':{'click': this.vendorClearToAdd},\r",
+                    "'#maintoolbar-modify-btn':{'click': this.vendorClearToModify}\r",
                     "})"
                 ]
             },
@@ -92,8 +93,10 @@
                     "\r",
                     "ClothoExtXml.controller.GlobalVariables.formSave(\r",
                     "function(){ClothoExtXml.controller.GlobalVariables.deleteFromStore()},\r",
-                    "function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()}\r",
-                    ")    "
+                    "function(){ClothoExtXml.controller.GlobalVariables.hideCurrentContainer();\r",
+                    "           ClothoExtXml.controller.GlobalVariables.getCurrentForm().queryById('codiceVendor').setEditable(true);}\r",
+                    ")    \r",
+                    ""
                 ]
             },
             "designerId": "9946130b-4003-4061-be01-b79abee3dc30"
@@ -177,7 +180,14 @@
                     "model,records"
                 ],
                 "implHandler": [
-                    "this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});"
+                    "if(records[0])\r",
+                    "    this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "else{\r",
+                    "    var rec= Ext.getCmp('vendorGridPanel').getSelectionModel();\r",
+                    "    rec.select(0);\r",
+                    "    this.getRuleList().getStore().load({params:{vendor:rec.getSelection()[0].get('codice')}});\r",
+                    "}\r",
+                    "    "
                 ]
             },
             "designerId": "ac779948-a31d-4604-8a04-e76cec505489"

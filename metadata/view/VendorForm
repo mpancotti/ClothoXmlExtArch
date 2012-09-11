@@ -148,27 +148,7 @@
                         "text": "Esci senza salvare",
                         "type": "reset"
                     },
-                    "designerId": "73baa4a1-7ac1-4285-82d3-924d98ff517b",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "onButtonClick",
-                                "fn": "onButtonClick",
-                                "implHandler": [
-                                    "ClothoExtXml.controller.GlobalVariables.formExit();"
-                                ],
-                                "name": "click",
-                                "scope": "me"
-                            },
-                            "designerId": "2e8385d7-468d-4287-8ef0-1497cad7cb4e"
-                        }
-                    ]
+                    "designerId": "73baa4a1-7ac1-4285-82d3-924d98ff517b"
                 }
             ]
         }

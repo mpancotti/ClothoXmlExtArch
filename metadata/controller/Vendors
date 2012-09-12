@@ -35,7 +35,7 @@
                     "{'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick,'selectionchange':this.vendorSelectionChange},\r",
                     "'#venFormSaveBtn':{'click': this.vendorFormSave},\r",
                     "'#venFormExit':{'click':this.vendorFormExit},\r",
-                    " '#maintoolbar-add-btn':{'click': this.vendorClearToAdd},\r",
+                    "'#maintoolbar-add-btn':{'click': this.vendorClearToAdd},\r",
                     "'#maintoolbar-modify-btn':{'click': this.vendorClearToModify}\r",
                     "})"
                 ]
@@ -180,18 +180,18 @@
                     "model,records"
                 ],
                 "implHandler": [
+                    "\r",
                     "if(records[0]!=undefined){\r",
-                    "   this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
-                    "   var rec= Ext.getCmp('discountGridPanel').getStore().load({params:{vendor:records[0].get('codice')}});\r",
-                    "   //this.getDiscountList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "    this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "    this.getDisList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
                     "}\r",
                     "else{\r",
                     "    var rec= Ext.getCmp('vendorGridPanel').getSelectionModel();\r",
                     "    rec.select(0);\r",
                     "    this.getRuleList().getStore().load({params:{vendor:rec.getSelection()[0].get('codice')}});\r",
-                    "    this.getDiscountList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
+                    "    this.getDisList().getStore().load({params:{vendor:records[0].get('codice')}});\r",
                     "}\r",
-                    "    "
+                    ""
                 ]
             },
             "designerId": "ac779948-a31d-4604-8a04-e76cec505489"
@@ -218,8 +218,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "discountList",
-                "ref": "discountList",
+                "designer|userClassName": "disList",
+                "ref": "disList",
                 "selector": "discountGridPanel"
             },
             "designerId": "2ed003af-69f3-43c0-b886-609d05267aaf"

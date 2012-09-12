@@ -140,17 +140,23 @@
                 "designer|userClassName": "ruleSelectionChange",
                 "fn": "ruleSelectionChange",
                 "designer|params": [
-                    "model, record"
+                    "model, records"
                 ],
                 "implHandler": [
-                    "if(records[0])\r",
-                    "    this.ruleGridPanel().getStore().load({params:{rule:records[0].get('id')}});\r",
+                    "if(records[0]){\r",
+                    "    this.getScontiList().getStore().load({params:{rule:records[0].get('id')}});\r",
+                    "    this.getPrezziList().getStore().load({params:{rule:records[0].get('id')}});\r",
+                    "    this.getPrezziFissiList().getStore().load({params:{rule:records[0].get('id')}});\r",
+                    "    \r",
+                    "}\r",
                     "else{\r",
                     "    var rec= Ext.getCmp('ruleGridPanel').getSelectionModel();\r",
                     "    rec.select(0);\r",
-                    "    this.ruleGridPanel().getStore().load({params:{vendor:rec.getSelection()[0].get('id')}});\r",
+                    "    this.getScontiList().getStore().load({params:{rule:rec.getSelection()[0].get('id')}});\r",
+                    "    this.getPrezziList().getStore().load({params:{rule:rec.getSelection()[0].get('id')}});\r",
+                    "    this.getPrezziFissiList().getStore().load({params:{rule:rec.getSelection()[0].get('id')}});\r",
                     "}\r",
-                    "   "
+                    ""
                 ]
             },
             "designerId": "57e7723f-8cce-41d3-b9dd-b671eca8686d"
@@ -171,6 +177,48 @@
                 ]
             },
             "designerId": "87229040-b58a-4ed1-b9fb-9ceb3cd7f6c7"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "scontiList",
+                "ref": "scontiList",
+                "selector": "scontiGridPanel"
+            },
+            "designerId": "1755676b-1e3a-45d5-a581-fa2e9fa50c16"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "prezziList",
+                "ref": "prezziList",
+                "selector": "prezziGridPanel"
+            },
+            "designerId": "0eb6b121-89b2-4e74-bf14-2a844ec1842b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "prezziFissiList",
+                "ref": "prezziFissiList",
+                "selector": "prezziFissiGridPanel"
+            },
+            "designerId": "9e01d1c1-b217-4f70-81ff-1a676313b5cb"
         }
     ]
 }

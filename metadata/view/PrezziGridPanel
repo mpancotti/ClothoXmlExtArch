@@ -1,0 +1,130 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PrezziGridPanel",
+        "designer|userAlias": "prezziGridPanel",
+        "id": "prezziGridPanel",
+        "title": "Prezzi",
+        "store": "Prezzi"
+    },
+    "id": "ExtBox1-ext-gen1971",
+    "designerId": "ffb3cebb-af37-4c56-80e6-ff1cf5d3bffe",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView",
+                "designer|displayName": "prezziGridView"
+            },
+            "designerId": "764b9297-61f2-4f79-abfa-7ae897ebb727"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn7",
+                "dataIndex": "prezzo_from",
+                "text": "Prezzo_from"
+            },
+            "designerId": "2c54c480-ea5c-478a-9b7c-34492a3431a1"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn18",
+                "dataIndex": "prezzo_to",
+                "text": "Prezzo_to"
+            },
+            "designerId": "5e38e773-6549-43da-8b94-39bfc49f6db8"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn19",
+                "dataIndex": "netto_lordo",
+                "text": "Netto_lordo"
+            },
+            "designerId": "93cbc94a-306a-4b00-8aa1-84fd7e57bae8"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn20",
+                "dataIndex": "prezzo_affiliato",
+                "text": "Prezzo_affiliato"
+            },
+            "designerId": "b3116655-e424-4efb-8224-bdca2d80f63b"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn21",
+                "dataIndex": "prezzo_affiliato_light",
+                "text": "Prezzo_affiliato_light"
+            },
+            "designerId": "69c42a57-c958-4c42-ba79-682d4b96c736"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn22",
+                "dataIndex": "prezzo_somministrato",
+                "text": "Prezzo_somministrato"
+            },
+            "designerId": "bad7c89c-3b21-496e-b27c-c083081e4ef8"
+        },
+        {
+            "type": "datecolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyDateColumn2",
+                "dataIndex": "scadenza",
+                "text": "Scadenza"
+            },
+            "designerId": "afd9a226-b6e5-48b7-919f-d30da22a69d6"
+        }
+    ]
+}

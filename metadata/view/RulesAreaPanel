@@ -169,34 +169,15 @@
                             "designerId": "75eea967-2e90-48c0-956d-58dbcc39f706",
                             "cn": [
                                 {
-                                    "type": "gridpanel",
+                                    "type": "linkedinstance",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyGridPanel2",
-                                        "height": null,
-                                        "padding": 2,
-                                        "title": "Sconti",
-                                        "store": "Sconti"
-                                    },
-                                    "designerId": "53bd2e01-8b28-4948-a3fb-dc1d83bd6e49",
+                                    "designerId": "32cc99d4-02e3-4d29-a8c3-e0eb1702aa65",
+                                    "masterInstanceId": "ExtBox1-ext-gen1958",
                                     "cn": [
-                                        {
-                                            "type": "gridview",
-                                            "reference": {
-                                                "name": "viewConfig",
-                                                "type": "object"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyGridView2",
-                                                "designer|displayName": "scontiGridView"
-                                            },
-                                            "designerId": "5d3d7c23-4e80-41f1-94dc-60155342aea9"
-                                        },
                                         {
                                             "type": "tab",
                                             "reference": {
@@ -205,179 +186,22 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "designer|userClassName": "TabConfig5"
+                                                "designer|userClassName": "TabConfig"
                                             },
-                                            "designerId": "67339d49-78d4-4ecc-9425-a6273905389d"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn8",
-                                                "dataIndex": "sconto_fornitore",
-                                                "text": "Sconto_fornitore"
-                                            },
-                                            "designerId": "380d7cf6-a5bb-4ce8-9bed-a05e23fe5db8"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn9",
-                                                "dataIndex": "tolleranza",
-                                                "text": "Tolleranza"
-                                            },
-                                            "designerId": "7c5bd345-f9fa-4648-8596-6a1fca5df4c4"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn10",
-                                                "dataIndex": "prezzo_lordo",
-                                                "text": "Prezzo_lordo"
-                                            },
-                                            "designerId": "154246a0-9414-4c71-b329-2dcd7b7b5eec"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn11",
-                                                "dataIndex": "affiliato",
-                                                "text": "Affiliato"
-                                            },
-                                            "designerId": "e79d7917-d5fa-4cad-ab8f-4e7845d83d65"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn12",
-                                                "dataIndex": "affiliato_light",
-                                                "text": "Affiliato_light"
-                                            },
-                                            "designerId": "97d04c06-34d8-42ad-85e1-870b6db22a91"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn13",
-                                                "dataIndex": "somministrato",
-                                                "text": "Somministrato"
-                                            },
-                                            "designerId": "6d915dcc-7f94-4eac-9a0a-e3ed01773bba"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn14",
-                                                "dataIndex": "prezzo_affiliato",
-                                                "text": "Prezzo_affiliato"
-                                            },
-                                            "designerId": "35049d23-4d58-48b9-ae5f-9a4082351dca"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn15",
-                                                "dataIndex": "prezzo_affiliato_light",
-                                                "text": "Prezzo_affiliato_light"
-                                            },
-                                            "designerId": "c56e8d59-349c-4c0b-b7b2-77c0412cdbe8"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn16",
-                                                "dataIndex": "prezzo_somministrato",
-                                                "text": "Prezzo_somministrato"
-                                            },
-                                            "designerId": "ef0d338f-18ab-4c66-9378-f87f76bb67e1"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn17",
-                                                "dataIndex": "scadenza",
-                                                "text": "Scadenza"
-                                            },
-                                            "designerId": "1b5113ad-0b91-430e-afa6-ef237ecc67f6"
+                                            "designerId": "93b5640b-980e-4fb2-964e-7d8abbfe02b1"
                                         }
                                     ]
                                 },
                                 {
-                                    "type": "gridpanel",
+                                    "type": "linkedinstance",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyGridPanel4",
-                                        "title": "Prezzi",
-                                        "store": "Prezzi"
-                                    },
-                                    "designerId": "ffb3cebb-af37-4c56-80e6-ff1cf5d3bffe",
+                                    "designerId": "a8f8d6d2-3e96-40cd-942e-06de43f836d5",
+                                    "masterInstanceId": "ExtBox1-ext-gen1971",
                                     "cn": [
-                                        {
-                                            "type": "gridview",
-                                            "reference": {
-                                                "name": "viewConfig",
-                                                "type": "object"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyGridView",
-                                                "designer|displayName": "prezziGridView"
-                                            },
-                                            "designerId": "764b9297-61f2-4f79-abfa-7ae897ebb727"
-                                        },
                                         {
                                             "type": "tab",
                                             "reference": {
@@ -386,136 +210,22 @@
                                             },
                                             "codeClass": null,
                                             "userConfig": {
-                                                "designer|userClassName": "TabConfig4"
+                                                "designer|userClassName": "TabConfig1"
                                             },
-                                            "designerId": "f4a08027-f451-4c40-9796-a92156a9f5ca"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn7",
-                                                "dataIndex": "prezzo_from",
-                                                "text": "Prezzo_from"
-                                            },
-                                            "designerId": "2c54c480-ea5c-478a-9b7c-34492a3431a1"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn18",
-                                                "dataIndex": "prezzo_to",
-                                                "text": "Prezzo_to"
-                                            },
-                                            "designerId": "5e38e773-6549-43da-8b94-39bfc49f6db8"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn19",
-                                                "dataIndex": "netto_lordo",
-                                                "text": "Netto_lordo"
-                                            },
-                                            "designerId": "93cbc94a-306a-4b00-8aa1-84fd7e57bae8"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn20",
-                                                "dataIndex": "prezzo_affiliato",
-                                                "text": "Prezzo_affiliato"
-                                            },
-                                            "designerId": "b3116655-e424-4efb-8224-bdca2d80f63b"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn21",
-                                                "dataIndex": "prezzo_affiliato_light",
-                                                "text": "Prezzo_affiliato_light"
-                                            },
-                                            "designerId": "69c42a57-c958-4c42-ba79-682d4b96c736"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn22",
-                                                "dataIndex": "prezzo_somministrato",
-                                                "text": "Prezzo_somministrato"
-                                            },
-                                            "designerId": "bad7c89c-3b21-496e-b27c-c083081e4ef8"
-                                        },
-                                        {
-                                            "type": "datecolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyDateColumn2",
-                                                "dataIndex": "scadenza",
-                                                "text": "Scadenza"
-                                            },
-                                            "designerId": "afd9a226-b6e5-48b7-919f-d30da22a69d6"
+                                            "designerId": "2652b40f-c7be-4330-a750-22859823091d"
                                         }
                                     ]
                                 },
                                 {
-                                    "type": "gridpanel",
+                                    "type": "linkedinstance",
                                     "reference": {
                                         "name": "items",
                                         "type": "array"
                                     },
                                     "codeClass": null,
-                                    "userConfig": {
-                                        "designer|userClassName": "MyGridPanel5",
-                                        "title": "Prezzo fisso",
-                                        "store": "PrezziFissi"
-                                    },
-                                    "designerId": "b3d66c06-5b22-4289-88bd-b7c07b42b7c7",
+                                    "designerId": "e88af707-c372-4920-84ba-bbf0651aeebe",
+                                    "masterInstanceId": "ExtBox1-ext-gen1981",
                                     "cn": [
-                                        {
-                                            "type": "gridview",
-                                            "reference": {
-                                                "name": "viewConfig",
-                                                "type": "object"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyGridView4"
-                                            },
-                                            "designerId": "991698b8-6468-4cfe-ab34-9d387a50268a"
-                                        },
                                         {
                                             "type": "tab",
                                             "reference": {
@@ -526,91 +236,7 @@
                                             "userConfig": {
                                                 "designer|userClassName": "TabConfig2"
                                             },
-                                            "designerId": "49b2a5ba-8258-452d-895e-4393c7c60e77"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn6",
-                                                "dataIndex": "prezzo_fornitore",
-                                                "text": "Prezzo_fornitore"
-                                            },
-                                            "designerId": "4363665a-252c-4258-9217-dcc94bb8e413"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn23",
-                                                "dataIndex": "netto_lordo",
-                                                "text": "Netto_lordo"
-                                            },
-                                            "designerId": "cb214186-26d3-4c3e-921b-c059f7307df6"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn24",
-                                                "dataIndex": "affiliato",
-                                                "text": "Affiliato"
-                                            },
-                                            "designerId": "92fadb23-d30f-407d-b664-2498cafcae4b"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn25",
-                                                "dataIndex": "affiliato_light",
-                                                "text": "Affiliato_light"
-                                            },
-                                            "designerId": "f010957a-485d-4a0a-a3fb-ab5c4cfbd015"
-                                        },
-                                        {
-                                            "type": "numbercolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyNumberColumn26",
-                                                "dataIndex": "somministrato",
-                                                "text": "Somministrato"
-                                            },
-                                            "designerId": "0ed0d84f-bf0c-4e0e-8395-c1f642c9e69f"
-                                        },
-                                        {
-                                            "type": "datecolumn",
-                                            "reference": {
-                                                "name": "columns",
-                                                "type": "array"
-                                            },
-                                            "codeClass": null,
-                                            "userConfig": {
-                                                "designer|userClassName": "MyDateColumn3",
-                                                "dataIndex": "scadenza",
-                                                "text": "Scadenza"
-                                            },
-                                            "designerId": "1a00dc94-ba8d-4317-b855-395a9314f1ee"
+                                            "designerId": "8dc5e05b-d99c-4eaf-b8b8-c9c58f9b9088"
                                         }
                                     ]
                                 }

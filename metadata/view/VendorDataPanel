@@ -19,82 +19,17 @@
     "designerId": "d1c49070-4f64-4443-948e-1e2939a16978",
     "cn": [
         {
-            "type": "gridpanel",
+            "type": "linkedinstance",
             "reference": {
                 "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "layout|flex": 1,
-                "designer|userClassName": "MyGridPanel1",
-                "designer|displayName": "vendorScontiGrid",
-                "height": 205,
-                "id": "basicDataPanel",
-                "itemId": "basicDataPanel",
-                "width": 748,
-                "title": "Basic Data",
-                "store": "Discounts"
+                "layout|flex": 1
             },
-            "designerId": "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
-            "cn": [
-                {
-                    "type": "gridcolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyColumn1",
-                        "dataIndex": "from_discount",
-                        "text": "Da"
-                    },
-                    "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf"
-                },
-                {
-                    "type": "numbercolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyNumberColumn1",
-                        "dataIndex": "to_discount",
-                        "text": "A"
-                    },
-                    "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc"
-                },
-                {
-                    "type": "datecolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyDateColumn1",
-                        "dataIndex": "scadenza",
-                        "text": "Scadenza"
-                    },
-                    "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
-                },
-                {
-                    "type": "booleancolumn",
-                    "reference": {
-                        "name": "columns",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "MyBooleanColumn1",
-                        "dataIndex": "value_note_3",
-                        "text": "Valore in note3"
-                    },
-                    "designerId": "c7737b6e-7db3-4683-92e3-647753846cdb"
-                }
-            ]
+            "designerId": "f27c4019-2b59-4ff5-83f8-ce4422e3dfe4",
+            "masterInstanceId": "ExtBox1-ext-gen1929"
         }
     ]
 }

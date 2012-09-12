@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Sconti",
-        "autoLoad": true,
+        "autoLoad": false,
         "remoteFilter": true,
         "storeId": "sconti",
         "model": "Sconto"

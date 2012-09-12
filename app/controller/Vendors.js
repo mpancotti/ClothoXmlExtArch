@@ -29,7 +29,7 @@ Ext.define('ClothoExtXml.controller.Vendors', {
             selector: 'ruleGridPanel'
         },
         {
-            ref: 'discountList',
+            ref: 'disList',
             selector: 'discountGridPanel'
         }
     ],
@@ -103,16 +103,16 @@ Ext.define('ClothoExtXml.controller.Vendors', {
     },
 
     vendorSelectionChange: function(model,records) {
+
         if(records[0]!=undefined){
             this.getRuleList().getStore().load({params:{vendor:records[0].get('codice')}});
-            var rec= Ext.getCmp('discountGridPanel').getStore().load({params:{vendor:records[0].get('codice')}});
-            //this.getDiscountList().getStore().load({params:{vendor:records[0].get('codice')}});
+            this.getDisList().getStore().load({params:{vendor:records[0].get('codice')}});
         }
         else{
             var rec= Ext.getCmp('vendorGridPanel').getSelectionModel();
             rec.select(0);
             this.getRuleList().getStore().load({params:{vendor:rec.getSelection()[0].get('codice')}});
-            this.getDiscountList().getStore().load({params:{vendor:records[0].get('codice')}});
+            this.getDisList().getStore().load({params:{vendor:records[0].get('codice')}});
         }
 
     }

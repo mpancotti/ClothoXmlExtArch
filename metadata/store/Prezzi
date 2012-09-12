@@ -7,7 +7,7 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "Prezzi",
-        "autoLoad": true,
+        "autoLoad": false,
         "remoteFilter": true,
         "storeId": "prezzi",
         "model": "Prezzo"

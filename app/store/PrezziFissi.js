@@ -24,7 +24,7 @@ Ext.define('ClothoExtXml.store.PrezziFissi', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            autoLoad: true,
+            autoLoad: false,
             remoteFilter: true,
             storeId: 'prezziFissi',
             model: 'ClothoExtXml.model.PrezzoFisso',

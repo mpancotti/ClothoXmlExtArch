@@ -24,7 +24,7 @@ Ext.define('ClothoExtXml.store.Sconti', {
         var me = this;
         cfg = cfg || {};
         me.callParent([Ext.apply({
-            autoLoad: true,
+            autoLoad: false,
             remoteFilter: true,
             storeId: 'sconti',
             model: 'ClothoExtXml.model.Sconto',

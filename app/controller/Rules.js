@@ -31,6 +31,21 @@ Ext.define('ClothoExtXml.controller.Rules', {
         'Sconti'
     ],
 
+    refs: [
+        {
+            ref: 'scontiList',
+            selector: 'scontiGridPanel'
+        },
+        {
+            ref: 'prezziList',
+            selector: 'prezziGridPanel'
+        },
+        {
+            ref: 'prezziFissiList',
+            selector: 'prezziFissiGridPanel'
+        }
+    ],
+
     rulesDoubleClick: function(view,record) {
         // Mostra il container
         if(record){
@@ -78,13 +93,19 @@ Ext.define('ClothoExtXml.controller.Rules', {
         )   
     },
 
-    ruleSelectionChange: function(model, record) {
-        if(records[0])
-        this.ruleGridPanel().getStore().load({params:{rule:records[0].get('id')}});
+    ruleSelectionChange: function(model, records) {
+        if(records[0]){
+            this.getScontiList().getStore().load({params:{rule:records[0].get('id')}});
+            this.getPrezziList().getStore().load({params:{rule:records[0].get('id')}});
+            this.getPrezziFissiList().getStore().load({params:{rule:records[0].get('id')}});
+
+        }
         else{
             var rec= Ext.getCmp('ruleGridPanel').getSelectionModel();
             rec.select(0);
-            this.ruleGridPanel().getStore().load({params:{vendor:rec.getSelection()[0].get('id')}});
+            this.getScontiList().getStore().load({params:{rule:rec.getSelection()[0].get('id')}});
+            this.getPrezziList().getStore().load({params:{rule:rec.getSelection()[0].get('id')}});
+            this.getPrezziFissiList().getStore().load({params:{rule:rec.getSelection()[0].get('id')}});
         }
 
     },

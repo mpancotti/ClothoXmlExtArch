@@ -163,14 +163,6 @@
             ],
             "className": "GlobalVariables"
         },
-        "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375": {
-            "paths": [
-                "metadata/view/BasicDataGrid",
-                "app/view/override/BasicDataGrid.js",
-                "app/view/BasicDataGrid.js"
-            ],
-            "className": "BasicDataGrid"
-        },
         "d1c49070-4f64-4443-948e-1e2939a16978": {
             "paths": [
                 "metadata/view/VendorDataPanel",
@@ -250,20 +242,55 @@
                 "app/store/Strategy.js"
             ],
             "className": "Strategy"
+        },
+        "53bd2e01-8b28-4948-a3fb-dc1d83bd6e49": {
+            "paths": [
+                "metadata/view/ScontiGridPanel",
+                "app/view/override/ScontiGridPanel.js",
+                "app/view/ScontiGridPanel.js"
+            ],
+            "className": "ScontiGridPanel"
+        },
+        "ffb3cebb-af37-4c56-80e6-ff1cf5d3bffe": {
+            "paths": [
+                "metadata/view/PrezziGridPanel",
+                "app/view/override/PrezziGridPanel.js",
+                "app/view/PrezziGridPanel.js"
+            ],
+            "className": "PrezziGridPanel"
+        },
+        "b3d66c06-5b22-4289-88bd-b7c07b42b7c7": {
+            "paths": [
+                "metadata/view/PrezziFissiGridPanel",
+                "app/view/override/PrezziFissiGridPanel.js",
+                "app/view/PrezziFissiGridPanel.js"
+            ],
+            "className": "PrezziFissiGridPanel"
+        },
+        "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375": {
+            "paths": [
+                "metadata/view/DiscountGridPanel",
+                "app/view/override/DiscountGridPanel.js",
+                "app/view/DiscountGridPanel.js"
+            ],
+            "className": "DiscountGridPanel"
         }
     },
     "viewOrderMap": {
         "view": [
             "664f83ad-5d62-4f70-bddf-b256049ce321",
-            "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375",
             "d1c49070-4f64-4443-948e-1e2939a16978",
             "fd16741e-361b-4020-8ee3-9f71936bec4d",
             "8af6e369-8926-4575-885f-7cfaa8cd9d84",
             "f7e0512b-9e93-4c52-9136-f4b6d2022441",
             "3e5195e7-04f8-4ccb-837e-61d5e09c1e67",
-            "dc78034f-90cc-4598-b68b-d9f0e1bde877",
             "67156ffa-162c-4f8d-9c34-50a318f451dc",
-            "b051ec7d-47cf-4c22-aa67-f4cbf61e8a4f"
+            "dc78034f-90cc-4598-b68b-d9f0e1bde877",
+            "b051ec7d-47cf-4c22-aa67-f4cbf61e8a4f",
+            "53bd2e01-8b28-4948-a3fb-dc1d83bd6e49",
+            "ffb3cebb-af37-4c56-80e6-ff1cf5d3bffe",
+            "b3d66c06-5b22-4289-88bd-b7c07b42b7c7",
+            "c7ec34a3-74f3-4f9c-8a1b-08abc4ef6375"
         ],
         "store": [
             "a8b33621-8c8f-40f6-95ae-7220ce515698",

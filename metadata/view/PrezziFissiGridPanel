@@ -1,0 +1,115 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "PrezziFissiGridPanel",
+        "designer|userAlias": "prezziFissiGridPanel",
+        "id": "prezziFissiGridPanel",
+        "title": "Prezzo fisso",
+        "store": "PrezziFissi"
+    },
+    "id": "ExtBox1-ext-gen1981",
+    "designerId": "b3d66c06-5b22-4289-88bd-b7c07b42b7c7",
+    "cn": [
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView4"
+            },
+            "designerId": "991698b8-6468-4cfe-ab34-9d387a50268a"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn6",
+                "dataIndex": "prezzo_fornitore",
+                "text": "Prezzo_fornitore"
+            },
+            "designerId": "4363665a-252c-4258-9217-dcc94bb8e413"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn23",
+                "dataIndex": "netto_lordo",
+                "text": "Netto_lordo"
+            },
+            "designerId": "cb214186-26d3-4c3e-921b-c059f7307df6"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn24",
+                "dataIndex": "affiliato",
+                "text": "Affiliato"
+            },
+            "designerId": "92fadb23-d30f-407d-b664-2498cafcae4b"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn25",
+                "dataIndex": "affiliato_light",
+                "text": "Affiliato_light"
+            },
+            "designerId": "f010957a-485d-4a0a-a3fb-ab5c4cfbd015"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn26",
+                "dataIndex": "somministrato",
+                "text": "Somministrato"
+            },
+            "designerId": "0ed0d84f-bf0c-4e0e-8395-c1f642c9e69f"
+        },
+        {
+            "type": "datecolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyDateColumn3",
+                "dataIndex": "scadenza",
+                "text": "Scadenza"
+            },
+            "designerId": "1a00dc94-ba8d-4317-b855-395a9314f1ee"
+        }
+    ]
+}

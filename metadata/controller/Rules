@@ -43,12 +43,12 @@
                     "if(record){\r",
                     "    var container = Ext.getCmp('ruleFormContainer');\r",
                     "    if (!container.isVisible())\r",
-                    "      container.setVisible(true);\r",
+                    "    container.setVisible(true);\r",
                     "    // Legge il Basic form\r",
                     "    var form = Ext.getCmp('ruleForm');\r",
                     "    // Carica i dati dallo store\r",
                     "    form.getForm().loadRecord(record);\r",
-                    "   //Imposta le variabili globali\r",
+                    "    //Imposta le variabili globali\r",
                     "    ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());\r",
                     "    ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);\r",
                     "    ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);\r",
@@ -75,8 +75,9 @@
                 ],
                 "implHandler": [
                     "this.control(\r",
-                    "{'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemClick':this.rulesItemClick,'selectionchange':this.ruleSelectionChange},\r",
+                    "{'ruleGridPanel': {'itemdblclick':this.rulesDoubleClick,'itemclick':this.rulesItemClick,'selectionchange':this.ruleSelectionChange},\r",
                     "'#ruleFormSaveBtn':{'click': this.ruleFormSave},\r",
+                    "'#ruleFormExit':{'click': this.ruleFormExit}, \r",
                     "'#maintoolbar-add-btn':{'click': this.ruleClearToAdd},\r",
                     "'#maintoolbar-modify-btn':{'click': this.ruleClearToModify},\r",
                     "})"
@@ -147,7 +148,7 @@
                     "    this.getScontiList().getStore().load({params:{rule:records[0].get('id')}});\r",
                     "    this.getPrezziList().getStore().load({params:{rule:records[0].get('id')}});\r",
                     "    this.getPrezziFissiList().getStore().load({params:{rule:records[0].get('id')}});\r",
-                    "    \r",
+                    "\r",
                     "}\r",
                     "else{\r",
                     "    var rec= Ext.getCmp('ruleGridPanel').getSelectionModel();\r",
@@ -173,6 +174,7 @@
                 "fn": "ruleClearToAdd",
                 "implHandler": [
                     "if(ClothoExtXml.controller.GlobalVariables.getCurrentModel()=='ClothoExtXml.model.Rule'){\r",
+                    "    ClothoExtXml.controller.GlobalVariables.addCurrentRecord();\r",
                     "}"
                 ]
             },
@@ -219,6 +221,22 @@
                 "selector": "prezziFissiGridPanel"
             },
             "designerId": "9e01d1c1-b217-4f70-81ff-1a676313b5cb"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "ruleFormExit",
+                "fn": "ruleFormExit",
+                "implHandler": [
+                    "ClothoExtXml.controller.GlobalVariables.formExit();"
+                ]
+            },
+            "designerId": "768d7daf-ba1e-4bab-84ba-6be5b970118a"
         }
     ]
 }

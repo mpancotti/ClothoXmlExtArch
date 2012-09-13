@@ -43,7 +43,10 @@
         "controllers": [
             "Rules",
             "Vendors",
-            "FocusController"
+            "FocusController",
+            "Sconti",
+            "Prezzi",
+            "Prezzifissi"
         ]
     },
     "id": "ExtBox1-ext-gen2590",

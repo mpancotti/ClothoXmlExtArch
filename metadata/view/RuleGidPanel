@@ -10,10 +10,10 @@
         "designer|userAlias": "ruleGridPanel",
         "designer|displayName": "rulesListGrid",
         "id": "ruleGridPanel",
-        "maxWidth": 160,
-        "minWidth": 160,
+        "maxWidth": 250,
+        "minWidth": 250,
         "padding": 2,
-        "width": 160,
+        "width": 250,
         "title": "Lista Regole ",
         "enableColumnHide": false,
         "enableColumnMove": false,
@@ -69,6 +69,20 @@
                 "scope": "me"
             },
             "designerId": "a0c2fd0c-34f7-48f4-8e82-1cfa15a1cf1f"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn23",
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "91fb7b1f-a1b3-42a6-9d91-73cb89fdd7ca"
         }
     ]
 }

@@ -1,0 +1,19 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Prezzifissi",
+        "models": [
+            "PrezzoFisso"
+        ],
+        "stores": [
+            "PrezziFissi"
+        ]
+    },
+    "id": "ExtBox1-ext-gen11039",
+    "designerId": "d2cd7f98-b22f-4fb4-8c0f-42c0dd8defea"
+}

@@ -156,27 +156,7 @@
                         "iconCls": "cancel",
                         "text": "Esci senza salvare"
                     },
-                    "designerId": "88f60714-cacc-467a-b752-042fb01b40b0",
-                    "cn": [
-                        {
-                            "type": "basiceventbinding",
-                            "reference": {
-                                "name": "listeners",
-                                "type": "array"
-                            },
-                            "codeClass": null,
-                            "userConfig": {
-                                "designer|userClassName": "onButtonClick",
-                                "fn": "onButtonClick",
-                                "implHandler": [
-                                    "ClothoExtXml.controller.GlobalVariables.formExit();"
-                                ],
-                                "name": "click",
-                                "scope": "me"
-                            },
-                            "designerId": "59d5e8a6-96ab-4822-b80c-17ef4d7ac3a2"
-                        }
-                    ]
+                    "designerId": "88f60714-cacc-467a-b752-042fb01b40b0"
                 }
             ]
         }

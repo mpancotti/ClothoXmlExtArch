@@ -1,0 +1,19 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Sconti",
+        "models": [
+            "Sconto"
+        ],
+        "stores": [
+            "Sconti"
+        ]
+    },
+    "id": "ExtBox1-ext-gen10827",
+    "designerId": "37d384c7-abd6-44ec-b0e5-2cd043ce015b"
+}

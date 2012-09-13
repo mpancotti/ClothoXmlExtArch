@@ -119,6 +119,7 @@
             "userConfig": {
                 "designer|userClassName": "MyField8",
                 "name": "scadenza",
+                "dateFormat": null,
                 "type": "date"
             },
             "designerId": "765f546f-a1cb-4e0a-8147-59a9a20c90df"

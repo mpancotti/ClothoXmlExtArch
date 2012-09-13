@@ -88,27 +88,7 @@
                 "iconCls": "file_add",
                 "text": "Aggiungi"
             },
-            "designerId": "de7b7e2a-e2c7-42da-9dc8-8c3f3631388f",
-            "cn": [
-                {
-                    "type": "basiceventbinding",
-                    "reference": {
-                        "name": "listeners",
-                        "type": "array"
-                    },
-                    "codeClass": null,
-                    "userConfig": {
-                        "designer|userClassName": "addRecord",
-                        "fn": "addRecord",
-                        "implHandler": [
-                            "ClothoExtXml.controller.GlobalVariables.addCurrentRecord();"
-                        ],
-                        "name": "click",
-                        "scope": "me"
-                    },
-                    "designerId": "b8d2d951-210c-4e3a-9f4c-578e8be5d397"
-                }
-            ]
+            "designerId": "de7b7e2a-e2c7-42da-9dc8-8c3f3631388f"
         },
         {
             "type": "button",

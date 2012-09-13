@@ -21,7 +21,7 @@
             "userConfig": {
                 "designer|userClassName": "MyField27",
                 "name": "id",
-                "type": "string"
+                "type": "int"
             },
             "designerId": "9e5278ce-abdf-4820-96f6-72820c27d9e8"
         },

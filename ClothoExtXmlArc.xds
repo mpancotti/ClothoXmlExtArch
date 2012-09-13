@@ -274,6 +274,30 @@
                 "app/view/DiscountGridPanel.js"
             ],
             "className": "DiscountGridPanel"
+        },
+        "37d384c7-abd6-44ec-b0e5-2cd043ce015b": {
+            "paths": [
+                "metadata/controller/Sconti",
+                "app/controller/override/Sconti.js",
+                "app/controller/Sconti.js"
+            ],
+            "className": "Sconti"
+        },
+        "a66106ce-95a5-4304-a1f1-513dd961b577": {
+            "paths": [
+                "metadata/controller/Prezzi",
+                "app/controller/override/Prezzi.js",
+                "app/controller/Prezzi.js"
+            ],
+            "className": "Prezzi"
+        },
+        "d2cd7f98-b22f-4fb4-8c0f-42c0dd8defea": {
+            "paths": [
+                "metadata/controller/Prezzifissi",
+                "app/controller/override/Prezzifissi.js",
+                "app/controller/Prezzifissi.js"
+            ],
+            "className": "Prezzifissi"
         }
     },
     "viewOrderMap": {
@@ -305,7 +329,10 @@
             "d40825c4-56c5-4a6b-92e9-e18823ca0f25",
             "cdf18da0-e28e-49bf-accd-f722f986dacf",
             "a7b88bdc-9f79-4adb-a9a3-77c02608679a",
-            "fd4b6b7b-89d4-4c55-bf88-b2e28e771059"
+            "fd4b6b7b-89d4-4c55-bf88-b2e28e771059",
+            "37d384c7-abd6-44ec-b0e5-2cd043ce015b",
+            "a66106ce-95a5-4304-a1f1-513dd961b577",
+            "d2cd7f98-b22f-4fb4-8c0f-42c0dd8defea"
         ],
         "model": [
             "e9c88aa2-d26c-47b5-82b8-b1e531f8210f",

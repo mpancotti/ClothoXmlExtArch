@@ -64,7 +64,8 @@
             "userConfig": {
                 "designer|userClassName": "MyDateColumn1",
                 "dataIndex": "scadenza",
-                "text": "Scadenza"
+                "text": "Scadenza",
+                "format": "d/m/Y"
             },
             "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
         },

@@ -1,0 +1,19 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Prezzi",
+        "models": [
+            "Prezzo"
+        ],
+        "stores": [
+            "Prezzi"
+        ]
+    },
+    "id": "ExtBox1-ext-gen10933",
+    "designerId": "a66106ce-95a5-4304-a1f1-513dd961b577"
+}

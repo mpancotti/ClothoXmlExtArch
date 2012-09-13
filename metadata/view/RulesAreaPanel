@@ -45,9 +45,9 @@
                         "container|align": "stretch",
                         "designer|userClassName": "MyContainer9",
                         "designer|displayName": "rulesListContainer",
-                        "maxWidth": 160,
-                        "minWidth": 160,
-                        "width": 160,
+                        "maxWidth": 250,
+                        "minWidth": 250,
+                        "width": 250,
                         "layout": "hbox"
                     },
                     "designerId": "704cd6d2-3260-4b05-a51c-12c355b73584",

@@ -32,7 +32,7 @@
                 ],
                 "implHandler": [
                     "this.control(\r",
-                    "{'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorClick,'selectionchange':this.vendorSelectionChange},\r",
+                    "{'vendorGridPanel': {'itemdblclick':this.vendorDoubleClick,'itemclick':this.vendorItemClick,'selectionchange':this.vendorSelectionChange},\r",
                     "'#venFormSaveBtn':{'click': this.vendorFormSave},\r",
                     "'#venFormExit':{'click':this.vendorFormExit},\r",
                     "'#maintoolbar-add-btn':{'click': this.vendorClearToAdd},\r",
@@ -109,8 +109,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "vendorClick",
-                "fn": "vendorClick",
+                "designer|userClassName": "vendorItemClick",
+                "fn": "vendorItemClick",
                 "designer|params": [
                     "view, record"
                 ],
@@ -142,6 +142,7 @@
                     "    var form=Ext.getCmp('vendorForm');\r",
                     "    form.queryById('codiceVendor').setEditable(true);\r",
                     "    form.queryById('codiceVendor').focus(true,100);\r",
+                    "    ClothoExtXml.controller.GlobalVariables.addCurrentRecord();\r",
                     "}"
                 ]
             },
@@ -223,6 +224,22 @@
                 "selector": "discountGridPanel"
             },
             "designerId": "2ed003af-69f3-43c0-b886-609d05267aaf"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "vendorFormExit",
+                "fn": "vendorFormExit",
+                "implHandler": [
+                    "ClothoExtXml.controller.GlobalVariables.formExit();"
+                ]
+            },
+            "designerId": "21ccac6e-7068-4367-a9e0-bb88d691a622"
         }
     ]
 }

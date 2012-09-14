@@ -1,0 +1,15 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "encodeDate.js",
+        "defer": false,
+        "id": "encDate"
+    },
+    "id": "ExtBox1-ext-gen3437",
+    "designerId": "acaeba4c-ca07-4444-8133-3f0029e5ce6a"
+}

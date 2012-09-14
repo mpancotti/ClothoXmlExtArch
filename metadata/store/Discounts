@@ -8,6 +8,7 @@
     "userConfig": {
         "designer|userClassName": "Discounts",
         "autoLoad": false,
+        "autoSync": true,
         "remoteFilter": true,
         "storeId": "discounts",
         "model": "Discount"

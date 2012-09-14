@@ -298,6 +298,12 @@
                 "app/controller/Prezzifissi.js"
             ],
             "className": "Prezzifissi"
+        },
+        "acaeba4c-ca07-4444-8133-3f0029e5ce6a": {
+            "paths": [
+                "metadata/resource/js"
+            ],
+            "className": "js"
         }
     },
     "viewOrderMap": {
@@ -345,7 +351,8 @@
         ],
         "resource": [
             "bb324d84-14c4-4543-be57-cd615045dea8",
-            "95540c0e-fedc-4d24-8d97-5913a9ff8e05"
+            "95540c0e-fedc-4d24-8d97-5913a9ff8e05",
+            "acaeba4c-ca07-4444-8133-3f0029e5ce6a"
         ],
         "app": [
             "application"

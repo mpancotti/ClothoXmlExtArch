@@ -85,7 +85,8 @@
                         "designer|userClassName": "MyDateField",
                         "name": "scadenza",
                         "fieldLabel": "Scadenza",
-                        "labelAlign": "right"
+                        "labelAlign": "right",
+                        "format": "d/m/Y"
                     },
                     "designerId": "6c9c456d-e96c-4a00-9ae8-b10cb866f632"
                 },

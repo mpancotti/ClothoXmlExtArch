@@ -79,7 +79,10 @@
                 "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
-                    "Ext.getCmp('vendorGridPanel').getSelectionModel().select(0)"
+                    "Ext.getCmp('vendorGridPanel').getSelectionModel().select(0);\r",
+                    "Ext.JSON.encodeDate=function(d){\r",
+                    "    return Ext.Date.format(d,'\"m/d/Y\"');\r",
+                    "}"
                 ]
             },
             "designerId": "89603797-53ab-4b97-be0d-e097efe6e9ba"

@@ -27,18 +27,32 @@
     ],
     "cn": [
         {
-            "type": "gridcolumn",
+            "type": "numbercolumn",
             "reference": {
                 "name": "columns",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "MyColumn1",
+                "designer|userClassName": "MyNumberColumn24",
                 "dataIndex": "from_discount",
                 "text": "Da"
             },
-            "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf"
+            "designerId": "2c536105-7d7c-45fc-ac23-413107a57faf",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField1"
+                    },
+                    "designerId": "b3d4f617-a961-4a1a-a302-11cdeb4e37a9"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -52,7 +66,49 @@
                 "dataIndex": "to_discount",
                 "text": "A"
             },
-            "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc"
+            "designerId": "68794ef3-87d0-425b-b0cd-7b7b8c9990dc",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField3"
+                    },
+                    "designerId": "7832527b-983f-4c29-a3bf-8068391a7207"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "value_note_3",
+                "text": "Valore in Note 3"
+            },
+            "designerId": "7101bb5e-f221-49ec-9ddd-63f3d0494b27",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField3"
+                    },
+                    "designerId": "b20333c5-ca8d-4319-9957-0c55c5b7cc62"
+                }
+            ]
         },
         {
             "type": "datecolumn",
@@ -67,21 +123,33 @@
                 "text": "Scadenza",
                 "format": "d/m/Y"
             },
-            "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7"
+            "designerId": "004c6c9d-6e45-42fe-b7c1-e4e104acb8e7",
+            "cn": [
+                {
+                    "type": "datefield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyDateField1"
+                    },
+                    "designerId": "a7d441f4-34d4-451a-9631-0d2272f9b4ae"
+                }
+            ]
         },
         {
-            "type": "booleancolumn",
+            "type": "gridroweditingplugin",
             "reference": {
-                "name": "columns",
+                "name": "plugins",
                 "type": "array"
             },
-            "codeClass": null,
+            "codeClass": "Ext.grid.plugin.RowEditing",
             "userConfig": {
-                "designer|userClassName": "MyBooleanColumn1",
-                "dataIndex": "value_note_3",
-                "text": "Valore in note3"
+                "designer|userClassName": "MyRowEditingPlugin"
             },
-            "designerId": "c7737b6e-7db3-4683-92e3-647753846cdb"
+            "designerId": "77145f3a-736b-4b15-ae0d-ca72c79aada8"
         }
     ]
 }

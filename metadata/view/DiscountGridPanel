@@ -147,7 +147,9 @@
             },
             "codeClass": "Ext.grid.plugin.RowEditing",
             "userConfig": {
-                "designer|userClassName": "MyRowEditingPlugin"
+                "designer|userClassName": "MyRowEditingPlugin",
+                "designer|displayName": "discountEditingPlugin",
+                "pluginId": "discountEditingPlugin"
             },
             "designerId": "77145f3a-736b-4b15-ae0d-ca72c79aada8"
         }

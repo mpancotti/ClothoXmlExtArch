@@ -39,7 +39,21 @@
                 "dataIndex": "prezzo_fornitore",
                 "text": "Prezzo_fornitore"
             },
-            "designerId": "4363665a-252c-4258-9217-dcc94bb8e413"
+            "designerId": "4363665a-252c-4258-9217-dcc94bb8e413",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField18"
+                    },
+                    "designerId": "2f5310bf-b77f-476c-89dd-49a07ef37584"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -53,7 +67,21 @@
                 "dataIndex": "netto_lordo",
                 "text": "Netto_lordo"
             },
-            "designerId": "cb214186-26d3-4c3e-921b-c059f7307df6"
+            "designerId": "cb214186-26d3-4c3e-921b-c059f7307df6",
+            "cn": [
+                {
+                    "type": "textfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyTextField5"
+                    },
+                    "designerId": "f815dbc9-5d07-4360-b1cf-3adc7ba42262"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -67,7 +95,21 @@
                 "dataIndex": "affiliato",
                 "text": "Affiliato"
             },
-            "designerId": "92fadb23-d30f-407d-b664-2498cafcae4b"
+            "designerId": "92fadb23-d30f-407d-b664-2498cafcae4b",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField19"
+                    },
+                    "designerId": "5b7dc5ef-35ca-4a8a-a3b3-bfe973278b6c"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -81,7 +123,21 @@
                 "dataIndex": "affiliato_light",
                 "text": "Affiliato_light"
             },
-            "designerId": "f010957a-485d-4a0a-a3fb-ab5c4cfbd015"
+            "designerId": "f010957a-485d-4a0a-a3fb-ab5c4cfbd015",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField20"
+                    },
+                    "designerId": "6053236d-d30c-4521-910a-6efe7386fe8b"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -95,7 +151,21 @@
                 "dataIndex": "somministrato",
                 "text": "Somministrato"
             },
-            "designerId": "0ed0d84f-bf0c-4e0e-8395-c1f642c9e69f"
+            "designerId": "0ed0d84f-bf0c-4e0e-8395-c1f642c9e69f",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField21"
+                    },
+                    "designerId": "b819c904-cabd-47b6-a7aa-1bd9ae248c24"
+                }
+            ]
         },
         {
             "type": "datecolumn",
@@ -109,7 +179,21 @@
                 "dataIndex": "scadenza",
                 "text": "Scadenza"
             },
-            "designerId": "1a00dc94-ba8d-4317-b855-395a9314f1ee"
+            "designerId": "1a00dc94-ba8d-4317-b855-395a9314f1ee",
+            "cn": [
+                {
+                    "type": "datefield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyDateField4"
+                    },
+                    "designerId": "faa11a96-8726-4c15-90e2-d2963ab0c33c"
+                }
+            ]
         }
     ]
 }

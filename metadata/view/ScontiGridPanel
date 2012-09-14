@@ -49,7 +49,21 @@
                 "dataIndex": "sconto_fornitore",
                 "text": "Sconto_fornitore"
             },
-            "designerId": "380d7cf6-a5bb-4ce8-9bed-a05e23fe5db8"
+            "designerId": "380d7cf6-a5bb-4ce8-9bed-a05e23fe5db8",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField4"
+                    },
+                    "designerId": "9f7ad4c3-ea36-4a88-966a-3878c18e86b8"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -63,7 +77,21 @@
                 "dataIndex": "tolleranza",
                 "text": "Tolleranza"
             },
-            "designerId": "7c5bd345-f9fa-4648-8596-6a1fca5df4c4"
+            "designerId": "7c5bd345-f9fa-4648-8596-6a1fca5df4c4",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField5"
+                    },
+                    "designerId": "f3536520-42d4-4a34-b084-04e1f0150f2f"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -77,7 +105,21 @@
                 "dataIndex": "prezzo_lordo",
                 "text": "Prezzo_lordo"
             },
-            "designerId": "154246a0-9414-4c71-b329-2dcd7b7b5eec"
+            "designerId": "154246a0-9414-4c71-b329-2dcd7b7b5eec",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField6"
+                    },
+                    "designerId": "35e65d59-06b5-4555-8ca9-f8be86f69ada"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -91,7 +133,21 @@
                 "dataIndex": "affiliato",
                 "text": "Affiliato"
             },
-            "designerId": "e79d7917-d5fa-4cad-ab8f-4e7845d83d65"
+            "designerId": "e79d7917-d5fa-4cad-ab8f-4e7845d83d65",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField7"
+                    },
+                    "designerId": "75a809cd-ef6a-46e4-91c5-236f62b83ec6"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -105,7 +161,21 @@
                 "dataIndex": "affiliato_light",
                 "text": "Affiliato_light"
             },
-            "designerId": "97d04c06-34d8-42ad-85e1-870b6db22a91"
+            "designerId": "97d04c06-34d8-42ad-85e1-870b6db22a91",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField8"
+                    },
+                    "designerId": "4ad35b46-bec5-4f58-b912-acdd081baa5e"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -119,7 +189,21 @@
                 "dataIndex": "somministrato",
                 "text": "Somministrato"
             },
-            "designerId": "6d915dcc-7f94-4eac-9a0a-e3ed01773bba"
+            "designerId": "6d915dcc-7f94-4eac-9a0a-e3ed01773bba",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField9"
+                    },
+                    "designerId": "5f62cf7a-f04a-4dee-b2dd-7f82af3aa67f"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -133,7 +217,21 @@
                 "dataIndex": "prezzo_affiliato",
                 "text": "Prezzo_affiliato"
             },
-            "designerId": "35049d23-4d58-48b9-ae5f-9a4082351dca"
+            "designerId": "35049d23-4d58-48b9-ae5f-9a4082351dca",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField10"
+                    },
+                    "designerId": "74f52123-a92d-44e2-bebb-3228726baeb8"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -147,7 +245,21 @@
                 "dataIndex": "prezzo_affiliato_light",
                 "text": "Prezzo_affiliato_light"
             },
-            "designerId": "c56e8d59-349c-4c0b-b7b2-77c0412cdbe8"
+            "designerId": "c56e8d59-349c-4c0b-b7b2-77c0412cdbe8",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField11"
+                    },
+                    "designerId": "b0ea8563-8080-427e-9ec9-e5279dfa805d"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -161,7 +273,21 @@
                 "dataIndex": "prezzo_somministrato",
                 "text": "Prezzo_somministrato"
             },
-            "designerId": "ef0d338f-18ab-4c66-9378-f87f76bb67e1"
+            "designerId": "ef0d338f-18ab-4c66-9378-f87f76bb67e1",
+            "cn": [
+                {
+                    "type": "numberfield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyNumberField12"
+                    },
+                    "designerId": "cc0e94d1-e103-49b8-a17f-7f3fa22ce289"
+                }
+            ]
         },
         {
             "type": "numbercolumn",
@@ -175,7 +301,21 @@
                 "dataIndex": "scadenza",
                 "text": "Scadenza"
             },
-            "designerId": "1b5113ad-0b91-430e-afa6-ef237ecc67f6"
+            "designerId": "1b5113ad-0b91-430e-afa6-ef237ecc67f6",
+            "cn": [
+                {
+                    "type": "datefield",
+                    "reference": {
+                        "name": "editor",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyDateField2"
+                    },
+                    "designerId": "6ced63dd-d38b-4822-81c5-a306d26ee13e"
+                }
+            ]
         }
     ]
 }

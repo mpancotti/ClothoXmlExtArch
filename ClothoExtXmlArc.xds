@@ -1,9 +1,9 @@
 {
     "name": "ClothoExtXmlArc",
     "settings": {
-        "urlPrefix": "http://localhost/ClothoXmlExtArch",
+        "urlPrefix": "http://localhost:8080/clothoxml/ext",
         "spacesToIndent": 4,
-        "exportPath": "C:/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
+        "exportPath": "/Users/marco/JavaProjects/ClothoXmlServer/src/main/webapp/ext",
         "lineEnding": "CRLF",
         "genTimestamps": false,
         "cacheBust": false

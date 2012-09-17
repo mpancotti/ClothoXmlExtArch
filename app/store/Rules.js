@@ -41,6 +41,12 @@ Ext.define('ClothoExtXml.store.Rules', {
                         scope: me
                     }
                 }
+            },
+            listeners: {
+                add: {
+                    fn: me.onStoreAdd,
+                    scope: me
+                }
             }
         }, cfg)]);
     },
@@ -52,6 +58,10 @@ Ext.define('ClothoExtXml.store.Rules', {
             this.rejectChanges();
             ClothoExtXml.controller.GlobalVariables.hideCurrentContainer()
         },this);
+    },
+
+    onStoreAdd: function(store, records, index, options) {
+        records[0].codice_vendor_fk=ClothoExtXml.controller.GlobalVariables.getCurrentVendor();
     }
 
 });

@@ -36,6 +36,10 @@ Ext.define('ClothoExtXml.model.Rule', {
         {
             name: 'strategy',
             type: 'string'
+        },
+        {
+            name: 'codice_vendor_fk',
+            type: 'int'
         }
     ]
 });

@@ -51,6 +51,10 @@ Ext.define('ClothoExtXml.view.VendorGridPanel', {
                 select: {
                     fn: me.onVendorGridPanelSelect,
                     scope: me
+                },
+                itemcontextmenu: {
+                    fn: me.onVendorGridPanelItemContextMenu,
+                    scope: me
                 }
             },
             selModel: Ext.create('Ext.selection.RowModel', {
@@ -67,6 +71,10 @@ Ext.define('ClothoExtXml.view.VendorGridPanel', {
 
     onVendorGridPanelSelect: function(selModel, record, index, options) {
         Ext.getCmp('vendorData').update(record.getData());
+    },
+
+    onVendorGridPanelItemContextMenu: function(tablepanel, record, item, index, e, options) {
+        console.log('far apparire menu')
     }
 
 });

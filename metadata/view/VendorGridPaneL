@@ -107,6 +107,24 @@
                 "designer|userClassName": "MyRowSelectionModel"
             },
             "designerId": "3c40db72-9b14-40c8-be79-2d2814dd7fce"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onVendorGridPanelItemContextMenu",
+                "fn": "onVendorGridPanelItemContextMenu",
+                "implHandler": [
+                    "console.log('far apparire menu')"
+                ],
+                "name": "itemcontextmenu",
+                "scope": "me"
+            },
+            "designerId": "5123b08b-1259-41eb-adae-662ad349bc13"
         }
     ]
 }

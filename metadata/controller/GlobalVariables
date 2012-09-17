@@ -395,6 +395,76 @@
                 ]
             },
             "designerId": "e03049e3-311e-445e-be0c-dfec3bbf60b1"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentVendor",
+                "fn": "setCurrentVendor",
+                "designer|params": [
+                    "vendorId"
+                ],
+                "implHandler": [
+                    "this.vendor=vendorId"
+                ]
+            },
+            "designerId": "9b3a08bf-bf90-4218-9b3f-4895b0258c13"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentVendor",
+                "fn": "getCurrentVendor",
+                "implHandler": [
+                    "return this.vendor"
+                ]
+            },
+            "designerId": "d4de67ce-9981-42bd-97ad-8da0f4d93d4b"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "setCurrentRule",
+                "fn": "setCurrentRule",
+                "designer|params": [
+                    "ruleId"
+                ],
+                "implHandler": [
+                    "this.rule=rule_id"
+                ]
+            },
+            "designerId": "87e00cde-ad70-4925-9929-776ee7e43bca"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getCurrentRule",
+                "fn": "getCurrentRule",
+                "implHandler": [
+                    "return this.rule"
+                ]
+            },
+            "designerId": "f2cd836d-2718-4111-9fcc-03f115a9ecc8"
         }
     ]
 }

@@ -59,6 +59,7 @@ Ext.define('ClothoExtXml.controller.Vendors', {
             // Imposta le variabili globali
             ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());
             ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);
+            ClothoExtXml.controller.GlobalVariables.setCurrentVendor(record.codice);
             ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);
             ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);
             ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Modify');
@@ -81,6 +82,7 @@ Ext.define('ClothoExtXml.controller.Vendors', {
         var container = Ext.getCmp('vendorFormContainer');
         ClothoExtXml.controller.GlobalVariables.setCurrentStore(view.getStore());
         ClothoExtXml.controller.GlobalVariables.setCurrentRecord(record);
+        ClothoExtXml.controller.GlobalVariables.setCurrentVendor(record.codice);
         ClothoExtXml.controller.GlobalVariables.setCurrentForm(form);
         ClothoExtXml.controller.GlobalVariables.setCurrentContainer(container);
         ClothoExtXml.controller.GlobalVariables.setCurrentStatus('Selected');

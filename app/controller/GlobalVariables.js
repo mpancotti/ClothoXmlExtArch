@@ -121,6 +121,22 @@ Ext.define('ClothoExtXml.controller.GlobalVariables', {
 
     setCurrentStore: function(store) {
         this.currentStore=store;
+    },
+
+    setCurrentVendor: function(vendorId) {
+        this.vendor=vendorId
+    },
+
+    getCurrentVendor: function() {
+        return this.vendor
+    },
+
+    setCurrentRule: function(ruleId) {
+        this.rule=rule_id
+    },
+
+    getCurrentRule: function() {
+        return this.rule
     }
 
 });

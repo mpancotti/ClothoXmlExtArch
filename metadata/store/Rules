@@ -66,6 +66,24 @@
                     "designerId": "d6c62600-6e48-40d7-96cc-de47fde64f13"
                 }
             ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onStoreAdd",
+                "fn": "onStoreAdd",
+                "implHandler": [
+                    "records[0].codice_vendor_fk=ClothoExtXml.controller.GlobalVariables.getCurrentVendor();"
+                ],
+                "name": "add",
+                "scope": "me"
+            },
+            "designerId": "904e2800-3340-4225-80da-9a7400fd52de"
         }
     ]
 }

@@ -64,7 +64,7 @@
                                 "designer|userClassName": "tpl",
                                 "implHandler": [
                                     "<div style=\"padding:5px\"> \r",
-                                    "    <span>Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>\r",
+                                    "    <span><b>Fornitore:</b> Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>\r",
                                     "    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>\r",
                                     "</div>"
                                 ],

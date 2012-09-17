@@ -49,7 +49,7 @@ Ext.define('ClothoExtXml.view.ClothoXmlViewport', {
                             minHeight: 30,
                             tpl: [
                                 '<div style="padding:5px"> ',
-                                '    <span>Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>',
+                                '    <span><b>Fornitore:</b> Codice:<b>{codice}</b></span>&nbsp;&nbsp;<span>Nome:<b>{nome}</b></span>',
                                 '    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>',
                                 '</div>'
                             ]

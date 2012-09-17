@@ -76,8 +76,8 @@ Ext.define('ClothoExtXml.view.RulesAreaPanel', {
                                     minHeight: 30,
                                     tpl: [
                                         '<div style="padding:5px"> ',
-                                        '    <span>RegExp:<b>{regexp}</b></span>&nbsp;&nbsp;<span>Valore Note 3:<b>{valore_note_3}</b></span>',
-                                        '    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>&nbsp;&nbsp;<span>Scadenza:<b>{scadenza}</b></span>',
+                                        '    <span><b>Regola:</b> RegExp:<b>{regexp}</b></span>&nbsp;&nbsp;<span>Valore Note 3:<b>{valore_note_3}</b></span>',
+                                        '    &nbsp;&nbsp;<span>Strategia:<b>{strategy}</b></span>&nbsp;&nbsp;<span>Scadenza:<b>{scadenza:date("d/m/Y")}</b></span>',
                                         '</div>'
                                     ],
                                     frameHeader: false

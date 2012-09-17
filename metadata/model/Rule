@@ -63,6 +63,7 @@
             "userConfig": {
                 "designer|userClassName": "MyField30",
                 "name": "scadenza",
+                "dateFormat": null,
                 "type": "date"
             },
             "designerId": "605c57b7-f950-4c02-ae79-06af3145a35e"
@@ -80,6 +81,20 @@
                 "type": "string"
             },
             "designerId": "a8a8e511-677e-4b8a-b571-f0a819a02c48"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field48",
+                "name": "codice_vendor_fk",
+                "type": "int"
+            },
+            "designerId": "07655d1a-cca8-43d4-b81a-1dd27bf010c0"
         }
     ]
 }
